@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cook Pong</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap">
+<style>
+  :root {
+    --bg: #0b0f14;
+    --court: #101820;
+    --line: #2a3a48;
+    --ink: #e6f1ea;
+    --phosphor: #7cff9e;
+    --dim: #8aa0a8;
+  }
+  html, body { height: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: "Press Start 2P", "Courier New", monospace;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    padding: 16px;
+    box-sizing: border-box;
+    touch-action: none;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  h1 {
+    margin: 0;
+    font-size: clamp(14px, 3vw, 22px);
+    letter-spacing: 2px;
+    color: var(--phosphor);
+    text-shadow: 0 0 12px rgba(124,255,158,.45);
+  }
+  .wrap {
+    width: min(100%, 800px);
+    aspect-ratio: 8 / 5;
+    max-width: 100%;
+    position: relative;
+  }
+  canvas {
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: var(--court);
+    border: 2px solid var(--line);
+    box-shadow: 0 0 40px rgba(124,255,158,.08) inset, 0 0 24px rgba(0,0,0,.6);
+    image-rendering: pixelated;
+  }
+  .overlay {
+    position: absolute; inset: 0;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    gap: 18px; text-align: center; padding: 16px;
+    background: rgba(11,15,20,.72);
+  }
+  .overlay p { margin: 0; font-size: clamp(8px, 1.6vw, 12px); line-height: 1.9; color: var(--dim); }
+  .overlay .big { font-size: clamp(12px, 2.6vw, 20px); color: var(--ink); }
+  button {
+    font: inherit; font-size: clamp(9px, 1.8vw, 13px);
+    background: var(--phosphor); color: var(--bg);
+    border: 0; padding: 12px 20px; cursor: pointer;
+    box-shadow: 0 0 16px rgba(124,255,158,.5);
+  }
+  button:focus-visible { outline: 3px solid var(--ink); outline-offset: 3px; }
+  .hint { font-size: clamp(7px, 1.3vw, 10px); color: var(--dim); line-height: 1.8; text-align: center; max-width: 60ch; }
+  @media (prefers-reduced-motion: reduce) { h1 { text-shadow: none; } }
+</style>
+</head>
+<body>
+
+<h1>COOK PONG</h1>
+<div class="wrap">
+  <canvas id="game" width="800" height="500" aria-label="Pong game"></canvas>
+  <div class="overlay" id="overlay">
+    <p class="big" id="msg">FIRST TO 7 WINS</p>
+    <p>W / S or ↑ / ↓ to move<br>Touch or drag on the court also works</p>
+    <button id="start">PRESS START</button>
+  </div>
+</div>
+<p class="hint">You are the left paddle. Hit the ball with the edge of your paddle to put spin on it.</p>
+
+<script>
+(function () {
+  const canvas = document.getElementById('game');
+  const ctx = canvas.getContext('2d');
+  const overlay = document.getElementById('overlay');
+  const msg = document.getElementById('msg');
+  const startBtn = document.getElementById('start');
+
+  const W = canvas.width, H = canvas.height;
+  const PAD_W = 12, PAD_H = 80, BALL = 12, WIN = 7;
+  const PLAYER_SPEED = 7, AI_SPEED = 5.2;
+
+  const state = {
+    running: false,
+    p1: { y: H / 2 - PAD_H / 2, score: 0 },
+    p2: { y: H / 2 - PAD_H / 2, score: 0 },
+    ball: { x: W / 2, y: H / 2, vx: 0, vy: 0 },
+    keys: {},
+    touchY: null,
+    serveTimer: 0,
+  };
+
+  function serve(toward) {
+    const b = state.ball;
+    b.x = W / 2; b.y = H / 2;
+    const angle = (Math.random() * 0.8 - 0.4);
+    const speed = 6;
+    b.vx = Math.cos(angle) * speed * toward;
+    b.vy = Math.sin(angle) * speed;
+    state.serveTimer = 40;
+  }
+
+  function reset() {
+    state.p1.score = 0; state.p2.score = 0;
+    state.p1.y = state.p2.y = H / 2 - PAD_H / 2;
+    serve(Math.random() < 0.5 ? 1 : -1);
+  }
+
+  function clamp(v, lo, hi) { return Math.max(lo, Math.min(hi, v)); }
+
+  function update() {
+    const { p1, p2, ball, keys } = state;
+
+    // Player
+    if (state.touchY !== null) {
+      p1.y += clamp(state.touchY - (p1.y + PAD_H / 2), -PLAYER_SPEED * 1.6, PLAYER_SPEED * 1.6);
+    } else {
+      if (keys.ArrowUp || keys.w || keys.W) p1.y -= PLAYER_SPEED;
+      if (keys.ArrowDown || keys.s || keys.S) p1.y += PLAYER_SPEED;
+    }
+    p1.y = clamp(p1.y, 0, H - PAD_H);
+
+    // AI: track the ball only when it's coming, with a bit of lag
+    const target = ball.vx > 0 ? ball.y : H / 2;
+    const diff = target - (p2.y + PAD_H / 2);
+    p2.y += clamp(diff * 0.12, -AI_SPEED, AI_SPEED);
+    p2.y = clamp(p2.y, 0, H - PAD_H);
+
+    if (state.serveTimer > 0) { state.serveTimer--; return; }
+
+    ball.x += ball.vx; ball.y += ball.vy;
+
+    // Walls
+    if (ball.y <= 0) { ball.y = 0; ball.vy = Math.abs(ball.vy); }
+    if (ball.y + BALL >= H) { ball.y = H - BALL; ball.vy = -Math.abs(ball.vy); }
+
+    // Paddles
+    const hit = (px, py) => ball.x < px + PAD_W && ball.x + BALL > px && ball.y < py + PAD_H && ball.y + BALL > py;
+    const bounce = (py, dir) => {
+      const rel = ((ball.y + BALL / 2) - (py + PAD_H / 2)) / (PAD_H / 2); // -1..1
+      const speed = Math.min(Math.hypot(ball.vx, ball.vy) * 1.05, 14);
+      const angle = rel * 1.05;
+      ball.vx = Math.cos(angle) * speed * dir;
+      ball.vy = Math.sin(angle) * speed;
+    };
+    if (ball.vx < 0 && hit(20, p1.y)) { ball.x = 20 + PAD_W; bounce(p1.y, 1); }
+    if (ball.vx > 0 && hit(W - 20 - PAD_W, p2.y)) { ball.x = W - 20 - PAD_W - BALL; bounce(p2.y, -1); }
+
+    // Score
+    if (ball.x + BALL < 0) { p2.score++; endPointOrGame(-1); }
+    if (ball.x > W) { p1.score++; endPointOrGame(1); }
+  }
+
+  function endPointOrGame(dirNext) {
+    const { p1, p2 } = state;
+    if (p1.score >= WIN || p2.score >= WIN) {
+      state.running = false;
+      msg.textContent = p1.score > p2.score ? 'YOU WIN' : 'CPU WINS';
+      startBtn.textContent = 'PLAY AGAIN';
+      overlay.hidden = false;
+    } else {
+      serve(dirNext);
+    }
+  }
+
+  function draw() {
+    const { p1, p2, ball } = state;
+    ctx.fillStyle = '#101820';
+    ctx.fillRect(0, 0, W, H);
+
+    // Center line
+    ctx.fillStyle = '#2a3a48';
+    for (let y = 0; y < H; y += 24) ctx.fillRect(W / 2 - 2, y, 4, 14);
+
+    // Scores
+    ctx.fillStyle = '#8aa0a8';
+    ctx.font = '32px "Press Start 2P", monospace';
+    ctx.textAlign = 'center';
+    ctx.fillText(p1.score, W / 2 - 70, 56);
+    ctx.fillText(p2.score, W / 2 + 70, 56);
+
+    // Paddles and ball
+    ctx.fillStyle = '#7cff9e';
+    ctx.shadowColor = 'rgba(124,255,158,.6)';
+    ctx.shadowBlur = 12;
+    ctx.fillRect(20, p1.y, PAD_W, PAD_H);
+    ctx.fillRect(W - 20 - PAD_W, p2.y, PAD_W, PAD_H);
+    ctx.fillStyle = '#e6f1ea';
+    ctx.fillRect(ball.x, ball.y, BALL, BALL);
+    ctx.shadowBlur = 0;
+  }
+
+  function loop() {
+    if (state.running) update();
+    draw();
+    requestAnimationFrame(loop);
+  }
+
+  // Input
+  window.addEventListener('keydown', e => {
+    if (['ArrowUp', 'ArrowDown', ' '].includes(e.key)) e.preventDefault();
+    state.keys[e.key] = true;
+    if (e.key === ' ' && !state.running) startBtn.click();
+  });
+  window.addEventListener('keyup', e => { state.keys[e.key] = false; });
+
+  const toCourtY = ev => {
+    const r = canvas.getBoundingClientRect();
+    return (ev.clientY - r.top) * (H / r.height);
+  };
+  canvas.addEventListener('pointerdown', ev => { state.touchY = toCourtY(ev); canvas.setPointerCapture(ev.pointerId); });
+  canvas.addEventListener('pointermove', ev => { if (state.touchY !== null) state.touchY = toCourtY(ev); });
+  const release = () => { state.touchY = null; };
+  canvas.addEventListener('pointerup', release);
+  canvas.addEventListener('pointercancel', release);
+
+  startBtn.addEventListener('click', () => {
+    reset();
+    overlay.hidden = true;
+    state.running = true;
+    canvas.focus();
+  });
+
+  draw();
+  loop();
+})();
+</script>
+</body>
+</html>
