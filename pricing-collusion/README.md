@@ -1,17 +1,17 @@
 # Do AI Pricing Agents Tacitly Collude?
 
-*Javen Chen · Harvard College · Letting Claude Cook seminar, Fall 2026*
+*Javen Chen · Harvard University · Letting Claude Cook first-year seminar, Fall 2026*
 
 ## The question
 
-More and more companies let software set their prices. If each company hands
-pricing to an AI agent, and every agent is told only to "maximize profit,"
-will the agents compete prices down, or will they drift to high,
-cartel-like prices that hurt consumers?
+More and more companies are using artificial intelligence to set their prices. 
+If each company allows an AI agent to set prices (and every agent is told only 
+to maximize profit), will the agents compete towards lowering prices, or will 
+they jack the prices higher and higher, hurting consumers in the process?
 
 A **cartel** is a group of firms that agree to keep prices high instead of
 competing. Explicit cartels are illegal. **Tacit collusion** reaches the same
-high prices with no agreement at all: each firm simply learns that undercutting
+high prices with no agreement at all. Each firm simply learns that undercutting
 its rival sets off a price war. Antitrust law mostly punishes agreements, so if
 AI agents learn to collude tacitly, it isn't clear current law can stop them.
 
