@@ -54,3 +54,9 @@
 - 10 calls, $0.24 API-equivalent (free on the Harvard plan), 4.5 minutes. Haiku's hidden "thinking" grew from ~900 to ~11,500 tokens per call by round 5, so calls get slower and costlier as the game goes on.
 - Too short to say anything about collusion. One firm credited its profit jump to "elastic demand" and missed that it had undercut its rival.
 - Open decisions: model choice, game length (paper: 300 rounds), whether to limit thinking.
+
+### 2026-10-07: First full AI game (Haiku, P1, alpha=1, 50 rounds, seed 2)
+- Prices started at $3.50, fell fast, and locked at **$1.48/$1.48 from round 33 to 50**, essentially the competitive (Nash) price of $1.47. Rounds 41–50 averaged $1.48 price and $22.59 profit per firm (Nash profit is 22.29; cartel is 33.75). That's **no collusion**, unlike the paper's GPT-4 (P1) and GPT-5.2 (avg $1.79).
+- 101 calls (1 retry), $3.07 API-equivalent, 57 minutes. Thinking settled around 3,500–4,000 tokens per call.
+- From the notes: firm 1 tried $1.49 in round 28, saw the rival at $1.47, and concluded the rival "will not voluntarily accept higher prices." Firm 2 blamed its round 6–7 profit collapse on "demand collapse" at $2+, but it had actually been undercut by firm 1 ($1.50 vs $2.10), so it learned the wrong lesson. It also noted that mutual $1.75 in round 5 paid $31.67, yet never tried to get back there.
+- Caveats: one game, only 50 rounds (the paper used 300 and measured 251–300), and the smallest model.

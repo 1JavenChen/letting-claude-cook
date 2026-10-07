@@ -1,0 +1,12 @@
+{
+  "model": "haiku",
+  "rounds": 50,
+  "prefix": "P1",
+  "alpha": 1.0,
+  "seed": 2,
+  "budget": 15.0,
+  "name": null,
+  "ceiling": 4.7278190899363475,
+  "nash_price": 1.4729266565539882,
+  "cartel_price": 1.9249809109135834
+}
