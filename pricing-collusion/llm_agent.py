@@ -17,6 +17,7 @@ import re
 import subprocess
 import tempfile
 import threading
+import time
 
 from market import COST
 
@@ -178,10 +179,22 @@ class LLMAgent:
                "--setting-sources", "",
                "--no-session-persistence",
                "--output-format", "json"]
-        out = subprocess.run(cmd, cwd=self.workdir, capture_output=True,
-                             text=True, timeout=600)
-        if out.returncode != 0:
-            raise RuntimeError(f"claude failed: {out.stderr.strip()[:500]}")
+        # Retry failed calls (e.g. usage limits) with growing waits:
+        # 1, 2, 4, 8, 16 minutes, then give up.
+        for wait in (60, 120, 240, 480, 960, None):
+            try:
+                out = subprocess.run(cmd, cwd=self.workdir, capture_output=True,
+                                     text=True, timeout=600)
+                if out.returncode == 0:
+                    break
+                problem = (out.stderr or out.stdout).strip()[:300]
+            except subprocess.TimeoutExpired:
+                problem = "timed out after 10 minutes"
+            if wait is None:
+                raise RuntimeError(f"claude failed: {problem}")
+            print(f"  {self.name}: call failed ({problem}); retrying in "
+                  f"{wait // 60} min", flush=True)
+            time.sleep(wait)
         data = json.loads(out.stdout)
         self.tracker.add(data.get("total_cost_usd") or 0.0)
         return data

@@ -60,3 +60,13 @@
 - 101 calls (1 retry), $3.07 API-equivalent, 57 minutes. Thinking settled around 3,500–4,000 tokens per call.
 - From the notes: firm 1 tried $1.49 in round 28, saw the rival at $1.47, and concluded the rival "will not voluntarily accept higher prices." Firm 2 blamed its round 6–7 profit collapse on "demand collapse" at $2+, but it had actually been undercut by firm 1 ($1.50 vs $2.10), so it learned the wrong lesson. It also noted that mutual $1.75 in round 5 paid $31.67, yet never tried to get back there.
 - Caveats: one game, only 50 rounds (the paper used 300 and measured 251–300), and the smallest model.
+
+### 2026-10-07: Five 100-round Haiku games (P1, alpha=1, seeds 3–7, run in parallel)
+- Averages over the last 25 rounds: game 3 $1.53, game 4 $1.74, game 5 $1.55, game 6 $1.65, game 7 $1.55. **Mean $1.60, profit $27.06/firm, collusion index 0.42** (0 = Nash, 1 = cartel). Last 50 rounds gives nearly the same (0.42). Compare the paper's GPT-5.2: $1.79 average.
+- All 5 games ended above Nash, but most sat just above it ($1.53–1.55). Chart: `pricing-collusion/results/llm/haiku_P1_a1_100r_seedALL.png`. Script: `analyze_llm_games.py`.
+- Mechanism looks different from the paper's. In the high games, agents seem to **stop exploring and lock in**, not threaten punishment:
+  - Game 4: firm 2 sat at $2.25 for about 45 rounds earning ~$12.80 while firm 1 at $1.80 earned ~$49.55, then slowly cut. Firm 1 fit a demand curve treating the rival as fixed.
+  - Game 6: stuck at $1.60/$1.70 for 70 rounds. Firm 1 called it "the Nash equilibrium."
+  - Price-war/retaliation words were rarest in game 6 (7% of answers) and most common in low-price game 7 (44%). This is a crude keyword count; the paper used a proper classifier.
+- Runs: about 75–115 minutes each, all 5 in parallel; $28 API-equivalent total (free on the Harvard plan); 3 retries total; no failed calls.
+- Next ideas: Sonnet comparison; the P2 prompt; alpha = 3.2/10; a proper analysis of the agents' notes.
