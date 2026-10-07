@@ -2,6 +2,35 @@
 
 *Javen Chen · Harvard University · Letting Claude Cook first-year seminar, Fall 2026*
 
+> **"Can a team of AI agents design an experiment, write and run the code,
+> interpret the results, and then decide what to do next—all on their own?
+> This is no longer a thought experiment. In this seminar, we will explore
+> what happens when we give AI systems genuine autonomy to do science."**
+>
+> from the [official course description](https://firstyearseminarprogram.college.harvard.edu/seminars/)
+
+## About this assignment
+
+This is my project for *Letting Claude Cook*, a Harvard first-year seminar
+(First-Year Seminar 54I, enrollment limited to 12) taught by Douglas Finkbeiner (Astronomy and
+Physics). The course starts by building a working understanding of how large
+language models work: not just what they produce, but why. It draws on both
+physics and computer science. The central question is how far AI agents can
+go in doing science on their own: designing experiments, writing and running
+code, interpreting results, and choosing the next step.
+
+Because the seminar is about AI doing science, using AI agents to do the work
+is the point of this assignment, not a shortcut. This project comes at the
+question from two directions:
+
+1. **It is research done with AI agents.** An AI coding agent (Claude Code)
+   wrote most of the code and proposed parts of the experimental design. I
+   chose the question and the plan, reviewed and checked the agent's work, and
+   decide what the results mean. In later stages this becomes a multi-agent
+   team project, where several AI agents share the work.
+2. **It is research about AI agents.** The experiment itself asks what AI
+   agents do when they are left alone to set prices in a market.
+
 ## The question
 
 More and more companies are using artificial intelligence to set their prices. 
@@ -121,15 +150,37 @@ secret agreement. It only needs each firm to *expect* retaliation if it cuts
 prices. Stage 2 asks whether AI agents, told nothing except to maximize profit,
 work out that logic by themselves.
 
-## How this was built
+### How this compares to the paper
 
-This project is part of a seminar about using AI agents to do research, and
-most of the code was written by an AI coding agent (Claude Code) working under
-my direction. My job was to make the research decisions: the question, the
-experimental design (two firms and 100 rounds, the benchmarks, testing with
-bots before adding AI), what to vary, and how to interpret the results.
-Checking the agent's work, for example confirming that our benchmark prices
-match the published paper, was part of that job.
+The paper ran **AI agents (GPT-4)** in this market. So far I've only run
+**rule-based bots**, so only part of it can be compared yet:
+
+| | Fish et al. (2024) | This project so far | Match? |
+|---|---|---|---|
+| Market setup | Logit demand, 2 firms, settings above | Same formula and settings | ✅ |
+| Competitive (Nash) price | 1.47 | 1.47 | ✅ |
+| Cartel price | 1.92 | 1.92 | ✅ |
+| Do AI agents reach above-competitive prices? | Yes, without being told to collude | Not tested yet (Stage 2) | ❓ |
+| What keeps prices high? | AI agents use reward-and-punishment strategies, and their notes show they fear price wars | Bots that threaten punishment hold high prices, but I wrote that rule by hand | 🔶 Same mechanism, not discovered by AI yet |
+
+Two parts of the paper's design matter for Stage 2:
+
+- **Wording matters.** One prompt stressed long-run profit. Another mentioned
+  that "pricing lower than your competitor will typically lead to more product
+  sold." The first led to much higher prices.
+- **Longer games.** The paper ran 300 rounds and measured the last 50. My
+  100-round games may need to get longer once AI agents are involved.
+
+## Who did what
+
+| | Me | AI agent (Claude Code) |
+|---|---|---|
+| Research question and paper to build on | ✔ | |
+| Plan: 2 firms, 100 rounds, bots first, then vary one factor at a time | ✔ | |
+| Finding the demand formula in the paper and checking the benchmarks against it | had it explained | ✔ |
+| Choice of test bots (best-responder, grim trigger, cheater) | reviewed | proposed |
+| Writing and running the code | | ✔ |
+| Interpreting results and deciding the next step | ✔ | assisted |
 
 ## Reproduce it
 

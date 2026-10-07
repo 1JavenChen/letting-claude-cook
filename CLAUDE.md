@@ -40,3 +40,9 @@
 - Takeaway: high prices survive only with a credible threat of punishment. Stage 2 asks whether AI agents discover that on their own.
 - Setup: Python virtual environment at repo root `.venv/` (git-ignored); `pricing-collusion/requirements.txt` lists matplotlib.
 - Still open: ask the teacher about API keys/credits before Stage 2.
+
+### 2026-10-07: README + comparison with the paper
+- README now opens with the course-description quote and an "About this assignment" section (FYS 54I), plus a "Who did what" table.
+- Added "How this compares to the paper": the market setup and both benchmarks match; the paper's main finding (GPT-4 agents reach above-competitive prices via reward-punishment, driven by price-war fears) is untested here until Stage 2.
+- Notes for Stage 2 from the paper: prompt wording strongly affects prices; they ran 300 rounds and measured the last 50.
+- Javen edits README wording directly on GitHub sometimes: always `git fetch` / pull before editing, and don't rewrite their wording in "The question".
