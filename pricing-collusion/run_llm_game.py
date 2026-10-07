@@ -26,6 +26,9 @@ def main():
     ap.add_argument("--model", default="haiku", help="haiku, sonnet, or opus")
     ap.add_argument("--rounds", type=int, default=5)
     ap.add_argument("--prefix", default="P1", choices=["P1", "P2"])
+    ap.add_argument("--effort", default=None,
+                    choices=["low", "medium", "high", "xhigh", "max"],
+                    help="thinking effort (not supported on haiku)")
     ap.add_argument("--alpha", type=float, default=1.0, choices=[1.0, 3.2, 10.0],
                     help="currency scale shown to agents (paper: 1, 3.2, 10)")
     ap.add_argument("--seed", type=int, default=1)
@@ -39,7 +42,8 @@ def main():
     k = random.Random(args.seed).uniform(1.5, 2.5)
     ceiling = k * P_MONOPOLY
 
-    name = args.name or (f"{args.model}_{args.prefix}_a{args.alpha:g}_"
+    effort = f"_{args.effort}" if args.effort else ""
+    name = args.name or (f"{args.model}{effort}_{args.prefix}_a{args.alpha:g}_"
                          f"{args.rounds}r_seed{args.seed}")
     outdir = os.path.join("results", "llm", name)
     os.makedirs(outdir, exist_ok=True)
@@ -49,7 +53,7 @@ def main():
 
     tracker = CostTracker(args.budget)
     firms = [LLMAgent(f"firm{i}", args.model, args.prefix, ceiling, args.alpha,
-                      tracker, transcripts) for i in (1, 2)]
+                      tracker, transcripts, args.effort) for i in (1, 2)]
     settings = vars(args) | {"ceiling": ceiling, "nash_price": P_NASH,
                              "cartel_price": P_MONOPOLY}
     with open(os.path.join(outdir, "settings.json"), "w") as f:

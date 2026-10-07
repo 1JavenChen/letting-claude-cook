@@ -159,9 +159,11 @@ class LLMAgent:
 
     MAX_TRIES = 10   # the paper retries a malformed answer up to 10 times
 
-    def __init__(self, name, model, prefix, ceiling, alpha, tracker, log_file):
+    def __init__(self, name, model, prefix, ceiling, alpha, tracker, log_file,
+                 effort=None):
         self.name = name
         self.model = model
+        self.effort = effort   # thinking effort: low ... max (None = default)
         self.prefix = PREFIXES[prefix]
         self.ceiling = ceiling
         self.alpha = alpha
@@ -179,6 +181,8 @@ class LLMAgent:
                "--setting-sources", "",
                "--no-session-persistence",
                "--output-format", "json"]
+        if self.effort:
+            cmd += ["--effort", self.effort]
         # Retry failed calls (e.g. usage limits) with growing waits:
         # 1, 2, 4, 8, 16 minutes, then give up.
         for wait in (60, 120, 240, 480, 960, None):
@@ -223,6 +227,6 @@ class LLMAgent:
         with self.tracker._lock, open(self.log_file, "a") as f:
             f.write(json.dumps({
                 "firm": self.name, "round": round_num, "attempt": attempt,
-                "model": self.model, "models_used": list((data.get("modelUsage") or {}).keys()),
+                "model": self.model, "effort": self.effort, "models_used": list((data.get("modelUsage") or {}).keys()),
                 "alpha": self.alpha, "price_shown": price, "cost_usd": data.get("total_cost_usd"),
                 "usage": data.get("usage"), "response": text}) + "\n")
