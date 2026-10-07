@@ -33,7 +33,7 @@ def best_responder(round_num, history):
 def grim_trigger(round_num, history):
     """Charges the cartel price as long as the rival always has. If the
     rival ever undercuts, it charges the Nash price forever (punishment)."""
-    if any(rival < P_MONOPOLY - 1e-6 for _, rival in history):
+    if any(h[1] < P_MONOPOLY - 1e-6 for h in history):
         return P_NASH
     return P_MONOPOLY
 

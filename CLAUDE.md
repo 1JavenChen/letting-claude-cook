@@ -23,7 +23,8 @@
 - Later, this becomes a multi-agent team project.
 - Code goes in `pricing-collusion/`.
 - `pricing-collusion/README.md` is for recruiters and non-experts: keep the question, method, key chart, and findings current and jargon-free, cite the paper, and say plainly that AI agents wrote much of the code under my direction. Never report findings we haven't actually produced.
-- **Open question:** running AI agents inside the simulation needs API access. Check with the teacher how the class handles API keys/credits.
+- **How AI firms are run (decided 2026-10-07):** through `claude -p` on Javen's Harvard Claude login, with no API key (`pricing-collusion/llm_agent.py`). Each call runs in an empty temp folder with no tools/settings, so agents never see this project or the hypothesis. The fallback is an API key, with the teacher paying up to $100: set a $100 spend limit, keep the key in a git-ignored `.env`, and never print or commit it.
+- Before every real run: estimate the time and usage and get Javen's OK. `run_llm_game.py --budget` stops a game once its API-equivalent cost passes the limit.
 
 ## Progress log
 
@@ -46,3 +47,10 @@
 - Added "How this compares to the paper": the market setup and both benchmarks match; the paper's main finding (GPT-4 agents reach above-competitive prices via reward-punishment, driven by price-war fears) is untested here until Stage 2.
 - Notes for Stage 2 from the paper: prompt wording strongly affects prices; they ran 300 rounds and measured the last 50.
 - Javen edits README wording directly on GitHub sometimes: always `git fetch` / pull before editing, and don't rewrite their wording in "The question".
+
+### 2026-10-07: Stage 2 started, AI agent + 5-round pilot
+- Built `llm_agent.py` (uses the paper's Appendix G prompt word for word: prefixes P1/P2, PLANS/INSIGHTS notes, last 100 rounds of data, price ceiling = U[1.5,2.5] x cartel price) and `run_llm_game.py`.
+- Pilot: Haiku vs Haiku, prompt P1, 5 rounds. Prices 2.00/2.00, 2.50/2.50, 2.20/1.50, 2.00/1.25, 1.75/1.60. Every answer parsed; no retries.
+- 10 calls, $0.24 API-equivalent (free on the Harvard plan), 4.5 minutes. Haiku's hidden "thinking" grew from ~900 to ~11,500 tokens per call by round 5, so calls get slower and costlier as the game goes on.
+- Too short to say anything about collusion. One firm credited its profit jump to "elastic demand" and missed that it had undercut its rival.
+- Open decisions: model choice, game length (paper: 300 rounds), whether to limit thinking.
