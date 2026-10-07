@@ -6,17 +6,19 @@ from concurrent.futures import ThreadPoolExecutor
 from market import demand, profits
 
 
-def play(bot1, bot2, rounds=100, on_round=None):
+def play(bot1, bot2, rounds=100, on_round=None, log=None):
     """Play `rounds` rounds. Each round both bots set a price at the same
     time, then both see the result. Returns one dict per round.
 
     Each bot's history is a list of (my price, rival price, my quantity,
-    my profit). `on_round(log)` is called after every round, if given."""
-    history1, history2 = [], []
-    log = []
+    my profit). `on_round(log)` is called after every round, if given.
+    Pass the `log` of an unfinished game to continue it where it stopped."""
+    log = list(log or [])
+    history1 = [(r["price1"], r["price2"], r["quantity1"], r["profit1"]) for r in log]
+    history2 = [(r["price2"], r["price1"], r["quantity2"], r["profit2"]) for r in log]
     # Ask both bots at once: AI bots take seconds per answer.
     with ThreadPoolExecutor(max_workers=2) as pool:
-        for r in range(1, rounds + 1):
+        for r in range(len(log) + 1, rounds + 1):
             f1 = pool.submit(bot1, r, list(history1))
             f2 = pool.submit(bot2, r, list(history2))
             p1, p2 = f1.result(), f2.result()

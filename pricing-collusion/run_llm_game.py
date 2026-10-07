@@ -9,6 +9,7 @@ and prices.png.
 """
 
 import argparse
+import csv
 import json
 import os
 import random
@@ -35,6 +36,8 @@ def main():
     ap.add_argument("--budget", type=float, default=2.0,
                     help="stop the game once API-equivalent cost passes this ($)")
     ap.add_argument("--name", default=None)
+    ap.add_argument("--resume", action="store_true",
+                    help="continue an unfinished game from its saved rounds")
     args = ap.parse_args()
 
     # Like the paper: the price ceiling shown to agents is k * cartel price,
@@ -48,16 +51,32 @@ def main():
     outdir = os.path.join("results", "llm", name)
     os.makedirs(outdir, exist_ok=True)
     transcripts = os.path.join(outdir, "transcripts.jsonl")
-    if os.path.exists(transcripts):
+    rounds_csv = os.path.join(outdir, "rounds.csv")
+    old_log, old_notes = [], []
+    if args.resume and os.path.exists(rounds_csv):
+        old_log = [{k: (int(v) if k == "round" else float(v)) for k, v in r.items()}
+                   for r in csv.DictReader(open(rounds_csv))]
+        # Answers for a round that never finished are set aside, not lost.
+        old_notes = [json.loads(l) for l in open(transcripts)]
+        done = len(old_log)
+        with open(transcripts, "w") as f:
+            f.writelines(json.dumps(t) + "\n" for t in old_notes if t["round"] <= done)
+        with open(os.path.join(outdir, "discarded.jsonl"), "a") as f:
+            f.writelines(json.dumps(t) + "\n" for t in old_notes if t["round"] > done)
+        print(f"Resuming after round {done}")
+    elif os.path.exists(transcripts):
         os.remove(transcripts)
 
     tracker = CostTracker(args.budget)
     firms = [LLMAgent(f"firm{i}", args.model, args.prefix, ceiling, args.alpha,
                       tracker, transcripts, args.effort) for i in (1, 2)]
+    for firm in firms:
+        firm.restore(old_notes, len(old_log))
     settings = vars(args) | {"ceiling": ceiling, "nash_price": P_NASH,
                              "cartel_price": P_MONOPOLY}
-    with open(os.path.join(outdir, "settings.json"), "w") as f:
-        json.dump(settings, f, indent=2)
+    if not args.resume:
+        with open(os.path.join(outdir, "settings.json"), "w") as f:
+            json.dump(settings, f, indent=2)
 
     start = time.time()
 
@@ -72,7 +91,8 @@ def main():
     print(f"{name}: Nash {P_NASH:.2f}, cartel {P_MONOPOLY:.2f}, "
           f"ceiling {ceiling:.2f} (all in base units; agents see x{args.alpha:g})")
     try:
-        log = play(firms[0], firms[1], args.rounds, on_round=progress)
+        log = play(firms[0], firms[1], args.rounds, on_round=progress,
+                   log=old_log)
     except BudgetExceeded as e:
         print(f"STOPPED: {e}")
         return

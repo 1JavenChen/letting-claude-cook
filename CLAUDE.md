@@ -70,3 +70,34 @@
   - Price-war/retaliation words were rarest in game 6 (7% of answers) and most common in low-price game 7 (44%). This is a crude keyword count; the paper used a proper classifier.
 - Runs: about 75–115 minutes each, all 5 in parallel; $28 API-equivalent total (free on the Harvard plan); 3 retries total; no failed calls.
 - Next ideas: Sonnet comparison; the P2 prompt; alpha = 3.2/10; a proper analysis of the agents' notes.
+
+### 2026-10-07 (afternoon): Literature check, pre-registered plan, Sonnet effort experiment started
+- **Literature check (details in `pricing-collusion/EXPERIMENT_PLAN.md`):**
+  - Lee & Park (arXiv 2609.18346) already compared Claude Sonnet 4.5 (collusion index 0.98) with Haiku 4.5 (0.37), using different prompts and no thinking setting. Our Haiku 0.42 is consistent with their 0.37.
+  - Garra (2609.13037) already ran P1 vs P2 on DeepSeek.
+  - **No paper varies thinking effort within one model. That is our original contribution.**
+  - The lock-in idea is new for LLMs. The closest is Baek, Farias & Wu (2605.16064), on non-LLM algorithms.
+  - The literature uses 200–300 rounds and 7–21 games per condition, averaging the last 50 rounds.
+- **Pre-registered plan** committed before running: `EXPERIMENT_PLAN.md`. Main test: Sonnet 5.5 low vs high effort, P1, alpha 1, 200 rounds, seeds 11–15 in each condition, primary outcome = rounds 151–200.
+- **New code:**
+  - `--effort` option.
+  - `analyze_llm_games.py` now also reports a price-based index.
+  - `analyze_behavior.py`: lock-in regression plus a rough keyword-based analysis of the notes.
+  - `--resume` continues an unfinished game.
+  - `run_queue.sh N ...` runs games at most N at a time.
+  - Failed calls retry for about 2.5 hours.
+- **Haiku lock-in check (mixed):**
+  - The rival-price coefficient averages 0.18, so firms do follow their rival somewhat. "Ignores rival" is too strong.
+  - In the notes, about 30% of plan sentences are about holding steady, versus about 5% about the rival's reaction.
+  - Haiku price-based index: 0.29 (profit-based 0.42).
+- **Usage limit hit:** 10 Sonnet games at once (20 concurrent calls) hit the Harvard plan's limit after about 25 minutes. All games were stopped cleanly and **resumed 4 at a time** via `run_queue.sh` (log: `results/llm/sonnet_queue.log`). Lesson: keep to 4 or fewer Sonnet games at once.
+- **Status when the session ended:** queue running in the background (nohup and caffeinate, so it survives closing Claude). At the pause, the low-effort games were at rounds 86–91 of 200 and the high-effort games at 52–65.
+  - Early sign: high-effort seed 12 was at $1.47/$1.47 (Nash) around round 69.
+- **To check next session:**
+  - `grep finished pricing-collusion/results/llm/sonnet_queue.log`
+  - `tail -1 pricing-collusion/results/llm/sonnet_*_200r_seed*/run.log`
+  - If a game crashed, rerun it with the same args plus `--resume`.
+- **When done:**
+  - Run `analyze_llm_games.py "sonnet_low_*" --last 50` and `analyze_llm_games.py "sonnet_high_*" --last 50` (add `--title`), then `analyze_behavior.py` on each.
+  - Compare the conditions (difference in means plus a paired-by-seed comparison).
+  - Then update the README with the findings. Javen wants the README GitHub-ready.

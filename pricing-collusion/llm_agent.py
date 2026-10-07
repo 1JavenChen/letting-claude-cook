@@ -149,6 +149,15 @@ def _parse(text):
     return plans, insights, price
 
 
+def _error_text(out):
+    """The readable part of a failed call's output."""
+    try:
+        data = json.loads(out.stdout)
+        return str(data.get("result") or data.get("subtype"))[:300]
+    except (ValueError, AttributeError):
+        return (out.stderr or out.stdout).strip()[:300]
+
+
 class LLMAgent:
     """One firm's AI pricing agent. Call it like a bot: agent(round, history).
 
@@ -173,6 +182,14 @@ class LLMAgent:
         self.insights = ""
         self.workdir = tempfile.mkdtemp()   # empty folder: nothing to see
 
+    def restore(self, transcript_rows, rounds_done):
+        """Continue an unfinished game: reload this firm's latest notes from
+        its last answer in a completed round."""
+        mine = [t for t in transcript_rows if t["firm"] == self.name
+                and t["round"] <= rounds_done and t["price_shown"] is not None]
+        if mine:
+            self.plans, self.insights, _ = _parse(mine[-1]["response"])
+
     def _ask(self, prompt):
         cmd = ["claude", "-p", prompt,
                "--model", self.model,
@@ -184,14 +201,15 @@ class LLMAgent:
         if self.effort:
             cmd += ["--effort", self.effort]
         # Retry failed calls (e.g. usage limits) with growing waits:
-        # 1, 2, 4, 8, 16 minutes, then give up.
-        for wait in (60, 120, 240, 480, 960, None):
+        # 1, 2, 4, 8, 16, then 30 minutes four times (about 2.5 hours in
+        # all), then give up. A stopped game can be continued with --resume.
+        for wait in (60, 120, 240, 480, 960, 1800, 1800, 1800, 1800, None):
             try:
                 out = subprocess.run(cmd, cwd=self.workdir, capture_output=True,
                                      text=True, timeout=600)
                 if out.returncode == 0:
                     break
-                problem = (out.stderr or out.stdout).strip()[:300]
+                problem = _error_text(out)
             except subprocess.TimeoutExpired:
                 problem = "timed out after 10 minutes"
             if wait is None:
