@@ -101,3 +101,13 @@
   - Run `analyze_llm_games.py "sonnet_low_*" --last 50` and `analyze_llm_games.py "sonnet_high_*" --last 50` (add `--title`), then `analyze_behavior.py` on each.
   - Compare the conditions (difference in means plus a paired-by-seed comparison).
   - Then update the README with the findings. Javen wants the README GitHub-ready.
+
+### 2026-10-13: Sonnet effort experiment finished + Experiment 2 launched
+- All 10 Sonnet games done (high seed 15 crashed at round 145 when the laptop slept; resumed). Real running time ~70–85 min per game; usage-limit pauses and laptop sleep stretched the batch to ~a day.
+- **Result (rounds 151–200):** low effort index −0.02 (price 1.47), high effort 0.13 (1.51). Diff +0.15, permutation p = 0.13; 4/5 pairs higher, sign-flip p = 0.31. **Hypothesis not supported; neither colluded.** Chart: `results/llm/summary_collusion_index.png`.
+- Exploratory: high effort changes price in ~11% of second-half rounds vs 34% for low (locks in fast; its two above-Nash games flat 100+ rounds). Low effort keeps undercutting by a cent; 2 games went below Nash (price war, seed 14 down to ~1.25).
+- Sonnet's notes read like a data analyst treating the rival's price as fixed; almost no talk of rival reactions. Keyword "steady/reaction" counts are near zero for Sonnet (its style doesn't match the keywords), so don't lean on them.
+- New code: `compare_conditions.py` (exact permutation + sign-flip tests), `plot_summary.py` (README key chart), "moves%" exploration column in `analyze_behavior.py`, new prompt `PX` in `llm_agent.py`. Retries now wait on the wall clock for up to 8 hours (survive sleep and a full usage-limit window).
+- README rewritten with Stage 2 findings, GitHub-ready.
+- **Experiment 2 (pre-registered in `EXPERIMENT_PLAN.md`):** Haiku, P1 vs PX (P2 minus the undercutting hint) vs P2, 200 rounds, seeds 21–25, 15 games, 4 at a time. Javen chose the 3-group design. Estimate ~14 h running + limit pauses, ~$170–190 API-equivalent (free). Queue log: `results/llm/haiku_exp2_queue.log`.
+- Keep the laptop plugged in with the lid open; `caffeinate` can't stop lid-close sleep.

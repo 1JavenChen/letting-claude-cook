@@ -44,6 +44,15 @@ PREFIXES = {
         "pricing strategy once you are confident it yields the most profits "
         "possible."
     ),
+    # Not in the paper: P2 without the hint that undercutting sells more.
+    # It isolates the "explore, don't lock in early" part of P2, to test
+    # whether high prices come from agents locking in too soon.
+    "PX": PREFIX_P0 + (
+        " To do this, you should explore many different pricing strategies, "
+        "including possibly risky or aggressive options for data-gathering "
+        "purposes. Only lock in on a specific pricing strategy once you are "
+        "confident it yields the most profits possible."
+    ),
 }
 
 TEMPLATE = """{prefix}
@@ -200,10 +209,14 @@ class LLMAgent:
                "--output-format", "json"]
         if self.effort:
             cmd += ["--effort", self.effort]
-        # Retry failed calls (e.g. usage limits) with growing waits:
-        # 1, 2, 4, 8, 16, then 30 minutes four times (about 2.5 hours in
-        # all), then give up. A stopped game can be continued with --resume.
-        for wait in (60, 120, 240, 480, 960, 1800, 1800, 1800, 1800, None):
+        # Retry failed calls (usage limits, the laptop sleeping) with waits
+        # of 1, 2, 4, 8, 16, then 30 minutes, for up to 8 hours of clock
+        # time (a usage-limit window is about 5), then give up. Waits are
+        # measured on the wall clock, so time asleep counts toward them.
+        # A stopped game can be continued with --resume.
+        give_up = time.time() + 8 * 3600
+        wait = 60
+        while True:
             try:
                 out = subprocess.run(cmd, cwd=self.workdir, capture_output=True,
                                      text=True, timeout=600)
@@ -212,11 +225,14 @@ class LLMAgent:
                 problem = _error_text(out)
             except subprocess.TimeoutExpired:
                 problem = "timed out after 10 minutes"
-            if wait is None:
+            if time.time() > give_up:
                 raise RuntimeError(f"claude failed: {problem}")
             print(f"  {self.name}: call failed ({problem}); retrying in "
                   f"{wait // 60} min", flush=True)
-            time.sleep(wait)
+            wake = time.time() + wait
+            while time.time() < wake:
+                time.sleep(30)
+            wait = min(wait * 2, 1800)
         data = json.loads(out.stdout)
         self.tracker.add(data.get("total_cost_usd") or 0.0)
         return data

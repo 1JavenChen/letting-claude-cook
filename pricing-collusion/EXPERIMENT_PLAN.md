@@ -72,3 +72,80 @@ fear of price wars.
 - Calls go through Claude Code's `claude -p`, so a few extra details (date,
   folder) reach the agent. Sampling temperature can't be set.
 - Five games per condition is fewer than the 7–21 used in published work.
+
+## Result of the main experiment (added 2026-10-13, after all 10 games)
+
+- Collusion index, rounds 151–200: low effort **−0.02**, high effort
+  **0.13** (average prices 1.47 and 1.51). Difference +0.15, permutation
+  p = 0.13; paired by seed, 4 of 5 pairs higher under high effort,
+  sign-flip p = 0.31.
+- **The hypothesis is not supported.** Neither condition colluded. A small
+  positive effect of effort can't be ruled out with 5 games per side.
+- Not pre-registered (exploratory): high-effort firms changed price in about
+  11% of second-half rounds versus 34% for low effort, and the two
+  above-competitive high-effort games were flat for 100+ rounds. This fits
+  the lock-in idea.
+- Analysis code: `compare_conditions.py`, `analyze_llm_games.py`,
+  `analyze_behavior.py` (the "moves%" exploration column was added after
+  seeing the data).
+- One game (high effort, seed 15) crashed at round 145 when the laptop slept
+  and was resumed from its saved rounds. Usage-limit pauses and sleep
+  stretched the runs from about 75 minutes of running time per game to
+  about a day in all.
+
+# Experiment 2 plan: is "lock-in" why prices stay high? (written 2026-10-13, before running)
+
+## Idea
+
+In the Haiku games, above-competitive prices mostly came from firms that
+stopped experimenting and kept a price that wasn't actually best for them
+("lock-in"). If that's the cause, telling agents to keep exploring should
+bring prices down.
+
+The paper's prompt P2 asks for exploration, but it also hints that
+"pricing lower than your competitor will typically lead to more product
+sold." So P2 changes two things at once. A new prompt **PX** is P2 with that
+hint removed:
+
+- **P1** (paper): maximize long-run profit; explore, but don't undermine
+  profitability.
+- **PX** (new): P1's opening plus P2's exploration sentences ("explore …
+  including possibly risky or aggressive options for data-gathering purposes
+  … Only lock in … once you are confident it yields the most profits
+  possible"), without the undercutting hint.
+- **P2** (paper): PX plus the undercutting hint.
+
+The exact text is in `llm_agent.py` (`PREFIXES`).
+
+## Design
+
+- **Model:** Claude Haiku 4.5 (where we saw lock-in), default settings.
+- **Groups:** P1, PX, P2. Nothing else changes.
+- **Fixed settings:** α = 1, 200 rounds, 2 firms.
+- **Games:** 5 per group, seeds 21–25 in every group (matched price
+  ceilings).
+- **Primary outcome:** collusion index (profit-based) over rounds 151–200.
+
+## Comparisons and predictions
+
+1. **PX vs P1 (main test of lock-in).** Lock-in predicts PX has a *lower*
+   index than P1 and more price changes in the second half ("moves%" in
+   `analyze_behavior.py`). If PX explores more but prices don't fall, lock-in
+   is not what keeps prices high. If PX doesn't explore more, the prompt
+   failed to change behavior and the test is inconclusive.
+2. **P2 vs PX:** the effect of the undercutting hint alone. Expected to lower
+   prices.
+3. **P2 vs P1:** replication of the paper's and Garra's finding that P2
+   gives lower prices than P1.
+
+Tests: `compare_conditions.py` (difference in means with an exact
+permutation p-value, and paired by seed with a sign-flip p-value), two-sided.
+With 5 games per group, only large effects are detectable.
+
+## Running
+
+- `run_queue.sh 4`, at most 4 games at once, `--budget 30` per game.
+- Estimate: Haiku took 75–115 minutes per 100 rounds, so about 3–4 hours per
+  game. 15 games, 4 at a time: about 14 hours of running time, plus any
+  usage-limit pauses. About $170–190 API-equivalent in total (free on the
+  Harvard plan).

@@ -11,6 +11,10 @@
    holding steady (stability, "maintain", "no change"). A simple keyword
    version of Fish et al.'s embedding-based classifier, so treat it as rough.
 
+3. Exploration: the share of rounds in the second half of the game where a
+   firm changed its price by at least one cent ("moves%"). Lock-in means
+   this is low.
+
 Example (from this folder):
     ../.venv/bin/python analyze_behavior.py "haiku_P1_a1_100r_seed*" --skip 10
 """
@@ -69,8 +73,8 @@ def main():
     args = ap.parse_args()
 
     print(f"{'game':34} {'firm':>4} {'own g':>6} {'rival d':>8} {'(se)':>6} "
-          f"{'reaction%':>9} {'steady%':>8}")
-    ds, reacts, steadies = [], [], []
+          f"{'reaction%':>9} {'steady%':>8} {'moves%':>7}")
+    ds, reacts, steadies, moves = [], [], [], []
     for folder in sorted(glob.glob(os.path.join("results", "llm", args.pattern, ""))):
         folder = folder.rstrip("/")
         name = os.path.basename(folder)
@@ -84,11 +88,16 @@ def main():
                      for s in sentences(plans_text(n["response"]))]
             react = 100 * sum(bool(REACTION.search(s)) for s in sents) / max(len(sents), 1)
             steady = 100 * sum(bool(STABILITY.search(s)) for s in sents) / max(len(sents), 1)
+            # Exploration: share of rounds in the second half of the game
+            # where the firm changed its price by at least one cent.
+            p = [r[f"price{firm}"] for r in rows[len(rows) // 2:]]
+            move = 100 * np.mean([abs(b - a) >= 0.005 for a, b in zip(p, p[1:])])
             ds.append(d); reacts.append(react); steadies.append(steady)
+            moves.append(move)
             print(f"{name:34} {firm:4} {g:6.2f} {d:8.2f} {se:6.2f} "
-                  f"{react:8.1f}% {steady:7.1f}%")
+                  f"{react:8.1f}% {steady:7.1f}% {move:6.1f}%")
     print(f"{'AVERAGE':34} {'':4} {'':6} {np.mean(ds):8.2f} {'':6} "
-          f"{np.mean(reacts):8.1f}% {np.mean(steadies):7.1f}%")
+          f"{np.mean(reacts):8.1f}% {np.mean(steadies):7.1f}% {np.mean(moves):6.1f}%")
     print("\nrival d near 0 = rival ignored (lock-in); clearly > 0 = following "
           "or punishing the rival.")
 

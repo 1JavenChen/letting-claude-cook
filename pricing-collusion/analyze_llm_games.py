@@ -80,7 +80,8 @@ def plot(games, last, path, title):
                 color=c, lw=1.6, label=f"{label} (avg {price:.2f})")
     rounds = max(len(g[1]) for g in games)
     ax.axvspan(rounds - last + 0.5, rounds + 0.5, color="#888", alpha=0.08)
-    ax.set_ylim(1.3, 2.6)
+    low = min(min(r["price1"], r["price2"]) for g in games for r in g[1])
+    ax.set_ylim(min(1.3, low - 0.05), 2.6)
     ax.set_xlabel("Round")
     ax.set_ylabel("Average price of the two firms")
     ax.set_title(f"{title}: {len(games)} games\n"

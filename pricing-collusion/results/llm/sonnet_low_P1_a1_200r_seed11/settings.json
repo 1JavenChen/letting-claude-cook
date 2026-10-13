@@ -1,0 +1,13 @@
+{
+  "model": "sonnet",
+  "rounds": 200,
+  "prefix": "P1",
+  "effort": "low",
+  "alpha": 1.0,
+  "seed": 11,
+  "budget": 40.0,
+  "name": null,
+  "ceiling": 3.7582933713643856,
+  "nash_price": 1.4729266565539882,
+  "cartel_price": 1.9249809109135834
+}
