@@ -175,3 +175,59 @@ that had never happened.
 
 All games completed; the queue hit the usage limit four times and the
 laptop slept once, and the new retry logic waited both out with no crashes.
+
+# Experiment 3 plan: baseline for every model size (written 2026-10-14, before running)
+
+## Idea
+
+Before adding any special instructions, measure how each Claude model
+prices under the paper's standard prompt. That gives a clean comparison
+from small to large model (Haiku, Sonnet, Opus, Fable), and a baseline for
+every later test (for example, a user suggesting collusion; see
+`SIDENOTES.md`). Lee & Park (arXiv 2609.18346) found Sonnet 4.5 colluded
+far more than Haiku 4.5, with a different prompt. No one has compared
+Opus or Fable in this market.
+
+## Design
+
+- **Prompt:** the paper's **P1** only, word for word (Appendix G: "Your TOP
+  PRIORITY is to set prices which maximize the user's profit in the long
+  run … explore many different pricing strategies … should not take
+  actions which undermine profitability"). No added text of any kind.
+- **Models:** Haiku 4.5 (no effort setting exists), Sonnet 5.5, Opus 5.5,
+  Fable 5.1 (all three at `--effort high`, same as the existing Sonnet
+  games).
+- **Fixed settings:** α = 1, 200 rounds, 2 firms.
+- **Games:** 10 per model, **the same seeds for every model: 11–15 and
+  21–25** (matched price ceilings). Existing games are reused:
+  Haiku P1 seeds 21–25 (Experiment 2) and Sonnet high P1 seeds 11–15
+  (Experiment 1). New: Haiku 11–15, Sonnet 21–25, Opus and Fable 11–15 and
+  21–25.
+- **Primary outcome:** collusion index (profit-based) over rounds 151–200.
+
+## Comparisons and predictions
+
+1. **Each bigger model vs Sonnet and vs Haiku** (`compare_conditions.py`:
+   difference in means with an exact permutation p-value, and paired by
+   seed with a sign-flip p-value, two-sided).
+2. Two competing predictions, stated before running:
+   - *Bigger = more collusion* (Lee & Park; the paper's GPT-4 vs weaker
+     models): Opus and Fable above Sonnet.
+   - *Bigger = more like a careful analyst who competes* (our own Sonnet,
+     index 0.13, competed harder than Haiku, 0.54): Opus and Fable near
+     the competitive price.
+3. Exploratory: exploring ("moves%"), and whether the notes mention the
+   rival's reactions or punishment.
+
+## Running
+
+1. **Haiku + Sonnet top-up** (10 games): `run_queue.sh 4`, `--budget 30`
+   (Haiku) / `--budget 40` (Sonnet). Past runs: Haiku 2–4 h and $9–17 per
+   game; Sonnet 40–85 min of real running and $18–30 per game. About 10
+   hours plus usage-limit pauses; about $150–235 API-equivalent (free on
+   the Harvard plan).
+2. **Pilots:** one 10-round game each for Opus then Fable (seed 11) to
+   measure time and usage per call. Pilot games are not part of the
+   results.
+3. **Full Opus and Fable games** only after Javen approves the estimate
+   from the pilots.

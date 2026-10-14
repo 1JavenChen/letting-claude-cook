@@ -24,7 +24,7 @@ from simulate import play, save_csv
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--model", default="haiku", help="haiku, sonnet, or opus")
+    ap.add_argument("--model", default="haiku", help="haiku, sonnet, opus, or fable")
     ap.add_argument("--rounds", type=int, default=5)
     ap.add_argument("--prefix", default="P1", choices=["P1", "P2", "PX"])
     ap.add_argument("--effort", default=None,
