@@ -120,3 +120,9 @@
 - New chart `results/llm/exp2_prompts.png` (`plot_summary.py` now makes both charts). README has a Stage 3 section.
 - Javen wanted a few sentences for a one-slide progress update, NOT a deck. A Slides artifact was started by mistake (https://claude.ai/artifact/HgT12Kt3CeRNGJWfBAihQM, private, cover only); offered to delete it.
 - Next ideas: more P1 vs PX games (~10/group), Sonnet with Lee & Park's prompt, more firms / messaging later.
+
+### 2026-10-14 (later): findings images, slides, plans saved for later
+- `plot_findings.py` makes 4 summary charts in `results/findings/` (overview of all 30 games, Sonnet effort over time, the exploring test, the $2.00 cartel game). Not yet committed/pushed (Javen hasn't said).
+- Slide deck with those 4 charts: https://claude.ai/artifact/HgT12Kt3CeRNGJWfBAihQM (private).
+- **Javen's long-term goal:** try bigger models (Opus, Fable) and test whether firms collude when the user suggests it, even when told it's illegal. Design, draft prompt wording, open choices, literature, and the lock-in follow-up options are in **`pricing-collusion/SIDENOTES.md`**. Bring it up when the project gets to that stage.
+- Recommended going forward: 200 rounds, 10 games per condition; start with Sonnet, pilot bigger models first.
