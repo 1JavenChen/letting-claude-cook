@@ -127,3 +127,9 @@
 - Slide deck with those 4 charts: https://claude.ai/artifact/HgT12Kt3CeRNGJWfBAihQM (private).
 - **Javen's long-term goal:** try bigger models (Opus, Fable) and test whether firms collude when the user suggests it, even when told it's illegal. Design, draft prompt wording, open choices, literature, and the lock-in follow-up options are in **`pricing-collusion/SIDENOTES.md`**. Bring it up when the project gets to that stage.
 - Recommended going forward: 200 rounds, 10 games per condition; start with Sonnet, pilot bigger models first.
+
+### 2026-10-14 (evening): Experiment 3 started, P1 baseline for every model size
+- Plan: plain P1 prompt (no extras), 200 rounds, 10 games per model, same seeds for every model (11–15, 21–25). Pre-registered in `EXPERIMENT_PLAN.md` (Experiment 3). Extras (e.g. suggest-collusion) wait until baselines are done.
+- Running (detached, started ~2:50pm): Haiku seeds 11–15 and Sonnet high seeds 21–25 via `run_queue.sh 4`. Log: `results/llm/exp3_baseline_queue.log`.
+- Pilots done (10 rounds, seed 11, not results): Opus $1.38, Fable $2.99 API-equivalent (Sonnet's first 10 rounds cost ~$0.65 and full games ~$25). Rough full-game estimates: Opus ~$50, Fable ~$110. Fable ran ~30 s/round. All model aliases work on the Harvard login.
+- Waiting on Javen's OK before full Opus/Fable games.
