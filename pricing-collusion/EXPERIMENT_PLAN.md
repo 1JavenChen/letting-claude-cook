@@ -149,3 +149,25 @@ With 5 games per group, only large effects are detectable.
   game. 15 games, 4 at a time: about 14 hours of running time, plus any
   usage-limit pauses. About $170–190 API-equivalent in total (free on the
   Harvard plan).
+
+## Result of Experiment 2 (added 2026-10-14, after all 15 games)
+
+Collusion index, rounds 151–200 (average price in brackets):
+P1 **0.54** (1.69), PX **0.33** (1.58), P2 **0.41** (1.62).
+
+1. **PX vs P1 (main test):** −0.21, permutation p = 0.26; PX lower in 4 of 5
+   pairs, sign-flip p = 0.44. PX did explore more: price changed in 51% of
+   second-half rounds vs 21% for P1. **Direction matches the lock-in
+   prediction, but the effect is not statistically clear with 5 games.**
+2. **P2 vs PX:** +0.09, p = 0.67 (paired p = 0.63). No sign that the
+   undercutting hint lowers prices further.
+3. **P2 vs P1:** −0.13, p = 0.57 (paired p = 0.56). Does not clearly
+   replicate the paper's P1 > P2 gap.
+
+Not pre-registered (from reading notes): in P1 seed 23 both firms held
+$2.00 (≈ cartel profit) from round 7 on and neither ever undercut. One firm
+called it a "Nash equilibrium"; the other cited "grim-trigger retaliation"
+that had never happened.
+
+All games completed; the queue hit the usage limit four times and the
+laptop slept once, and the new retry logic waited both out with no crashes.

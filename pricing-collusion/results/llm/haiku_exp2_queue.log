@@ -12,3 +12,5 @@ finished: haiku_PX_a1_200r_seed24 (Done: 402 calls, $16.535 API-equivalent, 2316
 finished: haiku_P2_a1_200r_seed24 (Done: 401 calls, $15.035 API-equivalent, 21146s. Saved to results/llm/haiku_P2_a1_200r_seed24/)
 finished: haiku_P1_a1_200r_seed25 (Done: 400 calls, $10.904 API-equivalent, 9674s. Saved to results/llm/haiku_P1_a1_200r_seed25/)
 finished: haiku_PX_a1_200r_seed25 (Done: 400 calls, $16.886 API-equivalent, 18330s. Saved to results/llm/haiku_PX_a1_200r_seed25/)
+finished: haiku_P2_a1_200r_seed25 (Done: 406 calls, $16.383 API-equivalent, 30232s. Saved to results/llm/haiku_P2_a1_200r_seed25/)
+QUEUE DONE

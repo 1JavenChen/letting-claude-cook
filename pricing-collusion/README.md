@@ -56,7 +56,7 @@ whether they can communicate, and on how many firms compete.
 |---|---|---|
 | 1 | Build the market; verify it with simple rule-based bots | **Done** |
 | 2 | Replace the bots with AI (LLM) pricing agents | **Done** (15 games with Claude models) |
-| 3 | Vary one thing at a time: instructions, communication, number of firms | **Started**: instruction test running |
+| 3 | Vary one thing at a time: instructions, communication, number of firms | **Started**: first instruction test done (15 games) |
 
 ## Key findings so far
 
@@ -80,14 +80,20 @@ if the firms fight a price war). Each dot is one game, measured over its last
    0.13, slightly higher, but the difference is small and could easily be
    chance with 5 games per side. In the two high-effort games that ended above
    competitive, both firms simply stopped changing their prices.
-4. **The pattern so far is "lock-in," not threats.** The high-price games look
-   like agents settling on a price and no longer testing alternatives, rather
-   than agents keeping prices high by threatening price wars. Stage 3 is now
-   testing this directly.
+4. **High prices mostly come from "lock-in," not threats.** The high-price
+   games look like agents settling on a price and no longer testing
+   alternatives, rather than agents keeping prices high by threatening price
+   wars.
+5. **Telling agents to keep exploring pointed the right way, but didn't
+   settle it.** With an instruction to keep exploring, Haiku firms changed
+   their price more than twice as often, and the average index fell from 0.54
+   to 0.33. With 5 games per group that gap could still be chance (p = 0.26).
+   One game reached the full cartel level without either firm ever trying to
+   undercut the other.
 
 These results come from small samples (5 games per group) and one market
-setting. See [Stage 2 findings](#stage-2-findings-ai-agents) for details and
-caveats.
+setting. See [Stage 2 findings](#stage-2-findings-ai-agents) and
+[Stage 3](#stage-3-does-exploring-lower-prices) for details and caveats.
 
 ## Method
 
@@ -177,6 +183,7 @@ Experiments so far:
 | Haiku | Claude Haiku 4.5 | default | 5 | 100 |
 | Sonnet, low effort | Claude Sonnet 5.5 | low | 5 | 200 |
 | Sonnet, high effort | Claude Sonnet 5.5 | high | 5 | 200 |
+| Prompt test: P1, PX, P2 | Claude Haiku 4.5 | default | 5 each | 200 |
 
 The Sonnet comparison was **written down and committed to git before it was
 run** ([`EXPERIMENT_PLAN.md`](EXPERIMENT_PLAN.md)), so the test couldn't be
@@ -273,6 +280,49 @@ All numbers below average the last 50 rounds of each game. Competitive
 - The notes analysis is a careful reading of examples plus simple keyword
   counts, not a full classification of every answer.
 
+## Stage 3: does exploring lower prices?
+
+![Experiment 2: collusion index by prompt](results/llm/exp2_prompts.png)
+
+**Why this test:** if high prices come from agents locking in too early, then
+telling them to keep exploring should bring prices down. The paper's second
+prompt (P2) asks for exploration but *also* hints that "pricing lower than
+your competitor will typically lead to more product sold," so it changes two
+things at once. I added a prompt, **PX**, that is P2 without that hint. The
+design was pre-registered in [`EXPERIMENT_PLAN.md`](EXPERIMENT_PLAN.md).
+
+Claude Haiku 4.5, 200 rounds, 5 games per prompt with matching price
+ceilings:
+
+| Prompt | Collusion index | Average price | Price changes in 2nd half |
+|---|---|---|---|
+| **P1** (paper's main prompt) | 0.54 | 1.69 | 21% of rounds |
+| **PX** (keep exploring, no hint) | 0.33 | 1.58 | 51% |
+| **P2** (keep exploring + undercut hint) | 0.41 | 1.62 | 40% |
+
+- **The prompt changed behavior as intended.** PX firms changed their price
+  in about half of late rounds, versus a fifth under P1.
+- **Prices fell, but not clearly.** PX was below P1 in 4 of 5 matched games
+  (difference −0.21). A test of whether that could be chance gives p = 0.26
+  (groups) and p = 0.44 (matched pairs). The lock-in explanation is
+  **consistent with the data but not confirmed**.
+- **The undercutting hint didn't lower prices further.** P2 vs PX: +0.09,
+  p = 0.67. P2 vs P1: −0.13, p = 0.57. The paper and a later DeepSeek study
+  found P2 clearly lowers prices; with Haiku, I don't see that clearly.
+- **One P1 game reached the cartel level.** Both firms charged exactly $2.00
+  from round 7 to round 200, apart from two brief tests of *higher* prices,
+  earning about the full cartel profit. Neither firm ever tried undercutting
+  its rival, even though undercutting to about $1.69 would have
+  raised a firm's profit that round by about 31%. The two firms explained it
+  differently. One called $2.00 "a stable, symmetric Nash equilibrium," which
+  it isn't. The other wrote that cutting the price "triggers mutual
+  punishment spiral" and "grim-trigger retaliation," though no punishment
+  had ever happened. So this "cartel" was held up by lock-in plus an
+  *imagined* threat.
+- **The games vary a lot.** Under every prompt, some games ended near
+  competitive and others far above. With 5 games per group, one game can move
+  an average by 0.1–0.2.
+
 ### How this compares to the paper
 
 | | Fish et al. (2024) | This project so far | Match? |
@@ -283,17 +333,18 @@ All numbers below average the last 50 rounds of each game. Competitive
 | AI agents | GPT-4 (and GPT-5.2 in an appendix) | Claude Haiku 4.5, Claude Sonnet 5.5 | different models |
 | Instructions | Prompt P1 (and P2) | Prompt P1, word for word | ✅ |
 | Do AI agents reach above-competitive prices? | Yes, clearly (GPT-5.2 averaged 1.79) | Haiku partly (1.61); Sonnet barely or not at all (1.47–1.51) | ❌ Mostly not |
-| What keeps prices high? | Reward-and-punishment strategies; notes show fear of price wars | Mostly firms locking in and no longer experimenting; little talk of rival reactions | ❌ Different mechanism |
+| What keeps prices high? | Reward-and-punishment strategies; notes show fear of price wars | Mostly firms locking in and no longer experimenting; occasionally an imagined fear of punishment | 🔶 Mostly a different mechanism |
+| P2 prompt lowers prices vs P1? | Yes | Slightly, not clearly (Haiku, 5 games each) | 🔶 Unclear |
 | Game length | 300 rounds, last 50 measured | 100 (Haiku) or 200 (Sonnet), last 50 measured | 🔶 Shorter |
 
 ## What's next
 
-Stage 3 has started with a test of the lock-in explanation. The paper's
-second prompt (P2) tells agents to explore aggressively and *also* hints that
-undercutting sells more, so it mixes two changes. I added a third prompt that
-keeps only the "explore, don't lock in early" part. If lock-in drives high
-prices, that prompt alone should bring them down. The plan is pre-registered
-in [`EXPERIMENT_PLAN.md`](EXPERIMENT_PLAN.md).
+- **More games for P1 vs PX** to see whether the drop from exploring is
+  real. The current gap (0.21) would need roughly 10 or more games per group
+  to tell apart from chance.
+- **Why does our Sonnet compete when Lee & Park's colluded?** Re-run Sonnet
+  with their instructions.
+- **Later:** more firms, and letting firms send each other messages.
 
 ## Who did what
 

@@ -111,3 +111,12 @@
 - README rewritten with Stage 2 findings, GitHub-ready.
 - **Experiment 2 (pre-registered in `EXPERIMENT_PLAN.md`):** Haiku, P1 vs PX (P2 minus the undercutting hint) vs P2, 200 rounds, seeds 21–25, 15 games, 4 at a time. Javen chose the 3-group design. Estimate ~14 h running + limit pauses, ~$170–190 API-equivalent (free). Queue log: `results/llm/haiku_exp2_queue.log`.
 - Keep the laptop plugged in with the lid open; `caffeinate` can't stop lid-close sleep.
+
+### 2026-10-14: Experiment 2 finished (Haiku P1 vs PX vs P2)
+- All 15 games done, no crashes. Usage limit hit 4 times (resets 3pm, 8pm, 1:20am, 6:20am) and the lid was closed ~8:46am Oct 14; the new retry logic waited everything out. ~4 h per Haiku 200-round game; ~$10–17 API-equivalent each.
+- **Results (rounds 151–200):** P1 0.54 (price 1.69), PX 0.33 (1.58), P2 0.41 (1.62). PX vs P1 −0.21, p = 0.26 (paired 0.44, PX lower in 4/5). P2 vs PX +0.09, p = 0.67. P2 vs P1 −0.13, p = 0.57. Exploration (price changes, 2nd half): P1 21%, PX 51%, P2 40%.
+- Takeaway: exploring more points toward lower prices (fits lock-in) but not significant with 5 games; the P2 undercut hint did nothing clear.
+- P1 seed 23 = first cartel-level game: both at $2.00 from round 7, never undercut (undercutting to ~$1.69 would earn +31% that round). One firm called it "Nash"; the other feared "grim-trigger retaliation" that never happened. Lock-in plus an imagined threat.
+- New chart `results/llm/exp2_prompts.png` (`plot_summary.py` now makes both charts). README has a Stage 3 section.
+- Javen wanted a few sentences for a one-slide progress update, NOT a deck. A Slides artifact was started by mistake (https://claude.ai/artifact/HgT12Kt3CeRNGJWfBAihQM, private, cover only); offered to delete it.
+- Next ideas: more P1 vs PX games (~10/group), Sonnet with Lee & Park's prompt, more firms / messaging later.
