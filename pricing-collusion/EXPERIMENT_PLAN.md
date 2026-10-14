@@ -1,5 +1,9 @@
 # Experiment plan (written before running, 2026-10-07)
 
+> **Standard for all new experiments (from 2026-10-14):** at least 10 games
+> per condition, 200 rounds each, scored on rounds 151–200, matched seeds
+> across conditions. Experiments 1 and 2 below used 5 per condition.
+
 This plan was committed to git **before** the experiments below were run,
 so the git history shows the design wasn't changed after seeing results.
 

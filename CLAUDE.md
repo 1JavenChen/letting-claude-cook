@@ -24,6 +24,7 @@
 - Code goes in `pricing-collusion/`.
 - `pricing-collusion/README.md` is for recruiters and non-experts: keep the question, method, key chart, and findings current and jargon-free, cite the paper, and say plainly that AI agents wrote much of the code under my direction. Never report findings we haven't actually produced.
 - **How AI firms are run (decided 2026-10-07):** through `claude -p` on Javen's Harvard Claude login, with no API key (`pricing-collusion/llm_agent.py`). Each call runs in an empty temp folder with no tools/settings, so agents never see this project or the hypothesis. The fallback is an API key, with the teacher paying up to $100: set a $100 spend limit, keep the key in a git-ignored `.env`, and never print or commit it.
+- **Standard design for every new experiment (decided 2026-10-14):** at least **10 games per condition**, **200 rounds** per game, scored on the **last 50 rounds (151–200)**, matched seeds across conditions. 5 per condition proved too few. If the first 10 show a small, unclear gap, add games and combine (a ~0.2 effect needs ~28 per condition). Older experiments (5 per condition) stay as they are.
 - Before every real run: estimate the time and usage and get Javen's OK. `run_llm_game.py --budget` stops a game once its API-equivalent cost passes the limit.
 
 ## Progress log
