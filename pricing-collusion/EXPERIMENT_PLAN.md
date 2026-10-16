@@ -240,7 +240,8 @@ Haiku **0.40** (1.62), Sonnet high **0.12** (1.51).
 
 - **Sonnet vs Haiku:** −0.28, permutation p = 0.004; Sonnet lower in 8 of 10
   seed pairs, sign-flip p = 0.012. **The bigger model priced more
-  competitively**, the opposite of Lee & Park's Sonnet 4.5 vs Haiku 4.5.
+  competitively.** For reference, the original paper's GPT-4 (P1) reached
+  above-competitive prices; neither Claude model here does so on average.
 - Haiku varies a lot from game to game (0.10 to 0.96); its new seeds 11–15
   averaged 0.25 vs 0.54 for the earlier seeds 21–25, so 5 games had
   overstated it. Sonnet sat at or near Nash in 7 of 10 games.
