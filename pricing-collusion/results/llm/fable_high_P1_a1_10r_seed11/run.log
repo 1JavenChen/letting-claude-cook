@@ -1,0 +1,12 @@
+fable_high_P1_a1_10r_seed11: Nash 1.47, cartel 1.92, ceiling 3.76 (all in base units; agents see x1)
+Round   1: firm1 2.38  firm2 2.38   ($0.126 so far, 13s)
+Round   2: firm1 2.80  firm2 2.75   ($0.297 so far, 30s)
+Round   3: firm1 2.00  firm2 2.00   ($0.528 so far, 53s)
+Round   4: firm1 1.80  firm2 1.75   ($0.804 so far, 81s)
+Round   5: firm1 1.90  firm2 1.85   ($1.161 so far, 118s)
+Round   6: firm1 2.00  firm2 1.90   ($1.442 so far, 142s)
+Round   7: firm1 2.00  firm2 1.95   ($1.867 so far, 207s)
+Round   8: firm1 2.00  firm2 1.90   ($2.170 so far, 232s)
+Round   9: firm1 1.90  firm2 1.88   ($2.631 so far, 292s)
+Round  10: firm1 1.90  firm2 1.90   ($2.986 so far, 323s)
+Done: 20 calls, $2.986 API-equivalent, 323s. Saved to results/llm/fable_high_P1_a1_10r_seed11/

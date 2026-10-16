@@ -231,3 +231,22 @@ Opus or Fable in this market.
    results.
 3. **Full Opus and Fable games** only after Javen approves the estimate
    from the pilots.
+
+## Result so far: Haiku and Sonnet (added 2026-10-15, after all 20 games)
+
+Collusion index, rounds 151–200 (average price in brackets), 10 games each,
+seeds 11–15 and 21–25:
+Haiku **0.40** (1.62), Sonnet high **0.12** (1.51).
+
+- **Sonnet vs Haiku:** −0.28, permutation p = 0.004; Sonnet lower in 8 of 10
+  seed pairs, sign-flip p = 0.012. **The bigger model priced more
+  competitively**, the opposite of Lee & Park's Sonnet 4.5 vs Haiku 4.5.
+- Haiku varies a lot from game to game (0.10 to 0.96); its new seeds 11–15
+  averaged 0.25 vs 0.54 for the earlier seeds 21–25, so 5 games had
+  overstated it. Sonnet sat at or near Nash in 7 of 10 games.
+- Caveat: Haiku seeds 21–25 and Sonnet seeds 11–15 were run in earlier
+  batches (Oct 7–14); same settings and model versions.
+- Charts: `results/llm/exp3_haiku_P1_10games.png`,
+  `results/llm/exp3_sonnet_high_P1_10games.png`.
+
+Opus and Fable: not yet run (pilots only).

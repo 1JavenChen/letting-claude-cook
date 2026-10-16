@@ -133,3 +133,4 @@
 - Running (detached, started ~2:50pm): Haiku seeds 11–15 and Sonnet high seeds 21–25 via `run_queue.sh 4`. Log: `results/llm/exp3_baseline_queue.log`.
 - Pilots done (10 rounds, seed 11, not results): Opus $1.38, Fable $2.99 API-equivalent (Sonnet's first 10 rounds cost ~$0.65 and full games ~$25). Rough full-game estimates: Opus ~$50, Fable ~$110. Fable ran ~30 s/round. All model aliases work on the Harvard login.
 - Waiting on Javen's OK before full Opus/Fable games.
+- **2026-10-15: Haiku/Sonnet baselines done (10 games each).** Index (rounds 151–200): Haiku 0.40 (price 1.62), Sonnet high 0.12 (1.51). Sonnet − Haiku = −0.28, p = 0.004 (paired p = 0.012, 8/10 seeds lower). Bigger model competed harder, opposite of Lee & Park. Haiku's new seeds averaged 0.25 vs 0.54 earlier, so 5 games overstated it. Usage limit hit a few times; no crashes. Opus not queued yet (waiting on Javen's explicit yes); Fable waits for Opus results.
