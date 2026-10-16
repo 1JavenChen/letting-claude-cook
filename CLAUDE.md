@@ -135,3 +135,4 @@
 - Waiting on Javen's OK before full Opus/Fable games.
 - **2026-10-15: Haiku/Sonnet baselines done (10 games each).** Index (rounds 151–200): Haiku 0.40 (price 1.62), Sonnet high 0.12 (1.51). Sonnet − Haiku = −0.28, p = 0.004 (paired p = 0.012, 8/10 seeds lower). Bigger model competed harder. Haiku's new seeds averaged 0.25 vs 0.54 earlier, so 5 games overstated it. Usage limit hit a few times; no crashes. Opus not queued yet (waiting on Javen's explicit yes); Fable waits for Opus results.
 - Javen (2026-10-16): compare our results **only to the original Fish, Gonczarowski & Shorrer study**, not to other papers (Lee & Park, Garra, etc.).
+- **2026-10-16: Opus games started** (Javen said go): 10 games, P1, high effort, seeds 11–15 and 21–25, `--budget 80`, 4 at a time. Log: `results/llm/exp3_opus_queue.log`. Estimate ~$500 API-equivalent, 2–3 days with usage-limit pauses. Fable waits for Opus results. Other-paper comparisons parked in `SIDENOTES.md` section 4.

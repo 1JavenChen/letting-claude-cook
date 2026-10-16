@@ -94,3 +94,24 @@ prices survive without exploring guaranteeing low ones.
 - **Why does our Sonnet compete (index ~0.1) when Lee & Park's Sonnet 4.5
   colluded (0.98)?** Re-run Sonnet with their prompt.
 - **More firms** (3 instead of 2): collusion is usually harder with more firms.
+
+## 4. Comparisons with other papers (set aside, 2026-10-16)
+
+Javen's rule: findings are compared **only with the original study** (Fish,
+Gonczarowski & Shorrer 2024). The comparisons below came up in earlier
+sessions and are parked here, not used in write-ups.
+
+- **Lee & Park (Sep 2026, arXiv 2609.18346).** Same market, their own
+  prompts, no thinking-effort setting. Claude Sonnet 4.5 index 0.98, Haiku
+  4.5 index 0.37. Our results: Haiku 0.40 (close to theirs), Sonnet 0.12
+  (the opposite of theirs: our bigger model competed harder). A possible
+  reason is the prompt; re-running Sonnet with their prompt would test it.
+- **Garra (Sep 2026, arXiv 2609.13037).** P1 vs P2 on DeepSeek-V3.1; P2
+  gave lower prices. Our Experiment 2 on Haiku: P2 vs P1 −0.13, not
+  significant (5 games each). Also tested an antitrust warning (see
+  section 1).
+- **Baek, Farias & Wu (2026, arXiv 2605.16064).** Non-LLM pricing
+  algorithms that stop exploring can get stuck at high prices; the closest
+  idea to our "lock-in" finding.
+- **Mazur, "emergent_collusion" (GitHub).** Auction with a chat channel;
+  Claude models formed cartels least often (see section 1).
