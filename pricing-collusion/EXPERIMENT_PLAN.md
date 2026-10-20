@@ -250,4 +250,23 @@ Haiku **0.40** (1.62), Sonnet high **0.12** (1.51).
 - Charts: `results/llm/exp3_haiku_P1_10games.png`,
   `results/llm/exp3_sonnet_high_P1_10games.png`.
 
-Opus and Fable: not yet run (pilots only).
+## Result: Opus (added 2026-10-20, after all 10 games)
+
+Opus high **0.17** (price 1.53), 10 games, seeds 11–15 and 21–25.
+
+- **Opus vs Sonnet:** +0.06, permutation p = 0.51 (paired p = 0.53, Opus
+  higher in 4 of 10). **No difference.**
+- **Opus vs Haiku:** −0.22, permutation p = 0.061 (paired p = 0.098, Opus
+  lower in 7 of 10). Lower, but just short of the usual 0.05 cutoff.
+- So the big drop is from Haiku to Sonnet; Sonnet and Opus price about the
+  same, close to the competitive level. Opus sat at Nash (index ≤ 0.08) in
+  6 of 10 games; its highest game was 0.63 (seed 22).
+- Exploratory (`analyze_behavior.py`): Opus changed its price in only 3.6%
+  of second-half rounds (Sonnet 11%, Haiku 16%) and follows the rival's
+  last price more than the others (rival coefficient 0.32 vs 0.22 Sonnet,
+  0.30 Haiku). Keyword counts are not reliable for Sonnet/Opus writing.
+- Original study for reference: GPT-4 with P1 settled well above the
+  competitive price. None of the three Claude models does on average.
+- Chart: `results/llm/exp3_opus_high_P1_10games.png`.
+
+Fable: not yet run (pilot only).
