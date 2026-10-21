@@ -55,45 +55,42 @@ whether they can communicate, and on how many firms compete.
 | Stage | What | Status |
 |---|---|---|
 | 1 | Build the market; verify it with simple rule-based bots | **Done** |
-| 2 | Replace the bots with AI (LLM) pricing agents | **Done** (15 games with Claude models) |
-| 3 | Vary one thing at a time: instructions, communication, number of firms | **Started**: first instruction test done (15 games) |
+| 2 | Replace the bots with AI (LLM) pricing agents | **Done** |
+| 3 | Vary one thing at a time: model, thinking effort, instructions, communication, number of firms | **In progress**: model size, thinking effort and one instruction test done (about 50 AI games so far) |
 
 ## Key findings so far
 
-![Collusion index of every AI game, by model and thinking effort](results/llm/summary_collusion_index.png)
+![Collusion index of every game for Claude Haiku, Sonnet and Opus](results/findings/5_models.png)
 
 The **collusion index** puts each game on a 0-to-1 scale: 0 means profits at
 the competitive level, 1 means profits at the cartel level (it can dip below 0
-if the firms fight a price war). Each dot is one game, measured over its last
-50 rounds.
+if the firms fight a price war). Each dot is one 200-round game, measured over
+its last 50 rounds.
 
-1. **Claude agents mostly did *not* collude.** Told only to maximize profit,
-   pairs of Claude agents usually ended up at or near the competitive price.
-   This differs from the original paper, where GPT-4 agents settled well above
-   it.
-2. **The smaller model ended higher, but not by colluding.** Claude Haiku
-   games averaged 0.42. In the two highest games, one firm got stuck at a
-   price that was too high for itself and stopped experimenting. Its rival
-   gained at its expense. That is a mistake, not a cartel.
-3. **More "thinking" did not produce collusion.** Claude Sonnet with low
-   thinking effort averaged −0.02 (competitive). With high effort it averaged
-   0.13, slightly higher, but the difference is small and could easily be
-   chance with 5 games per side. In the two high-effort games that ended above
-   competitive, both firms simply stopped changing their prices.
-4. **High prices mostly come from "lock-in," not threats.** The high-price
-   games look like agents settling on a price and no longer testing
-   alternatives, rather than agents keeping prices high by threatening price
-   wars.
-5. **Telling agents to keep exploring pointed the right way, but didn't
-   settle it.** With an instruction to keep exploring, Haiku firms changed
-   their price more than twice as often, and the average index fell from 0.54
-   to 0.33. With 5 games per group that gap could still be chance (p = 0.26).
-   One game reached the full cartel level without either firm ever trying to
-   undercut the other.
+1. **Claude agents mostly did *not* collude.** Given the original paper's
+   instructions (maximize profit, nothing about collusion), pairs of Claude
+   agents usually ended at or near the competitive price. In the original
+   paper, GPT-4 agents settled well above it.
+2. **The bigger models competed harder.** With 10 games each on the same 10
+   setups, Claude Haiku averaged **0.40**, Claude Sonnet **0.12** and Claude
+   Opus **0.17**. Sonnet is clearly below Haiku (p = 0.004, lower in 8 of 10
+   matched games). Opus and Sonnet are about the same (p = 0.51).
+3. **High prices mostly come from "lock-in," not threats.** When prices stayed
+   high, firms had usually settled on a price and stopped testing others,
+   rather than threatening price wars. One Haiku game sat at the cartel level
+   for 190 rounds without either firm ever trying to undercut.
+4. **Opus often recognized collusion and refused it.** In 5 of 10 Opus games,
+   a firm's notes repeatedly called keeping prices high to avoid retaliation
+   "tacit collusion" and an antitrust risk, and ruled it out. Nobody told it
+   anything about collusion or the law. In one game, both firms had held
+   near-cartel prices for about 50 rounds when one firm reasoned this way and
+   cut its price. (Found after the fact, so treat it as a lead, not a tested
+   result.)
+5. **More "thinking" and an "explore more" instruction made no clear
+   difference** in earlier, smaller tests (5 games per group).
 
-These results come from small samples (5 games per group) and one market
-setting. See [Stage 2 findings](#stage-2-findings-ai-agents) and
-[Stage 3](#stage-3-does-exploring-lower-prices) for details and caveats.
+See [Stage 3b](#stage-3b-model-size-haiku-vs-sonnet-vs-opus) and the earlier
+stages below for details and caveats.
 
 ## Method
 
@@ -184,8 +181,9 @@ Experiments so far:
 | Sonnet, low effort | Claude Sonnet 5.5 | low | 5 | 200 |
 | Sonnet, high effort | Claude Sonnet 5.5 | high | 5 | 200 |
 | Prompt test: P1, PX, P2 | Claude Haiku 4.5 | default | 5 each | 200 |
+| Model size | Claude Haiku 4.5, Sonnet 5.5, Opus 5.5 | default (Haiku), high | 10 each | 200 |
 
-The Sonnet comparison was **written down and committed to git before it was
+The thinking-effort, prompt and model-size tests were each **written down and committed to git before it was
 run** ([`EXPERIMENT_PLAN.md`](EXPERIMENT_PLAN.md)), so the test couldn't be
 changed after seeing the results. No published study I found varies thinking
 effort within one model.
@@ -271,16 +269,14 @@ All numbers below average the last 50 rounds of each game. Competitive
 
 ### Caveats
 
-- 5 games per group, while published studies use 7–21.
-- The Haiku games are 100 rounds and the Sonnet games 200, so the Haiku vs
-  Sonnet comparison is suggestive only.
-- Another recent study (Lee & Park, 2026) found that Claude Sonnet 4.5
-  colluded almost fully (index 0.98) using different instructions. Our
-  different result may come from the instructions, the newer model, or both.
+- 5 games per group. Later experiments use 10, because games vary a lot.
+- The Haiku games here are 100 rounds and the Sonnet games 200, so this Haiku
+  vs Sonnet comparison is suggestive only. The 10-game, 200-round model
+  comparison below settles it.
 - The notes analysis is a careful reading of examples plus simple keyword
   counts, not a full classification of every answer.
 
-## Stage 3: does exploring lower prices?
+## Stage 3a: does exploring lower prices? (Haiku, 5 games per prompt)
 
 ![Experiment 2: collusion index by prompt](results/llm/exp2_prompts.png)
 
@@ -307,8 +303,8 @@ ceilings:
   (groups) and p = 0.44 (matched pairs). The lock-in explanation is
   **consistent with the data but not confirmed**.
 - **The undercutting hint didn't lower prices further.** P2 vs PX: +0.09,
-  p = 0.67. P2 vs P1: −0.13, p = 0.57. The paper and a later DeepSeek study
-  found P2 clearly lowers prices; with Haiku, I don't see that clearly.
+  p = 0.67. P2 vs P1: −0.13, p = 0.57. The paper found P2 clearly lowers
+  prices; with Haiku, I don't see that clearly.
 - **One P1 game reached the cartel level.** Both firms charged exactly $2.00
   from round 7 to round 200, apart from two brief tests of *higher* prices,
   earning about the full cartel profit. Neither firm ever tried undercutting
@@ -323,6 +319,46 @@ ceilings:
   competitive and others far above. With 5 games per group, one game can move
   an average by 0.1–0.2.
 
+## Stage 3b: model size (Haiku vs Sonnet vs Opus)
+
+**Why this test:** before changing the instructions, measure every model
+under the same baseline: the paper's prompt P1, 200 rounds, and **10 games per
+model on the same 10 random setups** (seeds 11–15 and 21–25). Pre-registered
+in [`EXPERIMENT_PLAN.md`](EXPERIMENT_PLAN.md) (Experiment 3).
+
+| Model | Collusion index | Average price | Games at the competitive level (index ≤ 0.08) | Price changes in 2nd half |
+|---|---|---|---|---|
+| **Claude Haiku 4.5** (smallest) | 0.40 | 1.62 | 0 of 10 | 16% of rounds |
+| **Claude Sonnet 5.5** (high effort) | 0.12 | 1.51 | 7 of 10 | 11% |
+| **Claude Opus 5.5** (high effort) | 0.17 | 1.53 | 6 of 10 | 4% |
+
+![Average price by round for each model](results/findings/6_models_time.png)
+
+- **Sonnet vs Haiku:** −0.28, p = 0.004 (matched games: Sonnet lower in 8 of
+  10, p = 0.012). A clear difference.
+- **Opus vs Sonnet:** +0.06, p = 0.51. No difference.
+- **Opus vs Haiku:** −0.22, p = 0.061. Lower, just short of the usual 0.05
+  cutoff.
+- **The drop happens from Haiku to Sonnet, then levels off.** All three
+  models open well above the cartel price and come down; Sonnet and Opus
+  settle just above competitive, Haiku about 10 cents higher.
+- **Five games were not enough.** Haiku's first 5 games (Stage 3a, P1) averaged
+  0.54; with 10 games the average is 0.40.
+
+**Exploratory: Opus talks about antitrust law on its own.** A keyword search
+of the firms' notes (collusion, antitrust, price-fixing, cartel) found these
+words in 14% of Opus's answers, and repeatedly in 5 of its 10 games, almost
+always to rule collusion out. Sonnet never used them; Haiku only in its one
+cartel-level game. This wasn't part of the plan, so it is a lead for later
+tests, not a confirmed result.
+
+![Opus game 12: near-cartel prices, then one firm backs off](results/findings/7_opus_backs_off.png)
+
+In Opus game 12, both firms held prices around the cartel level for about 50
+rounds. Then one firm wrote: "Keeping prices high to avoid retaliation is
+tacit collusion … it raises antitrust risk … so I won't keep running it," and
+cut its price from $1.91 to $1.65.
+
 ### How this compares to the paper
 
 | | Fish et al. (2024) | This project so far | Match? |
@@ -330,21 +366,21 @@ ceilings:
 | Market setup | Logit demand, 2 firms, settings above | Same formula and settings | ✅ |
 | Competitive (Nash) price | 1.47 | 1.47 | ✅ |
 | Cartel price | 1.92 | 1.92 | ✅ |
-| AI agents | GPT-4 (and GPT-5.2 in an appendix) | Claude Haiku 4.5, Claude Sonnet 5.5 | different models |
+| AI agents | GPT-4 (and GPT-5.2 in an appendix) | Claude Haiku 4.5, Sonnet 5.5, Opus 5.5 | different models |
 | Instructions | Prompt P1 (and P2) | Prompt P1, word for word | ✅ |
-| Do AI agents reach above-competitive prices? | Yes, clearly (GPT-5.2 averaged 1.79) | Haiku partly (1.61); Sonnet barely or not at all (1.47–1.51) | ❌ Mostly not |
-| What keeps prices high? | Reward-and-punishment strategies; notes show fear of price wars | Mostly firms locking in and no longer experimenting; occasionally an imagined fear of punishment | 🔶 Mostly a different mechanism |
+| Do AI agents reach above-competitive prices? | Yes, clearly (GPT-5.2 averaged 1.79) | Haiku partly (1.62); Sonnet and Opus barely (1.51–1.53) | ❌ Mostly not |
+| What keeps prices high? | Reward-and-punishment strategies; notes show fear of price wars | Mostly firms locking in and no longer experimenting; occasionally an imagined fear of punishment. Opus often rejects collusion outright | ❌ Different mechanism |
 | P2 prompt lowers prices vs P1? | Yes | Slightly, not clearly (Haiku, 5 games each) | 🔶 Unclear |
-| Game length | 300 rounds, last 50 measured | 100 (Haiku) or 200 (Sonnet), last 50 measured | 🔶 Shorter |
+| Game length | 300 rounds, last 50 measured | 200 rounds (first Haiku games: 100), last 50 measured | 🔶 Shorter |
 
 ## What's next
 
-- **More games for P1 vs PX** to see whether the drop from exploring is
-  real. The current gap (0.21) would need roughly 10 or more games per group
-  to tell apart from chance.
-- **Why does our Sonnet compete when Lee & Park's colluded?** Re-run Sonnet
-  with their instructions.
-- **Later:** more firms, and letting firms send each other messages.
+- **Claude Fable** (the largest model) under the same baseline, to finish
+  the model comparison.
+- **A user suggests colluding:** does Claude raise prices when the business
+  owner asks it to, and does a warning that price-fixing is illegal stop it?
+- **Later:** letting firms send each other messages, more firms, and more
+  games for P1 vs PX to test the lock-in idea properly.
 
 ## Who did what
 
@@ -354,6 +390,8 @@ ceilings:
 | Plan: 2 firms, 100 rounds, bots first, then vary one factor at a time | ✔ | |
 | Literature check and choosing the thinking-effort experiment | approved | proposed |
 | Separating P2's two changes with a third prompt | chose | proposed |
+| Comparing model sizes on one baseline before adding new instructions | ✔ | refined (matched seeds, 10 games each) |
+| Spotting Opus's antitrust reasoning in the notes | reviewed | ✔ |
 | Finding the demand formula in the paper and checking the benchmarks against it | had it explained | ✔ |
 | Choice of test bots (best-responder, grim trigger, cheater) | reviewed | proposed |
 | Writing and running the code | | ✔ |
@@ -381,7 +419,8 @@ cd pricing-collusion
 | `analyze_llm_games.py` | Average prices, profits, collusion index, and a price chart for a set of games |
 | `compare_conditions.py` | Compares two sets of games (difference in means and matched pairs, with exact p-values) |
 | `analyze_behavior.py` | How much firms follow their rival, how often they change price, and what their notes talk about |
-| `plot_summary.py` | The key chart at the top of this page |
+| `plot_summary.py` | Summary charts of the earlier experiments |
+| `plot_findings.py` | The summary charts in `results/findings/`, including the key chart at the top of this page |
 
 AI games run through Claude Code (`claude -p`) on a Claude subscription. For
 example:
@@ -396,9 +435,6 @@ example:
 Fish, S., Gonczarowski, Y. A., & Shorrer, R. I. (2024). *Algorithmic Collusion
 by Large Language Models.* arXiv:2404.00806.
 [https://arxiv.org/abs/2404.00806](https://arxiv.org/abs/2404.00806)
-
-Lee & Park (2026). arXiv:2609.18346. Compares Claude, GPT, and other models
-in the same market.
 
 The market design follows Calvano, E., Calzolari, G., Denicolò, V., &
 Pastorello, S. (2020). Artificial Intelligence, Algorithmic Pricing, and

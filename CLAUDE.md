@@ -137,3 +137,10 @@
 - Javen (2026-10-16): compare our results **only to the original Fish, Gonczarowski & Shorrer study**, not to other papers (Lee & Park, Garra, etc.).
 - **2026-10-16: Opus games started** (Javen said go): 10 games, P1, high effort, seeds 11–15 and 21–25, `--budget 80`, 4 at a time. Log: `results/llm/exp3_opus_queue.log`. Estimate ~$500 API-equivalent, 2–3 days with usage-limit pauses. Fable waits for Opus results. Other-paper comparisons parked in `SIDENOTES.md` section 4.
 - **2026-10-20: Opus baseline done (10 games, ~$44–59 API-equivalent each).** Index: Opus 0.17 (price 1.53). Opus vs Sonnet +0.06, p = 0.51 (no difference); Opus vs Haiku −0.22, p = 0.061. Big drop is Haiku → Sonnet, then flat. Opus at Nash in 6/10 games, barely moves its price late in the game (3.6% of rounds). Next: Javen decides on Fable.
+
+### 2026-10-20/21: Opus results, charts, README
+- Opus baseline analyzed (see 2026-10-20 bullet above). Exploratory find: Opus often names "tacit collusion" and rejects it as an antitrust risk unprompted (5 of 10 games; Sonnet never). In Opus game 12 the firms held near-cartel prices, then one firm backed off for that reason at round 132. Details in `EXPERIMENT_PLAN.md`.
+- `plot_findings.py` now makes 8 charts in `results/findings/` (5–8 are Experiment 3). Same simple Slides deck updated with them: https://claude.ai/artifact/HgT12Kt3CeRNGJWfBAihQM. A .pptx version was made and deleted at Javen's request (don't commit decks; they prefer the simple image deck plus a chat explanation).
+- README updated for Experiment 3 (new key chart and findings, Stage 3b section) and now compares only with the original paper.
+- Explained to Javen: the logit demand formula (plain-text version, since the terminal can't render LaTeX), the collusion index and why it can go below 0, how a round works, and starting prices (no fixed start; AIs open around $2.00–3.00, often near the midpoint of cost and the price ceiling).
+- Next: Javen to choose between a Fable baseline (~$1,100 API-equivalent, ~1 week) and the suggest-collusion experiment on Sonnet.
