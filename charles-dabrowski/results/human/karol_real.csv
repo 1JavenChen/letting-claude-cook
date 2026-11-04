@@ -1,0 +1,8 @@
+file,true_n_speakers,guess_n_speakers,true_n_male,true_n_female,noise_kind
+EN2002a.Array1-01@1808.0,2,2,1,1,ami-Array1-01
+EN2002d.Array1-01@1656.0,3,2,1,2,ami-Array1-01
+EN2002b.Array1-01@460.0,3,3,2,1,ami-Array1-01
+TS3003d.Array1-01@412.0,3,2,3,0,ami-Array1-01
+ES2004c.Array1-01@1992.0,3,1,1,2,ami-Array1-01
+EN2002d.Array1-01@1620.0,3,3,1,2,ami-Array1-01
+EN2002b.Array1-01@1248.0,3,2,1,2,ami-Array1-01

@@ -1,0 +1,18 @@
+=== 00:02:13 generating data/mixtures_male
+=== 00:20:37 data/mixtures_male done: speakers per split: {'train': 102, 'val': 22, 'test': 22}
+=== 00:20:37 generating data/mixtures_female
+=== 00:38:37 data/mixtures_female done: speakers per split: {'train': 101, 'val': 22, 'test': 22}
+=== 00:38:37 waiting for AC power before training
+=== 10:00:57 on AC power; training
+=== 11:37:50 cnn_v8_male: best val count accuracy 0.789; saved models/cnn_v8_male.pt
+=== 15:55:37 cnn_v9_female: best val count accuracy 0.823; saved models/cnn_v9_female.pt
+=== 15:55:37 evaluating
+=== 15:55:44 cnn_v8_male_on_male: exact 0.822 within1 0.98
+=== 15:55:50 cnn_v4_on_male: exact 0.798 within1 0.983
+=== 15:55:56 cnn_v9_female_on_male: exact 0.705 within1 0.956
+=== 15:56:05 cnn_v9_female_on_female: exact 0.787 within1 0.98
+=== 15:56:12 cnn_v4_on_female: exact 0.765 within1 0.972
+=== 15:56:17 cnn_v8_male_on_female: exact 0.746 within1 0.974
+=== 15:56:22 cnn_v8_male_on_v3test: exact 0.799 within1 0.984
+=== 15:56:28 cnn_v9_female_on_v3test: exact 0.773 within1 0.974
+=== 15:56:28 DONE

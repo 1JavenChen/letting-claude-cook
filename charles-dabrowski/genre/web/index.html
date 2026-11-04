@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Which genre is this?</title>
+<script src="https://cdn.jsdelivr.net/npm/onnxruntime-web@1.20.1/dist/ort.min.js"></script>
+<style>
+body{font-family:-apple-system,Helvetica,Arial,sans-serif;max-width:900px;margin:40px auto;padding:0 20px;color:#1f1d2b;background:#fff}
+h1{font-size:30px;margin:0 0 4px}.sub{color:#6b687a;margin-bottom:24px}.sub a{color:#4b2c7f}
+.drop{border:2px dashed #b9b2d0;border-radius:14px;padding:34px;text-align:center;color:#4b2c7f;background:#f8f6fc;cursor:pointer}
+.drop.over{background:#ece6f7}.row{display:flex;gap:10px;margin:14px 0}
+input[type=text]{flex:1;padding:10px 12px;border:1px solid #cfc9df;border-radius:8px;font-size:15px;min-width:0}
+button{padding:10px 16px;border:0;border-radius:8px;background:#4b2c7f;color:#fff;font-size:15px;cursor:pointer}
+.bar{display:flex;align-items:center;gap:10px;margin:6px 0;font-size:15px}.bar .n{width:90px;text-align:right;color:#6b687a;flex:none}
+.bar .b{height:22px;background:#d8d1ea;border-radius:5px}.bar.top .b{background:#e8702a}.bar .v{width:50px;flex:none}
+#res{margin-top:22px}canvas.spec{width:100%;border-radius:10px;margin-top:16px;display:block}
+.np{display:flex;gap:20px;align-items:center;background:#f8f6fc;border-radius:16px;padding:18px;margin:4px 0 18px}
+.np .cv{width:150px;height:150px;border-radius:12px;object-fit:cover;flex:none;background:linear-gradient(135deg,#4b2c7f,#e8702a);box-shadow:0 6px 18px rgba(75,44,127,.25)}
+.np .info{flex:1;min-width:0}.np .t{font-size:20px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.np .g{font-size:15px;color:#6b687a;margin:2px 0 14px}.np .g b{color:#e8702a;font-size:17px}
+.pl{display:flex;align-items:center;gap:12px}.pl button{width:46px;height:46px;border-radius:50%;padding:0;font-size:18px;display:flex;align-items:center;justify-content:center;flex:none}
+.pl .tr{flex:1;height:8px;background:#ddd6ec;border-radius:4px;cursor:pointer;position:relative}.pl .tr i{display:block;height:100%;width:0;background:#4b2c7f;border-radius:4px}
+.pl .tm{font-variant-numeric:tabular-nums;color:#6b687a;font-size:13px;width:70px;text-align:right;flex:none}
+.err{color:#b3261e;margin-top:14px}.foot{margin-top:40px;color:#6b687a;font-size:13px}.foot a{color:#4b2c7f}
+.cap{font-size:13px;color:#6b687a;margin-top:6px}
+@media(max-width:600px){.np{flex-direction:column;align-items:stretch}.np .cv{width:100%;height:auto;aspect-ratio:1}.bar .n{width:70px}}
+</style></head><body>
+<h1>Which genre is this?</h1>
+<div class="sub">Drop any mp3 / wav / flac / ogg, any length: only the first 30 seconds are used. Or type a song name. Everything runs in your browser, nothing is uploaded.</div>
+<div class="drop" id="drop">Drop an audio file here or click to choose (first 30 s are analysed)<input type="file" id="file" accept="audio/*" hidden></div>
+<div class="row"><input type="text" id="q" placeholder="…or a song name, e.g. miles davis so what"><button id="go">Predict</button></div>
+<div id="res"><div class="sub" id="status">Loading the model (21 MB, once)…</div></div>
+<div class="foot">A 5.5M-parameter CNN on log-mel spectrograms, trained on 26k Deezer previews for a Harvard first-year seminar. Eight genres: classical, pop, jazz, hip-hop, rock, electronic, country, film score. Test accuracy 77 %, 79 % on 500 clips from unseen artists. Code and report: <a href="https://github.com/Guczyslaw/fys-audio-ml">github.com/Guczyslaw/fys-audio-ml</a>.</div>
+<script>
+const SR=22050,NFFT=2048,HOP=1024,NMELS=128,CLIP=30,WIN=5;
+const GENRES=["classical","pop","jazz","hiphop","rock","electronic","country","score"];
+const LABEL={hiphop:"hip-hop",score:"film score"};const lab=g=>LABEL[g]||g;
+const res=document.getElementById("res"),status=document.getElementById("status");
+if(location.hash.startsWith("#selftest"))document.write('<script src="hold.js"><\/script>');   // test hook: keeps the load event waiting until the run finishes
+window.addEventListener("error",e=>{console.log("PAGEERROR "+e.message);status.textContent="error: "+e.message});window.addEventListener("unhandledrejection",e=>{console.log("PAGEREJECT "+(e.reason&&e.reason.stack||e.reason));status.textContent="error: "+e.reason});
+// ---------------------------------------------------------------- assets: ONNX model, mel filterbank, colormap
+ort.env.wasm.wasmPaths="https://cdn.jsdelivr.net/npm/onnxruntime-web@1.20.1/dist/";
+const ready=(async()=>{
+  const [sess,fbBuf,magma]=await Promise.all([
+    ort.InferenceSession.create("cnn_v4_w48.onnx",{executionProviders:["wasm"]}),
+    fetch("fbank_128x1025.f32").then(r=>r.arrayBuffer()),fetch("magma.json").then(r=>r.json())]);
+  const fb=new Float32Array(fbBuf),NB=NFFT/2+1,bands=[];
+  for(let m=0;m<NMELS;m++){let s=-1,e=-1;for(let k=0;k<NB;k++)if(fb[m*NB+k]!==0){if(s<0)s=k;e=k}bands.push([s,e+1])}
+  status.textContent="Model ready. Drop a file or type a song name.";
+  return {sess,fb,bands,magma};
+})().catch(e=>{status.innerHTML='<span class="err">Could not load the model: '+e+'</span>';throw e});
+// ---------------------------------------------------------------- log-mel spectrogram (mirrors torchaudio.MelSpectrogram + log)
+const twr=new Float32Array(NFFT/2),twi=new Float32Array(NFFT/2),win=new Float32Array(NFFT),rev=new Uint16Array(NFFT);
+for(let i=0;i<NFFT/2;i++){twr[i]=Math.cos(-2*Math.PI*i/NFFT);twi[i]=Math.sin(-2*Math.PI*i/NFFT)}
+for(let i=0;i<NFFT;i++)win[i]=0.5-0.5*Math.cos(2*Math.PI*i/NFFT);          // periodic Hann
+for(let i=0,b=Math.log2(NFFT);i<NFFT;i++){let r=0;for(let j=0;j<b;j++)r=(r<<1)|((i>>j)&1);rev[i]=r}
+function fft(re,im){                                                        // in-place radix-2
+  for(let i=0;i<NFFT;i++){const j=rev[i];if(j>i){let t=re[i];re[i]=re[j];re[j]=t;t=im[i];im[i]=im[j];im[j]=t}}
+  for(let s=2;s<=NFFT;s<<=1){const h=s>>1,step=NFFT/s;
+    for(let k=0;k<NFFT;k+=s)for(let j=0,t=0;j<h;j++,t+=step){const wr=twr[t],wi=twi[t],a=k+j,b=a+h;
+      const xr=re[b]*wr-im[b]*wi,xi=re[b]*wi+im[b]*wr;re[b]=re[a]-xr;im[b]=im[a]-xi;re[a]+=xr;im[a]+=xi}}}
+function logMel(a,A){                                                       // a: Float32Array at 22050 Hz -> Float32Array [NMELS*T], T frames
+  const P=NFFT/2,n=a.length,x=new Float32Array(n+2*P);
+  x.set(a,P);for(let i=0;i<P;i++){x[P-1-i]=a[i+1];x[P+n+i]=a[n-2-i]}         // reflect padding (center=True)
+  const T=1+Math.floor((x.length-NFFT)/HOP),NB=P+1,out=new Float32Array(NMELS*T),re=new Float32Array(NFFT),im=new Float32Array(NFFT),pw=new Float32Array(NB);
+  for(let t=0;t<T;t++){const o=t*HOP;for(let i=0;i<NFFT;i++){re[i]=x[o+i]*win[i];im[i]=0}
+    fft(re,im);for(let k=0;k<NB;k++)pw[k]=re[k]*re[k]+im[k]*im[k];
+    for(let m=0;m<NMELS;m++){const [s,e]=A.bands[m];let v=0;for(let k=s;k<e;k++)v+=A.fb[m*NB+k]*pw[k];out[m*T+t]=Math.log(v+1e-6)}}
+  return {mel:out,T};
+}
+// ---------------------------------------------------------------- audio decoding: first 30 s, mono, 22050 Hz (the browser resamples)
+async function decode(buf){
+  const ctx=new OfflineAudioContext(1,SR*CLIP,SR);const ab=await ctx.decodeAudioData(buf);
+  const out=new Float32Array(SR*CLIP),n=Math.min(ab.length,SR*CLIP);
+  for(let c=0;c<ab.numberOfChannels;c++){const d=ab.getChannelData(c);for(let i=0;i<n;i++)out[i]+=d[i]/ab.numberOfChannels}
+  return out;
+}
+function wavUrl(a){const b=new ArrayBuffer(44+a.length*2),v=new DataView(b);const s=(o,t)=>{for(let i=0;i<t.length;i++)v.setUint8(o+i,t.charCodeAt(i))};
+  s(0,"RIFF");v.setUint32(4,36+a.length*2,true);s(8,"WAVEfmt ");v.setUint32(16,16,true);v.setUint16(20,1,true);v.setUint16(22,1,true);v.setUint32(24,SR,true);v.setUint32(28,SR*2,true);v.setUint16(32,2,true);v.setUint16(34,16,true);s(36,"data");v.setUint32(40,a.length*2,true);
+  for(let i=0;i<a.length;i++)v.setInt16(44+i*2,Math.max(-1,Math.min(1,a[i]))*32767,true);return URL.createObjectURL(new Blob([b],{type:"audio/wav"}))}
+// ---------------------------------------------------------------- model
+const softmax=l=>{const m=Math.max(...l),e=l.map(v=>Math.exp(v-m)),s=e.reduce((x,y)=>x+y);return e.map(v=>v/s)};
+async function predict(mel,T,A){
+  const full=await A.sess.run({mel:new ort.Tensor("float32",mel,[1,1,NMELS,T])});
+  const p=softmax(Array.from(full.logits.data));
+  const w=Math.floor(WIN*SR/HOP),nw=Math.floor((T-w)/w)+1,wd=new Float32Array(nw*NMELS*w);
+  for(let i=0;i<nw;i++)for(let m=0;m<NMELS;m++)for(let t=0;t<w;t++)wd[(i*NMELS+m)*w+t]=mel[m*T+i*w+t];
+  const wr=await A.sess.run({mel:new ort.Tensor("float32",wd,[nw,1,NMELS,w])}),pw=[];
+  for(let i=0;i<nw;i++)pw.push(softmax(Array.from(wr.logits.data.slice(i*GENRES.length,(i+1)*GENRES.length))));
+  return {p,pw};
+}
+function drawSpec(mel,T,pw,A){
+  const c=document.createElement("canvas");c.className="spec";c.width=T*2;c.height=NMELS*2;const g=c.getContext("2d"),img=g.createImageData(T,NMELS);
+  let lo=Infinity,hi=-Infinity;for(const v of mel){if(v<lo)lo=v;if(v>hi)hi=v}
+  for(let m=0;m<NMELS;m++)for(let t=0;t<T;t++){const v=Math.round((mel[m*T+t]-lo)/(hi-lo)*255),[r,gg,b]=A.magma[v],o=((NMELS-1-m)*T+t)*4;img.data[o]=r;img.data[o+1]=gg;img.data[o+2]=b;img.data[o+3]=255}
+  const tmp=document.createElement("canvas");tmp.width=T;tmp.height=NMELS;tmp.getContext("2d").putImageData(img,0,0);
+  g.imageSmoothingEnabled=false;g.drawImage(tmp,0,0,c.width,c.height);
+  const w=Math.floor(WIN*SR/HOP)*2;g.font="bold 20px -apple-system,Helvetica,Arial";g.textAlign="center";g.fillStyle="#fff";g.strokeStyle="rgba(255,255,255,.5)";g.lineWidth=1;
+  pw.forEach((row,i)=>{const top=row.indexOf(Math.max(...row));g.fillText(lab(GENRES[top]),i*w+w/2,30);g.beginPath();g.moveTo(i*w,0);g.lineTo(i*w,c.height);g.stroke()});
+  return c;
+}
+// ---------------------------------------------------------------- Deezer (JSONP for search; previews allow CORS)
+function jsonp(url){return new Promise((ok,bad)=>{const cb="cb"+Math.random().toString(36).slice(2);window[cb]=d=>{delete window[cb];s.remove();ok(d)};
+  const s=document.createElement("script");s.src=url+"&output=jsonp&callback="+cb;s.onerror=()=>bad("Deezer search failed");document.head.appendChild(s)})}
+async function deezer(q){const d=await jsonp("https://api.deezer.com/search?limit=1&q="+encodeURIComponent(q));return d.data&&d.data[0]}
+// ---------------------------------------------------------------- UI
+const drop=document.getElementById('drop'),file=document.getElementById('file');
+drop.onclick=()=>file.click();file.onchange=()=>file.files[0]&&fromFile(file.files[0]);
+drop.ondragover=e=>{e.preventDefault();drop.classList.add('over')};drop.ondragleave=()=>drop.classList.remove('over');
+drop.ondrop=e=>{e.preventDefault();drop.classList.remove('over');e.dataTransfer.files[0]&&fromFile(e.dataTransfer.files[0])};
+document.getElementById('go').onclick=()=>{const q=document.getElementById('q').value.trim();if(q)fromSearch(q)};
+document.getElementById('q').onkeydown=e=>{if(e.key==='Enter')document.getElementById('go').click()};
+const say=t=>res.innerHTML='<div class="sub">'+t+'</div>';
+async function fromFile(f){try{say("Decoding…");const buf=await f.arrayBuffer();
+  const q=f.name.replace(/\.[^.]+$/,"").replace(/[\-_]+/g," ").replace(/\b(official|video|audio|lyrics|hd|4k|\d{3,4}p)\b/gi," ").trim();
+  const cover=deezer(q).then(t=>t&&t.album&&(t.album.cover_big||t.album.cover_medium)).catch(()=>null);
+  await run(buf,f.name.replace(/\.[^.]+$/,""),await cover);}catch(e){res.innerHTML='<div class="err">'+e+'</div>'}}
+async function fromSearch(q){try{say("Searching Deezer…");const t=await deezer(q);if(!t)throw"no Deezer result for \""+q+"\"";
+  say("Fetching preview…");const buf=await fetch(t.preview).then(r=>r.arrayBuffer());
+  await run(buf,t.artist.name+" – "+t.title,t.album.cover_big||t.album.cover_medium);}catch(e){res.innerHTML='<div class="err">'+e+'</div>'}}
+async function run(buf,label,cover){
+  const A=await ready;say("Decoding…");const a=await decode(buf);
+  say("Computing the spectrogram…");await new Promise(r=>setTimeout(r,20));const {mel,T}=logMel(a,A);
+  say("Listening…");const {p,pw}=await predict(mel,T,A);
+  const probs=GENRES.map((g,i)=>[lab(g),p[i]]).sort((x,y)=>y[1]-x[1]),top=probs[0];
+  let h='';probs.forEach(([g,v],i)=>{h+='<div class="bar'+(i==0?' top':'')+'"><span class="n">'+g+'</span><div class="b" style="width:'+(v*560)+'px;max-width:60%"></div><span class="v">'+Math.round(v*100)+' %</span></div>'});
+  const cv=cover?'<img class="cv" src="'+cover+'">':'<div class="cv"></div>';
+  res.innerHTML='<div class="np">'+cv+'<div class="info"><div class="t"></div><div class="g">sounds like <b>'+top[0]+'</b> · '+Math.round(top[1]*100)+' % · 30 s clip</div>'+
+   '<div class="pl"><button id="pp">▶</button><div class="tr" id="tr"><i id="pr"></i></div><span class="tm" id="tm">0:00 / 0:30</span></div></div></div>'+h;
+  res.querySelector(".t").textContent=label;
+  res.appendChild(drawSpec(mel,T,pw,A));const cap=document.createElement("div");cap.className="cap";cap.textContent="Log-mel spectrogram of the 30 s that was analysed (128 mel bands × 646 frames); the label on each 5 s window is the CNN's guess for that window alone.";res.appendChild(cap);
+  const au=new Audio(wavUrl(a)),pp=document.getElementById('pp'),pr=document.getElementById('pr'),tm=document.getElementById('tm'),tr=document.getElementById('tr');
+  const fmt=t=>'0:'+String(Math.floor(t)).padStart(2,'0');
+  pp.onclick=()=>{au.paused?au.play():au.pause()};au.onplay=()=>pp.textContent='❚❚';au.onpause=()=>pp.textContent='▶';
+  au.ontimeupdate=()=>{pr.style.width=(au.currentTime/(au.duration||30)*100)+'%';tm.textContent=fmt(au.currentTime)+' / '+fmt(au.duration||30)};
+  au.onended=()=>{pp.textContent='▶';pr.style.width='0%'};tr.onclick=e=>{au.currentTime=(e.offsetX/tr.clientWidth)*(au.duration||30)};
+  if(window._au){window._au.pause()}window._au=au;
+  window._last={label,probs,pw,melStats:[Math.min(...mel),Math.max(...mel)]};
+  if(location.hash.startsWith("#selftest")){const pre=document.createElement("pre");pre.id="selftest";pre.textContent=JSON.stringify({p:Array.from(p),pw,mel:Array.from(mel.slice(0,8)),T});document.body.appendChild(pre);fetch("/done")}
+}
+if(location.hash.startsWith("#selftest-search:"))ready.then(()=>fromSearch(decodeURIComponent(location.hash.slice(17))));
+if(location.hash==="#selftest")ready.then(async()=>{const buf=await fetch("selftest.wav").then(r=>r.arrayBuffer());await run(buf,"selftest",null)});
+</script></body></html>

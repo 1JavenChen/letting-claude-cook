@@ -1,0 +1,33 @@
+device: mps
+params: 0.58M
+ep  1 | loss 3.984/4.825 | count acc 0.418/0.209 | male 0.003 female 0.301 | 152s
+ep  2 | loss 3.252/4.478 | count acc 0.542/0.311 | male 0.261 female 0.353 | 155s
+ep  3 | loss 2.929/3.269 | count acc 0.601/0.561 | male 0.529 female 0.593 | 161s
+ep  4 | loss 2.761/2.664 | count acc 0.635/0.674 | male 0.705 female 0.651 | 163s
+ep  5 | loss 2.662/2.483 | count acc 0.649/0.711 | male 0.744 female 0.673 | 164s
+ep  6 | loss 2.592/2.379 | count acc 0.665/0.729 | male 0.765 female 0.703 | 165s
+ep  7 | loss 2.520/2.277 | count acc 0.682/0.734 | male 0.789 female 0.719 | 165s
+ep  8 | loss 2.470/2.245 | count acc 0.691/0.744 | male 0.794 female 0.729 | 166s
+ep  9 | loss 2.418/2.203 | count acc 0.700/0.746 | male 0.801 female 0.733 | 166s
+ep 10 | loss 2.370/2.166 | count acc 0.710/0.746 | male 0.813 female 0.737 | 167s
+ep 11 | loss 2.327/2.130 | count acc 0.720/0.754 | male 0.812 female 0.744 | 167s
+ep 12 | loss 2.288/2.095 | count acc 0.727/0.763 | male 0.822 female 0.751 | 168s
+ep 13 | loss 2.262/2.071 | count acc 0.733/0.766 | male 0.827 female 0.756 | 168s
+ep 14 | loss 2.233/2.049 | count acc 0.739/0.763 | male 0.825 female 0.759 | 169s
+ep 15 | loss 2.208/2.042 | count acc 0.741/0.766 | male 0.829 female 0.761 | 169s
+ep 16 | loss 2.162/2.006 | count acc 0.754/0.780 | male 0.837 female 0.765 | 169s
+ep 17 | loss 2.147/1.993 | count acc 0.753/0.781 | male 0.837 female 0.767 | 170s
+ep 18 | loss 2.105/1.968 | count acc 0.763/0.797 | male 0.845 female 0.779 | 169s
+ep 19 | loss 2.075/1.964 | count acc 0.768/0.799 | male 0.841 female 0.777 | 167s
+ep 20 | loss 2.035/1.949 | count acc 0.777/0.797 | male 0.844 female 0.775 | 170s
+ep 21 | loss 1.999/1.936 | count acc 0.791/0.798 | male 0.843 female 0.783 | 167s
+ep 22 | loss 1.963/1.927 | count acc 0.800/0.805 | male 0.848 female 0.778 | 166s
+ep 23 | loss 1.933/1.922 | count acc 0.800/0.808 | male 0.848 female 0.782 | 861s
+ep 24 | loss 1.886/1.924 | count acc 0.811/0.803 | male 0.840 female 0.787 | 144s
+ep 25 | loss 1.859/1.913 | count acc 0.816/0.809 | male 0.840 female 0.785 | 149s
+ep 26 | loss 1.837/1.905 | count acc 0.827/0.805 | male 0.847 female 0.787 | 153s
+ep 27 | loss 1.809/1.905 | count acc 0.829/0.804 | male 0.846 female 0.784 | 159s
+ep 28 | loss 1.787/1.907 | count acc 0.839/0.807 | male 0.843 female 0.784 | 161s
+ep 29 | loss 1.782/1.909 | count acc 0.841/0.806 | male 0.843 female 0.781 | 163s
+ep 30 | loss 1.776/1.911 | count acc 0.845/0.804 | male 0.843 female 0.785 | 163s
+best val count accuracy 0.809; saved models/cnn_v4.pt

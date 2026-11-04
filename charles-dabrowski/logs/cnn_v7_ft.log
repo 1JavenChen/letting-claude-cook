@@ -1,0 +1,13 @@
+device: mps
+feature: mel, input shape (1, 64, 401)
+initialised from models/cnn_v4.pt
+params: 0.58M
+ep  1 | loss 2.967/2.719 | count acc 0.522/0.565 | male 0.657 female 0.752 | 374s
+ep  2 | loss 2.546/2.540 | count acc 0.593/0.602 | male 0.701 female 0.757 | 470s
+ep  3 | loss 2.466/2.507 | count acc 0.609/0.611 | male 0.700 female 0.761 | 348s
+ep  4 | loss 2.394/2.488 | count acc 0.624/0.613 | male 0.702 female 0.763 | 331s
+ep  5 | loss 2.346/2.469 | count acc 0.632/0.619 | male 0.703 female 0.767 | 336s
+ep  6 | loss 2.291/2.465 | count acc 0.642/0.622 | male 0.705 female 0.772 | 331s
+ep  7 | loss 2.248/2.462 | count acc 0.652/0.621 | male 0.706 female 0.773 | 334s
+ep  8 | loss 2.227/2.458 | count acc 0.655/0.626 | male 0.707 female 0.772 | 329s
+best val count accuracy 0.626; saved models/cnn_v7_ft.pt

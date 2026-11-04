@@ -1,0 +1,60 @@
+=== START Tue Oct  6 13:08:57 EDT 2026
+device: mps
+computing stft features for train (20000 clips)...
+computing stft features for val (1500 clips)...
+feature: stft, input shape (1, 128, 401)
+params: 0.58M
+ep  1 | loss 4.148/4.810 | count acc 0.360/0.227 | male 0.245 female 0.301 | 260s
+ep  2 | loss 3.553/4.353 | count acc 0.472/0.373 | male 0.494 female 0.329 | 7353s
+ep  3 | loss 3.182/3.415 | count acc 0.546/0.547 | male 0.595 female 0.571 | 298s
+ep  4 | loss 2.915/2.863 | count acc 0.594/0.629 | male 0.695 female 0.653 | 345s
+ep  5 | loss 2.756/2.609 | count acc 0.628/0.663 | male 0.731 female 0.672 | 357s
+ep  6 | loss 2.662/2.520 | count acc 0.647/0.681 | male 0.727 female 0.686 | 361s
+ep  7 | loss 2.606/2.397 | count acc 0.660/0.699 | male 0.762 female 0.719 | 396s
+ep  8 | loss 2.555/2.349 | count acc 0.666/0.705 | male 0.777 female 0.733 | 401s
+ep  9 | loss 2.503/2.287 | count acc 0.683/0.728 | male 0.788 female 0.738 | 401s
+ep 10 | loss 2.460/2.240 | count acc 0.691/0.729 | male 0.798 female 0.744 | 395s
+ep 11 | loss 2.410/2.203 | count acc 0.699/0.743 | male 0.802 female 0.751 | 370s
+ep 12 | loss 2.387/2.165 | count acc 0.706/0.758 | male 0.812 female 0.750 | 342s
+ep 13 | loss 2.362/2.140 | count acc 0.712/0.762 | male 0.811 female 0.752 | 320s
+ep 14 | loss 2.339/2.123 | count acc 0.723/0.761 | male 0.813 female 0.755 | 328s
+ep 15 | loss 2.302/2.110 | count acc 0.727/0.761 | male 0.817 female 0.757 | 333s
+ep 16 | loss 2.272/2.089 | count acc 0.731/0.763 | male 0.821 female 0.756 | 325s
+ep 17 | loss 2.254/2.068 | count acc 0.732/0.769 | male 0.822 female 0.760 | 324s
+ep 18 | loss 2.225/2.051 | count acc 0.740/0.775 | male 0.823 female 0.760 | 333s
+ep 19 | loss 2.190/2.042 | count acc 0.747/0.783 | male 0.825 female 0.763 | 332s
+ep 20 | loss 2.160/2.029 | count acc 0.758/0.789 | male 0.821 female 0.761 | 312s
+ep 21 | loss 2.126/2.008 | count acc 0.767/0.789 | male 0.835 female 0.761 | 321s
+ep 22 | loss 2.101/2.006 | count acc 0.771/0.794 | male 0.828 female 0.761 | 328s
+ep 23 | loss 2.077/1.987 | count acc 0.770/0.799 | male 0.836 female 0.769 | 320s
+ep 24 | loss 2.031/1.991 | count acc 0.787/0.800 | male 0.831 female 0.765 | 309s
+ep 25 | loss 2.002/1.988 | count acc 0.790/0.802 | male 0.832 female 0.763 | 308s
+ep 26 | loss 1.985/1.982 | count acc 0.796/0.801 | male 0.828 female 0.761 | 307s
+ep 27 | loss 1.967/1.974 | count acc 0.801/0.802 | male 0.829 female 0.767 | 307s
+ep 28 | loss 1.947/1.974 | count acc 0.802/0.803 | male 0.829 female 0.766 | 330s
+ep 29 | loss 1.940/1.981 | count acc 0.805/0.800 | male 0.827 female 0.760 | 319s
+ep 30 | loss 1.937/1.982 | count acc 0.812/0.801 | male 0.826 female 0.761 | 825s
+best val count accuracy 0.803; saved models/cnn_v5_stft.pt
+=== EVAL v3 test Tue Oct  6 18:02:02 EDT 2026
+computing stft features for test (2000 clips)...
+test set: 2000 clips
+  n_speakers   acc 0.792   MAE 0.234   within±1 0.985
+  n_male       acc 0.752   MAE 0.262   within±1 0.987
+  n_female     acc 0.781   MAE 0.236   within±1 0.985
+  count acc by #speakers: {0: '1.00', 1: '0.93', 2: '0.74', 3: '0.53', 4: '0.74'}
+  count acc by SNR:       {'00-05 dB': '0.68', '05-10 dB': '0.72', '10-15 dB': '0.76', '15-20 dB': '0.77', 'noise only': '1.00'}
+  count acc by noise:     {'babble': '0.72', 'pink': '0.82', 'white': '0.83'}
+  count acc by reverb:    {'dry': '0.84', 'reverb': '0.72'}
+saved results/cnn_v5_stft/metrics.json results/cnn_v5_stft/predictions.csv results/cnn_v5_stft/summary.png
+=== EVAL v2 test Tue Oct  6 18:02:27 EDT 2026
+computing stft features for test (1000 clips)...
+test set: 1000 clips
+  n_speakers   acc 0.814   MAE 0.215   within±1 0.984
+  n_male       acc 0.808   MAE 0.202   within±1 0.991
+  n_female     acc 0.805   MAE 0.207   within±1 0.991
+  count acc by #speakers: {0: '1.00', 1: '0.95', 2: '0.79', 3: '0.55', 4: '0.78'}
+  count acc by SNR:       {'00-05 dB': '0.63', '05-10 dB': '0.82', '10-15 dB': '0.81', '15-20 dB': '0.80', 'noise only': '1.00'}
+  count acc by noise:     {'babble': '0.74', 'pink': '0.85', 'white': '0.84'}
+  count acc by reverb:    {'dry': '0.85', 'reverb': '0.76'}
+saved results/cnn_v5_stft_on_v2test/metrics.json results/cnn_v5_stft_on_v2test/predictions.csv results/cnn_v5_stft_on_v2test/summary.png
+=== DONE OK Tue Oct  6 18:07:21 EDT 2026

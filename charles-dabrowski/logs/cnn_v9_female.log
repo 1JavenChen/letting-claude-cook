@@ -1,0 +1,36 @@
+device: mps
+computing mel features for train (20000 clips)...
+computing mel features for val (1500 clips)...
+feature: mel, input shape (1, 64, 401)
+params: 0.58M
+ep  1 | loss 3.430/5.002 | count acc 0.423/0.199 | male 0.000 female 0.204 | 593s
+ep  2 | loss 2.482/3.424 | count acc 0.572/0.418 | male 1.000 female 0.487 | 9734s
+ep  3 | loss 2.176/2.160 | count acc 0.624/0.634 | male 1.000 female 0.639 | 148s
+ep  4 | loss 2.010/1.859 | count acc 0.661/0.715 | male 1.000 female 0.723 | 183s
+ep  5 | loss 1.934/1.740 | count acc 0.684/0.763 | male 1.000 female 0.765 | 191s
+ep  6 | loss 1.876/1.700 | count acc 0.701/0.767 | male 1.000 female 0.767 | 215s
+ep  7 | loss 1.846/1.656 | count acc 0.709/0.777 | male 1.000 female 0.778 | 210s
+ep  8 | loss 1.804/1.631 | count acc 0.723/0.782 | male 1.000 female 0.781 | 220s
+ep  9 | loss 1.772/1.614 | count acc 0.730/0.784 | male 1.000 female 0.782 | 238s
+ep 10 | loss 1.737/1.589 | count acc 0.741/0.790 | male 1.000 female 0.792 | 237s
+ep 11 | loss 1.720/1.569 | count acc 0.748/0.795 | male 1.000 female 0.791 | 227s
+ep 12 | loss 1.701/1.555 | count acc 0.748/0.803 | male 1.000 female 0.797 | 207s
+ep 13 | loss 1.663/1.552 | count acc 0.762/0.799 | male 1.000 female 0.799 | 204s
+ep 14 | loss 1.654/1.524 | count acc 0.764/0.807 | male 1.000 female 0.806 | 201s
+ep 15 | loss 1.623/1.519 | count acc 0.775/0.807 | male 1.000 female 0.805 | 193s
+ep 16 | loss 1.602/1.511 | count acc 0.781/0.806 | male 1.000 female 0.808 | 191s
+ep 17 | loss 1.577/1.496 | count acc 0.788/0.809 | male 1.000 female 0.809 | 189s
+ep 18 | loss 1.553/1.481 | count acc 0.793/0.812 | male 1.000 female 0.810 | 177s
+ep 19 | loss 1.521/1.484 | count acc 0.802/0.811 | male 1.000 female 0.811 | 153s
+ep 20 | loss 1.501/1.468 | count acc 0.811/0.815 | male 1.000 female 0.813 | 153s
+ep 21 | loss 1.462/1.467 | count acc 0.825/0.814 | male 1.000 female 0.811 | 153s
+ep 22 | loss 1.441/1.458 | count acc 0.830/0.820 | male 1.000 female 0.821 | 158s
+ep 23 | loss 1.403/1.452 | count acc 0.844/0.823 | male 1.000 female 0.821 | 167s
+ep 24 | loss 1.369/1.452 | count acc 0.854/0.821 | male 1.000 female 0.818 | 170s
+ep 25 | loss 1.344/1.448 | count acc 0.864/0.816 | male 1.000 female 0.817 | 167s
+ep 26 | loss 1.318/1.448 | count acc 0.867/0.823 | male 1.000 female 0.822 | 154s
+ep 27 | loss 1.286/1.452 | count acc 0.883/0.818 | male 1.000 female 0.817 | 146s
+ep 28 | loss 1.273/1.454 | count acc 0.888/0.820 | male 1.000 female 0.820 | 154s
+ep 29 | loss 1.271/1.455 | count acc 0.887/0.819 | male 1.000 female 0.818 | 154s
+ep 30 | loss 1.271/1.454 | count acc 0.886/0.819 | male 1.000 female 0.817 | 159s
+best val count accuracy 0.823; saved models/cnn_v9_female.pt

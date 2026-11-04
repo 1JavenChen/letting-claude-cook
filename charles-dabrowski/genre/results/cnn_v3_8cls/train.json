@@ -1,0 +1,57 @@
+{
+ "args": {
+  "name": "cnn_v3_8cls",
+  "init": "cnn_v2",
+  "epochs": 10,
+  "lr": 0.0003,
+  "note": "stopped during epoch 10 (laptop on battery); best.pt = epoch 9"
+ },
+ "best_val_acc": 0.786,
+ "history": [
+  {
+   "epoch": 1,
+   "loss": 0.989,
+   "val_acc": 0.699
+  },
+  {
+   "epoch": 2,
+   "loss": 0.958,
+   "val_acc": 0.735
+  },
+  {
+   "epoch": 3,
+   "loss": 0.943,
+   "val_acc": 0.764
+  },
+  {
+   "epoch": 4,
+   "loss": 0.925,
+   "val_acc": 0.77
+  },
+  {
+   "epoch": 5,
+   "loss": 0.909,
+   "val_acc": 0.76
+  },
+  {
+   "epoch": 6,
+   "loss": 0.895,
+   "val_acc": 0.769
+  },
+  {
+   "epoch": 7,
+   "loss": 0.872,
+   "val_acc": 0.776
+  },
+  {
+   "epoch": 8,
+   "loss": 0.85,
+   "val_acc": 0.781
+  },
+  {
+   "epoch": 9,
+   "loss": 0.838,
+   "val_acc": 0.786
+  }
+ ]
+}

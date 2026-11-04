@@ -1,0 +1,49 @@
+=== laion/larger_clap_general
+19:29:33 0/1204 running acc 1.000
+19:29:45 100/1204 running acc 0.782
+19:29:58 200/1204 running acc 0.776
+19:30:10 300/1204 running acc 0.777
+19:30:22 400/1204 running acc 0.783
+19:30:34 500/1204 running acc 0.794
+19:30:46 600/1204 running acc 0.779
+19:30:58 700/1204 running acc 0.749
+19:31:09 800/1204 running acc 0.723
+19:31:22 900/1204 running acc 0.709
+19:31:33 1000/1204 running acc 0.716
+19:31:45 1100/1204 running acc 0.712
+19:31:57 1200/1204 running acc 0.696
+CLAP zero-shot test acc 0.694 macro F1 0.696
+  classical   f1 0.74
+  pop         f1 0.56
+  jazz        f1 0.79
+  hiphop      f1 0.86
+  rock        f1 0.64
+  electronic  f1 0.72
+  country     f1 0.67
+  score       f1 0.57
+CLAP EVAL DONE
+=== laion/clap-htsat-unfused
+19:32:03 0/1204 running acc 1.000
+19:32:12 100/1204 running acc 0.673
+19:32:21 200/1204 running acc 0.488
+19:32:30 300/1204 running acc 0.342
+19:32:38 400/1204 running acc 0.449
+19:32:47 500/1204 running acc 0.529
+19:32:56 600/1204 running acc 0.587
+19:33:05 700/1204 running acc 0.623
+19:33:14 800/1204 running acc 0.622
+19:33:23 900/1204 running acc 0.579
+19:33:31 1000/1204 running acc 0.583
+19:33:40 1100/1204 running acc 0.574
+19:33:49 1200/1204 running acc 0.560
+CLAP zero-shot test acc 0.559 macro F1 0.526
+  classical   f1 0.75
+  pop         f1 0.46
+  jazz        f1 0.72
+  hiphop      f1 0.79
+  rock        f1 0.58
+  electronic  f1 0.35
+  country     f1 0.07
+  score       f1 0.50
+CLAP EVAL DONE
+ALL CLAP DONE
