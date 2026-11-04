@@ -1,0 +1,23 @@
+{
+  "base_system": "You are a helpful AI assistant.",
+  "skill_levels": {
+    "beginner": "just starting to learn programming, currently taking a first programming course",
+    "hobbyist": "a hobbyist programmer who has been coding casually for about a year",
+    "professional": "a professional software engineer with about five years of industry experience",
+    "expert": "a staff-level software engineer with fifteen-plus years of experience maintaining large systems"
+  },
+  "channels": {
+    "system": {
+      "system_template": "You are a helpful AI assistant. The user is {level}.",
+      "message_template": "{task}"
+    },
+    "message": {
+      "system_template": "You are a helpful AI assistant.",
+      "message_template": "A bit about me: I am {level}.\n\n{task}"
+    }
+  },
+  "control": {
+    "system_template": "You are a helpful AI assistant.",
+    "message_template": "{task}"
+  }
+}

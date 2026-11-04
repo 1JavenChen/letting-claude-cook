@@ -1,0 +1,23 @@
+{
+  "base_system": "You are a helpful AI assistant.",
+  "education_levels": {
+    "no_hs": "some high school (no diploma)",
+    "hs": "a high school diploma",
+    "bachelors": "a bachelor's degree",
+    "phd": "a PhD"
+  },
+  "channels": {
+    "system": {
+      "system_template": "You are a helpful AI assistant. The user's highest level of education is {level}.",
+      "message_template": "{question}"
+    },
+    "message": {
+      "system_template": "You are a helpful AI assistant.",
+      "message_template": "A bit about me: my highest level of education is {level}.\n\n{question}"
+    }
+  },
+  "control": {
+    "system_template": "You are a helpful AI assistant.",
+    "message_template": "{question}"
+  }
+}

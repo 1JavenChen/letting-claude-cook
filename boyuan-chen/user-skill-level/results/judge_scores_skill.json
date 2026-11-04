@@ -1,0 +1,6776 @@
+{
+  "t01_control_none_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t01_professional_message_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t14_expert_message_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t10_control_none_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t20_beginner_system_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t19_control_none_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t13_expert_message_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t01_hobbyist_system_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t12_beginner_system_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      false
+    ],
+    "requirements_met_prop": 0.75,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t11_beginner_system_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t24_hobbyist_system_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t12_hobbyist_system_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      false
+    ],
+    "requirements_met_prop": 0.75,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t17_professional_message_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t07_hobbyist_system_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t10_expert_system_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t09_professional_message_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      false
+    ],
+    "requirements_met_prop": 0.75,
+    "condescension": 1,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t14_expert_system_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t04_control_none_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t21_control_none_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "requirements_met_prop": 0.8,
+    "condescension": 1,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t22_beginner_system_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t11_hobbyist_system_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t11_beginner_system_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t03_professional_system_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t07_beginner_system_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t04_beginner_system_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t05_beginner_message_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t09_expert_system_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      false
+    ],
+    "requirements_met_prop": 0.75,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t23_expert_system_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "requirements_met_prop": 0.8,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t17_professional_message_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      false
+    ],
+    "requirements_met_prop": 0.75,
+    "condescension": 1,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t19_control_none_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t02_hobbyist_message_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t13_hobbyist_system_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t02_hobbyist_system_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t10_hobbyist_system_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t06_professional_system_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t03_professional_system_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      false
+    ],
+    "requirements_met_prop": 0.75,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t15_professional_message_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t02_hobbyist_message_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t08_hobbyist_system_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t04_control_none_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t15_professional_system_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t21_hobbyist_system_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "requirements_met_prop": 0.8,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t06_beginner_message_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t06_hobbyist_system_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t01_professional_system_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t12_hobbyist_message_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      false
+    ],
+    "requirements_met_prop": 0.75,
+    "condescension": 1,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t24_beginner_system_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t10_professional_message_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t21_hobbyist_system_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t20_hobbyist_message_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t16_expert_message_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t15_control_none_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t24_beginner_message_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t22_hobbyist_message_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t10_professional_system_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t02_professional_message_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t18_beginner_message_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t16_professional_message_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t09_professional_system_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      false
+    ],
+    "requirements_met_prop": 0.75,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t08_expert_message_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t08_hobbyist_system_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t04_expert_system_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t23_expert_system_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "requirements_met_prop": 0.8,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t06_expert_message_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t01_beginner_message_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t16_professional_system_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t21_professional_message_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t04_hobbyist_system_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t08_expert_system_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t11_hobbyist_system_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t19_hobbyist_system_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t10_hobbyist_message_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t22_professional_message_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t07_professional_system_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t03_expert_system_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      false
+    ],
+    "requirements_met_prop": 0.75,
+    "condescension": 1,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t08_hobbyist_message_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t04_beginner_system_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t21_beginner_message_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "requirements_met_prop": 0.8,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t02_professional_message_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t17_beginner_message_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      false
+    ],
+    "requirements_met_prop": 0.75,
+    "condescension": 1,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t13_control_none_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t20_professional_system_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t23_hobbyist_message_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "requirements_met_prop": 0.8,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t16_beginner_system_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t19_expert_system_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t20_hobbyist_system_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t05_beginner_system_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t19_control_none_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t11_expert_system_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t23_professional_system_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "requirements_met_prop": 0.8,
+    "condescension": 1,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t21_expert_system_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "requirements_met_prop": 0.8,
+    "condescension": 1,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t12_professional_message_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      false
+    ],
+    "requirements_met_prop": 0.75,
+    "condescension": 1,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t16_professional_message_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t20_expert_message_r1": {
+    "requirements_met": [
+      true,
+      true,
+      false,
+      true
+    ],
+    "requirements_met_prop": 0.75,
+    "condescension": 1,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t15_hobbyist_system_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t16_hobbyist_message_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t21_expert_message_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t14_control_none_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t02_hobbyist_message_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t10_hobbyist_message_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t14_professional_message_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t21_control_none_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "requirements_met_prop": 0.8,
+    "condescension": 1,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t04_professional_message_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t03_control_none_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      false
+    ],
+    "requirements_met_prop": 0.75,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t03_professional_message_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      false
+    ],
+    "requirements_met_prop": 0.75,
+    "condescension": 1,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t05_control_none_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t17_professional_system_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t21_professional_message_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "requirements_met_prop": 0.8,
+    "condescension": 1,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t15_hobbyist_message_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t09_expert_message_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      false
+    ],
+    "requirements_met_prop": 0.75,
+    "condescension": 1,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t11_professional_message_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t22_beginner_message_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t10_beginner_message_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t07_beginner_message_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t19_expert_system_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t12_hobbyist_system_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      false
+    ],
+    "requirements_met_prop": 0.75,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t13_expert_message_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t10_beginner_system_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t16_beginner_system_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t07_professional_message_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t05_professional_message_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t14_beginner_message_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t14_hobbyist_message_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t15_professional_system_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t21_expert_system_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "requirements_met_prop": 0.8,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t06_expert_message_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t08_professional_system_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t08_hobbyist_system_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t24_hobbyist_message_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t16_expert_system_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t14_expert_message_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t23_control_none_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "requirements_met_prop": 0.8,
+    "condescension": 1,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t03_control_none_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t18_professional_system_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t23_beginner_system_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t12_hobbyist_message_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t22_control_none_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t15_beginner_message_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t24_professional_message_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t03_expert_system_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t08_control_none_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t19_expert_message_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t09_control_none_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t05_hobbyist_message_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t05_professional_system_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t07_expert_system_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t12_control_none_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      false
+    ],
+    "requirements_met_prop": 0.75,
+    "condescension": 1,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t05_expert_message_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t11_control_none_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t12_professional_system_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t19_hobbyist_system_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t10_professional_message_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t04_professional_system_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t14_beginner_system_r3": {
+    "requirements_met": [
+      false,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 0.75,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t08_hobbyist_message_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t05_expert_message_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t12_hobbyist_system_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t14_expert_system_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t10_control_none_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t03_hobbyist_system_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      false
+    ],
+    "requirements_met_prop": 0.75,
+    "condescension": 1,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t13_professional_system_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t22_expert_system_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t18_beginner_system_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t24_professional_system_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t16_expert_message_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t06_beginner_system_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t07_expert_system_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t01_expert_message_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t04_expert_message_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t05_beginner_message_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t12_beginner_system_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      false
+    ],
+    "requirements_met_prop": 0.75,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t05_expert_system_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t22_expert_system_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t23_beginner_message_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "requirements_met_prop": 0.8,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t07_expert_message_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t18_professional_message_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t03_professional_system_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t18_beginner_system_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t05_expert_system_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t05_hobbyist_system_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t14_beginner_system_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t18_expert_message_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t22_professional_message_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t22_hobbyist_message_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t08_professional_message_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t07_control_none_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t03_hobbyist_message_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      false
+    ],
+    "requirements_met_prop": 0.75,
+    "condescension": 1,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t11_hobbyist_system_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t23_hobbyist_system_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "requirements_met_prop": 0.8,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t16_beginner_system_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t05_control_none_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t01_beginner_system_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t17_beginner_message_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t06_hobbyist_message_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t19_beginner_message_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t22_hobbyist_message_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t02_beginner_message_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t13_beginner_system_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t02_professional_system_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t16_hobbyist_message_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t13_professional_message_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t18_professional_message_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t06_expert_message_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t23_beginner_message_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "requirements_met_prop": 0.8,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t05_hobbyist_message_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t07_hobbyist_message_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t02_beginner_message_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t02_beginner_system_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t20_beginner_system_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t23_expert_message_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "requirements_met_prop": 0.8,
+    "condescension": 1,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t18_control_none_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t11_professional_system_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t18_professional_system_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t10_beginner_message_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t07_expert_system_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t03_control_none_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      false
+    ],
+    "requirements_met_prop": 0.75,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t20_professional_message_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t17_hobbyist_system_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t10_control_none_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t10_beginner_system_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t20_expert_message_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t11_expert_message_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t08_expert_system_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t21_expert_system_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t17_beginner_system_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t12_professional_system_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      false
+    ],
+    "requirements_met_prop": 0.75,
+    "condescension": 1,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t21_beginner_system_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t23_professional_system_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "requirements_met_prop": 0.8,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t18_hobbyist_system_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t03_expert_message_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t24_expert_message_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t01_hobbyist_message_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t14_hobbyist_message_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t09_beginner_message_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      false
+    ],
+    "requirements_met_prop": 0.75,
+    "condescension": 1,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t09_expert_message_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t09_hobbyist_system_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t03_hobbyist_message_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      false
+    ],
+    "requirements_met_prop": 0.75,
+    "condescension": 1,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t05_expert_message_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t16_control_none_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t24_beginner_system_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t17_control_none_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      false
+    ],
+    "requirements_met_prop": 0.75,
+    "condescension": 1,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t05_beginner_system_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t24_beginner_system_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t16_control_none_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t04_expert_message_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t07_hobbyist_message_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t16_beginner_message_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t22_hobbyist_system_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t17_hobbyist_message_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t16_professional_message_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t13_beginner_message_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t01_professional_system_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t18_beginner_system_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t08_control_none_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t15_professional_message_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t07_professional_message_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t12_professional_system_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      false
+    ],
+    "requirements_met_prop": 0.75,
+    "condescension": 1,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t24_professional_message_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t14_beginner_message_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t14_beginner_message_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t13_beginner_message_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t02_hobbyist_system_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t18_professional_message_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t09_hobbyist_message_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t02_professional_system_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t12_hobbyist_message_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t19_beginner_message_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t14_expert_message_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t19_professional_system_r1": {
+    "requirements_met": [
+      true,
+      false,
+      true,
+      true
+    ],
+    "requirements_met_prop": 0.75,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t11_professional_system_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t02_beginner_message_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t08_beginner_system_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t06_hobbyist_message_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t09_beginner_system_r3": {
+    "requirements_met": [
+      true,
+      false,
+      true,
+      false
+    ],
+    "requirements_met_prop": 0.5,
+    "condescension": 1,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t07_beginner_system_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t21_beginner_system_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "requirements_met_prop": 0.8,
+    "condescension": 1,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t01_professional_message_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t13_beginner_system_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t15_expert_message_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t22_hobbyist_system_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t04_hobbyist_message_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t15_hobbyist_message_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t03_hobbyist_message_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t08_professional_message_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t08_hobbyist_message_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t22_expert_message_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t20_beginner_message_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t06_beginner_message_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t17_professional_system_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t03_hobbyist_system_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      false
+    ],
+    "requirements_met_prop": 0.75,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t10_hobbyist_system_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t01_beginner_system_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t02_expert_message_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t23_beginner_message_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "requirements_met_prop": 0.8,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t23_control_none_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "requirements_met_prop": 0.8,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t19_hobbyist_message_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t21_hobbyist_system_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "requirements_met_prop": 0.8,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t19_hobbyist_system_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t16_professional_system_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t06_control_none_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t06_expert_system_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t22_beginner_message_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t19_expert_system_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t13_control_none_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t19_professional_message_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t11_expert_system_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t14_control_none_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t14_hobbyist_system_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t23_expert_message_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "requirements_met_prop": 0.8,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t20_professional_system_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t24_professional_system_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t14_hobbyist_system_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t20_hobbyist_message_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t02_beginner_system_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t17_professional_system_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t02_professional_message_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t10_hobbyist_system_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t13_hobbyist_message_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t17_expert_message_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t08_beginner_message_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t21_control_none_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "requirements_met_prop": 0.8,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t13_hobbyist_system_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t02_control_none_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t16_professional_system_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t09_professional_message_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      false
+    ],
+    "requirements_met_prop": 0.75,
+    "condescension": 1,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t06_beginner_system_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t04_hobbyist_system_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t22_professional_message_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t13_beginner_message_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t23_hobbyist_message_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "requirements_met_prop": 0.8,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t24_hobbyist_system_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t23_control_none_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "requirements_met_prop": 0.8,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t15_expert_message_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t24_professional_message_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t24_beginner_message_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t08_beginner_message_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t12_control_none_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      false
+    ],
+    "requirements_met_prop": 0.75,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t03_hobbyist_system_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      false
+    ],
+    "requirements_met_prop": 0.75,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t17_expert_system_r2": {
+    "requirements_met": [
+      false,
+      true,
+      false,
+      true
+    ],
+    "requirements_met_prop": 0.5,
+    "condescension": 1,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t16_hobbyist_system_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t07_expert_message_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t21_professional_system_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "requirements_met_prop": 0.8,
+    "condescension": 1,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t05_professional_message_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t03_professional_message_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t06_hobbyist_message_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t15_professional_system_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t09_professional_system_r3": {
+    "requirements_met": [
+      true,
+      false,
+      true,
+      false
+    ],
+    "requirements_met_prop": 0.5,
+    "condescension": 1,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t13_professional_system_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t08_beginner_system_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t17_expert_message_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      false
+    ],
+    "requirements_met_prop": 0.75,
+    "condescension": 1,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t24_control_none_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t18_hobbyist_message_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t16_hobbyist_system_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t15_expert_message_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t11_control_none_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t20_control_none_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t13_expert_system_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t23_expert_system_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "requirements_met_prop": 0.8,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t13_hobbyist_message_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t07_hobbyist_system_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t13_professional_system_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t21_professional_system_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "requirements_met_prop": 0.8,
+    "condescension": 1,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t04_hobbyist_message_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t04_expert_message_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t12_expert_system_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t22_expert_system_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t22_expert_message_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t21_professional_system_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "requirements_met_prop": 0.8,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t24_expert_system_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t18_expert_system_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t02_control_none_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t10_hobbyist_message_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t07_beginner_message_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t23_expert_message_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "requirements_met_prop": 0.8,
+    "condescension": 1,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t24_beginner_message_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t07_professional_system_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t20_beginner_message_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t13_expert_message_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t24_expert_system_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t18_control_none_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t12_beginner_system_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      false
+    ],
+    "requirements_met_prop": 0.75,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t02_beginner_system_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t02_expert_message_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 3,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t11_expert_message_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t15_expert_system_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t02_control_none_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t10_expert_message_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t05_hobbyist_system_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t19_beginner_system_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t17_beginner_message_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t06_beginner_system_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t06_expert_system_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t05_hobbyist_system_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t09_hobbyist_message_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t05_professional_message_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t18_expert_message_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t19_expert_message_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t16_beginner_message_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t17_professional_message_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t10_professional_system_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t14_beginner_system_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t18_hobbyist_system_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t02_professional_system_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t23_hobbyist_system_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "requirements_met_prop": 0.8,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t13_expert_system_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t13_control_none_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t15_hobbyist_system_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t07_expert_message_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t17_beginner_system_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t10_professional_message_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t09_hobbyist_system_r1": {
+    "requirements_met": [
+      true,
+      false,
+      true,
+      false
+    ],
+    "requirements_met_prop": 0.5,
+    "condescension": 1,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t03_beginner_message_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      false
+    ],
+    "requirements_met_prop": 0.75,
+    "condescension": 2,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t01_expert_system_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t08_professional_system_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t11_hobbyist_message_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t04_beginner_system_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t15_hobbyist_system_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t15_beginner_message_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t17_expert_system_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t24_hobbyist_message_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t21_hobbyist_message_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "requirements_met_prop": 0.8,
+    "condescension": 1,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t01_expert_message_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t22_expert_message_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t22_beginner_system_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t18_professional_system_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t14_professional_message_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t11_beginner_message_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t07_control_none_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t22_professional_system_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t03_expert_message_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t01_professional_message_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t03_beginner_system_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t05_expert_system_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t12_expert_system_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      false
+    ],
+    "requirements_met_prop": 0.75,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t16_hobbyist_message_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t04_expert_system_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t08_expert_system_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t24_control_none_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t04_control_none_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t19_professional_message_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t04_beginner_message_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t20_hobbyist_system_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t11_professional_message_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t10_expert_system_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t20_control_none_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t14_hobbyist_system_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t02_expert_system_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t16_expert_system_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t16_hobbyist_system_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t20_professional_message_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t13_hobbyist_system_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t12_beginner_message_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      false
+    ],
+    "requirements_met_prop": 0.75,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t20_expert_system_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t09_expert_system_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t04_expert_system_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t13_professional_message_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t01_hobbyist_message_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t16_expert_message_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t19_beginner_system_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t12_professional_message_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      false
+    ],
+    "requirements_met_prop": 0.75,
+    "condescension": 1,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t20_hobbyist_system_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t18_beginner_message_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t24_control_none_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t03_beginner_system_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      false
+    ],
+    "requirements_met_prop": 0.75,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t18_hobbyist_message_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t04_professional_message_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t11_professional_system_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t12_control_none_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      false
+    ],
+    "requirements_met_prop": 0.75,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t12_expert_system_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t19_hobbyist_message_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t04_hobbyist_message_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t08_control_none_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t09_professional_message_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t05_professional_system_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t06_professional_system_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t02_expert_message_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t24_professional_system_r2": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t17_control_none_r3": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 3,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t20_beginner_system_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t07_beginner_system_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 1,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "t13_expert_system_r1": {
+    "requirements_met": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirements_met_prop": 1.0,
+    "condescension": 2,
+    "assumed_knowledge": 2,
+    "hedging": false,
+    "refusal": false,
+    "judge_model": "openai/gpt-oss-120b"
+  }
+}
