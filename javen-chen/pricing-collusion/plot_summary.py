@@ -1,7 +1,7 @@
 """Summary charts: collusion index of every AI game, grouped by condition.
 
 Example (from this folder):
-    ../.venv/bin/python plot_summary.py
+    ../../.venv/bin/python plot_summary.py
 
 Each dot is one game (index over its last 50 rounds: 0 = competitive,
 1 = cartel). The black bar is the group average. Gray lines join games in

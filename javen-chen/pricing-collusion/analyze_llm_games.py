@@ -1,7 +1,7 @@
 """Summarize a set of AI games: final prices, profits, and a chart.
 
 Example (from this folder):
-    ../.venv/bin/python analyze_llm_games.py "haiku_P1_a1_100r_seed*" --last 25
+    ../../.venv/bin/python analyze_llm_games.py "haiku_P1_a1_100r_seed*" --last 25
 
 For each game it averages the last `--last` rounds (the paper used the last
 50 of 300). The "collusion index" is (profit - Nash profit) / (cartel profit

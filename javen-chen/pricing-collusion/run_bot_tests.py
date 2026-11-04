@@ -1,7 +1,7 @@
 """Step 1 check: run rule-based bots through the market, print a summary,
 and chart prices over time against the Nash and cartel benchmarks.
 
-Run from this folder with:  ../.venv/bin/python run_bot_tests.py
+Run from this folder with:  ../../.venv/bin/python run_bot_tests.py
 """
 
 import os
