@@ -1,0 +1,12 @@
+opus_high_P1_a1_10r_seed11: Nash 1.47, cartel 1.92, ceiling 3.76 (all in base units; agents see x1)
+Round   1: firm1 2.40  firm2 2.40   ($0.054 so far, 580s)
+Round   2: firm1 2.90  firm2 2.90   ($0.121 so far, 596s)
+Round   3: firm1 2.00  firm2 2.00   ($0.223 so far, 628s)
+Round   4: firm1 1.80  firm2 1.80   ($0.378 so far, 914s)
+Round   5: firm1 1.90  firm2 1.93   ($0.538 so far, 2004s)
+Round   6: firm1 1.95  firm2 1.97   ($0.737 so far, 2045s)
+Round   7: firm1 1.90  firm2 2.00   ($0.883 so far, 2070s)
+Round   8: firm1 1.85  firm2 1.90   ($1.035 so far, 2097s)
+Round   9: firm1 1.88  firm2 1.85   ($1.204 so far, 2131s)
+Round  10: firm1 1.85  firm2 1.86   ($1.383 so far, 2170s)
+Done: 21 calls, $1.383 API-equivalent, 2170s. Saved to results/llm/opus_high_P1_a1_10r_seed11/

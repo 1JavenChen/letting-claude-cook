@@ -1,0 +1,13 @@
+finished: sonnet_low_P1_a1_200r_seed11 (Done: 222 calls, $17.781 API-equivalent, 2359s. Saved to results/llm/sonnet_low_P1_a1_200r_seed11/)
+finished: sonnet_high_P1_a1_200r_seed12 (Done: 270 calls, $20.646 API-equivalent, 34080s. Saved to results/llm/sonnet_high_P1_a1_200r_seed12/)
+finished: sonnet_low_P1_a1_200r_seed12 (Done: 228 calls, $22.041 API-equivalent, 34438s. Saved to results/llm/sonnet_low_P1_a1_200r_seed12/)
+finished: sonnet_high_P1_a1_200r_seed11 (Done: 286 calls, $29.558 API-equivalent, 35678s. Saved to results/llm/sonnet_high_P1_a1_200r_seed11/)
+finished: sonnet_low_P1_a1_200r_seed13 (Done: 228 calls, $19.074 API-equivalent, 2810s. Saved to results/llm/sonnet_low_P1_a1_200r_seed13/)
+finished: sonnet_high_P1_a1_200r_seed13 (Done: 280 calls, $25.499 API-equivalent, 35228s. Saved to results/llm/sonnet_high_P1_a1_200r_seed13/)
+finished: sonnet_high_P1_a1_200r_seed14 (Done: 296 calls, $24.687 API-equivalent, 3692s. Saved to results/llm/sonnet_high_P1_a1_200r_seed14/)
+finished: sonnet_low_P1_a1_200r_seed14 (Done: 228 calls, $18.793 API-equivalent, 2602s. Saved to results/llm/sonnet_low_P1_a1_200r_seed14/)
+finished: sonnet_high_P1_a1_200r_seed15 (RuntimeError: claude failed: API Error: Your computer went to sleep mid-response. The response above may be incomplete.)
+finished: sonnet_low_P1_a1_200r_seed15 (Done: 218 calls, $14.057 API-equivalent, 43765s. Saved to results/llm/sonnet_low_P1_a1_200r_seed15/)
+QUEUE DONE
+finished: sonnet_high_P1_a1_200r_seed15 (Done: 110 calls, $8.349 API-equivalent, 1287s. Saved to results/llm/sonnet_high_P1_a1_200r_seed15/)
+QUEUE DONE

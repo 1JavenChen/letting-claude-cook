@@ -1,5 +1,9 @@
 # Letting Claude Cook
 
+> **My project: [Do AI Pricing Agents Tacitly Collude?](pricing-collusion/README.md)**
+> An economics experiment in which AI agents set prices in a simulated market,
+> building on Fish, Gonczarowski & Shorrer (2024). *Javen Chen*
+
 Course materials for *Letting Claude Cook*, taught at Harvard.
 
 ## How to use this repo

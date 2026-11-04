@@ -1,0 +1,146 @@
+# CLAUDE.md
+
+## About me
+
+- First-year at Harvard in a seminar on AI agents doing science ("letting-claude-cook").
+- No coding experience. Explain what you do in plain language, and define econ/code terms the first time.
+- Interests: economics, AI, business.
+
+## Setup
+
+- This repo is my fork (`1JavenChen/letting-claude-cook`). The teacher's original is the "upstream" remote (`dfink/letting-claude-cook`).
+- Get the teacher's updates with `git pull upstream main`. Push my work to `origin`.
+
+## My project: Do AI pricing agents tacitly collude?
+
+- Inspired by Fish, Gonczarowski & Shorrer (2024), "Algorithmic Collusion by Large Language Models."
+- **Setup:** 2–3 AI agents each run a firm and set prices every round in a simulated market. Do they settle at high (cartel-like) prices without being told to collude?
+- **Benchmarks:** the competitive (Nash) price and the monopoly/cartel price.
+- **Plan:**
+  1. Build the market in Python and test it with simple rule-based bots.
+  2. Add AI agents.
+  3. Vary one thing at a time: instructions, communication, number of firms.
+- Later, this becomes a multi-agent team project.
+- Code goes in `pricing-collusion/`.
+- `pricing-collusion/README.md` is for recruiters and non-experts: keep the question, method, key chart, and findings current and jargon-free, cite the paper, and say plainly that AI agents wrote much of the code under my direction. Never report findings we haven't actually produced.
+- **How AI firms are run (decided 2026-10-07):** through `claude -p` on Javen's Harvard Claude login, with no API key (`pricing-collusion/llm_agent.py`). Each call runs in an empty temp folder with no tools/settings, so agents never see this project or the hypothesis. The fallback is an API key, with the teacher paying up to $100: set a $100 spend limit, keep the key in a git-ignored `.env`, and never print or commit it.
+- **Standard design for every new experiment (decided 2026-10-14):** at least **10 games per condition**, **200 rounds** per game, scored on the **last 50 rounds (151–200)**, matched seeds across conditions. 5 per condition proved too few. If the first 10 show a small, unclear gap, add games and combine (a ~0.2 effect needs ~28 per condition). Older experiments (5 per condition) stay as they are.
+- Before every real run: estimate the time and usage and get Javen's OK. `run_llm_game.py --budget` stops a game once its API-equivalent cost passes the limit.
+
+## Progress log
+
+(Update this section after each work session with what we did and what we found.)
+
+### 2026-09-30: Step 1, market + bot tests
+- Built the market in `pricing-collusion/` using the paper's logit demand (a=2, a0=0, mu=0.25, c=1, alpha=1, beta=100). 2 firms, 100 rounds.
+- Benchmarks match the paper: Nash price 1.47 (profit 22.3/firm/round), cartel price 1.92 (33.7). Collusion pays ~51% more.
+- Bot tests (chart: `pricing-collusion/results/bot_tests.png`):
+  - Nash vs Nash stays at 1.47. Cartel vs Cartel stays at 1.92. The market works.
+  - Two short-sighted best-responders starting at the cartel price fall to Nash within ~6 rounds.
+  - Two grim-trigger bots (punish any undercut forever) hold the cartel price all 100 rounds.
+  - A cheater that undercuts a grim-trigger bot in round 50 gains +7.4 once, then loses ~11.5/round; it ends 568 (17%) below staying loyal.
+- Takeaway: high prices survive only with a credible threat of punishment. Stage 2 asks whether AI agents discover that on their own.
+- Setup: Python virtual environment at repo root `.venv/` (git-ignored); `pricing-collusion/requirements.txt` lists matplotlib.
+- Still open: ask the teacher about API keys/credits before Stage 2.
+
+### 2026-10-07: README + comparison with the paper
+- README now opens with the course-description quote and an "About this assignment" section (FYS 54I), plus a "Who did what" table.
+- Added "How this compares to the paper": the market setup and both benchmarks match; the paper's main finding (GPT-4 agents reach above-competitive prices via reward-punishment, driven by price-war fears) is untested here until Stage 2.
+- Notes for Stage 2 from the paper: prompt wording strongly affects prices; they ran 300 rounds and measured the last 50.
+- Javen edits README wording directly on GitHub sometimes: always `git fetch` / pull before editing, and don't rewrite their wording in "The question".
+
+### 2026-10-07: Stage 2 started, AI agent + 5-round pilot
+- Built `llm_agent.py` (uses the paper's Appendix G prompt word for word: prefixes P1/P2, PLANS/INSIGHTS notes, last 100 rounds of data, price ceiling = U[1.5,2.5] x cartel price) and `run_llm_game.py`.
+- Pilot: Haiku vs Haiku, prompt P1, 5 rounds. Prices 2.00/2.00, 2.50/2.50, 2.20/1.50, 2.00/1.25, 1.75/1.60. Every answer parsed; no retries.
+- 10 calls, $0.24 API-equivalent (free on the Harvard plan), 4.5 minutes. Haiku's hidden "thinking" grew from ~900 to ~11,500 tokens per call by round 5, so calls get slower and costlier as the game goes on.
+- Too short to say anything about collusion. One firm credited its profit jump to "elastic demand" and missed that it had undercut its rival.
+- Open decisions: model choice, game length (paper: 300 rounds), whether to limit thinking.
+
+### 2026-10-07: First full AI game (Haiku, P1, alpha=1, 50 rounds, seed 2)
+- Prices started at $3.50, fell fast, and locked at **$1.48/$1.48 from round 33 to 50**, essentially the competitive (Nash) price of $1.47. Rounds 41–50 averaged $1.48 price and $22.59 profit per firm (Nash profit is 22.29; cartel is 33.75). That's **no collusion**, unlike the paper's GPT-4 (P1) and GPT-5.2 (avg $1.79).
+- 101 calls (1 retry), $3.07 API-equivalent, 57 minutes. Thinking settled around 3,500–4,000 tokens per call.
+- From the notes: firm 1 tried $1.49 in round 28, saw the rival at $1.47, and concluded the rival "will not voluntarily accept higher prices." Firm 2 blamed its round 6–7 profit collapse on "demand collapse" at $2+, but it had actually been undercut by firm 1 ($1.50 vs $2.10), so it learned the wrong lesson. It also noted that mutual $1.75 in round 5 paid $31.67, yet never tried to get back there.
+- Caveats: one game, only 50 rounds (the paper used 300 and measured 251–300), and the smallest model.
+
+### 2026-10-07: Five 100-round Haiku games (P1, alpha=1, seeds 3–7, run in parallel)
+- Averages over the last 25 rounds: game 3 $1.53, game 4 $1.74, game 5 $1.55, game 6 $1.65, game 7 $1.55. **Mean $1.60, profit $27.06/firm, collusion index 0.42** (0 = Nash, 1 = cartel). Last 50 rounds gives nearly the same (0.42). Compare the paper's GPT-5.2: $1.79 average.
+- All 5 games ended above Nash, but most sat just above it ($1.53–1.55). Chart: `pricing-collusion/results/llm/haiku_P1_a1_100r_seedALL.png`. Script: `analyze_llm_games.py`.
+- Mechanism looks different from the paper's. In the high games, agents seem to **stop exploring and lock in**, not threaten punishment:
+  - Game 4: firm 2 sat at $2.25 for about 45 rounds earning ~$12.80 while firm 1 at $1.80 earned ~$49.55, then slowly cut. Firm 1 fit a demand curve treating the rival as fixed.
+  - Game 6: stuck at $1.60/$1.70 for 70 rounds. Firm 1 called it "the Nash equilibrium."
+  - Price-war/retaliation words were rarest in game 6 (7% of answers) and most common in low-price game 7 (44%). This is a crude keyword count; the paper used a proper classifier.
+- Runs: about 75–115 minutes each, all 5 in parallel; $28 API-equivalent total (free on the Harvard plan); 3 retries total; no failed calls.
+- Next ideas: Sonnet comparison; the P2 prompt; alpha = 3.2/10; a proper analysis of the agents' notes.
+
+### 2026-10-07 (afternoon): Literature check, pre-registered plan, Sonnet effort experiment started
+- **Literature check (details in `pricing-collusion/EXPERIMENT_PLAN.md`):**
+  - Lee & Park (arXiv 2609.18346) already compared Claude Sonnet 4.5 (collusion index 0.98) with Haiku 4.5 (0.37), using different prompts and no thinking setting. Our Haiku 0.42 is consistent with their 0.37.
+  - Garra (2609.13037) already ran P1 vs P2 on DeepSeek.
+  - **No paper varies thinking effort within one model. That is our original contribution.**
+  - The lock-in idea is new for LLMs. The closest is Baek, Farias & Wu (2605.16064), on non-LLM algorithms.
+  - The literature uses 200–300 rounds and 7–21 games per condition, averaging the last 50 rounds.
+- **Pre-registered plan** committed before running: `EXPERIMENT_PLAN.md`. Main test: Sonnet 5.5 low vs high effort, P1, alpha 1, 200 rounds, seeds 11–15 in each condition, primary outcome = rounds 151–200.
+- **New code:**
+  - `--effort` option.
+  - `analyze_llm_games.py` now also reports a price-based index.
+  - `analyze_behavior.py`: lock-in regression plus a rough keyword-based analysis of the notes.
+  - `--resume` continues an unfinished game.
+  - `run_queue.sh N ...` runs games at most N at a time.
+  - Failed calls retry for about 2.5 hours.
+- **Haiku lock-in check (mixed):**
+  - The rival-price coefficient averages 0.18, so firms do follow their rival somewhat. "Ignores rival" is too strong.
+  - In the notes, about 30% of plan sentences are about holding steady, versus about 5% about the rival's reaction.
+  - Haiku price-based index: 0.29 (profit-based 0.42).
+- **Usage limit hit:** 10 Sonnet games at once (20 concurrent calls) hit the Harvard plan's limit after about 25 minutes. All games were stopped cleanly and **resumed 4 at a time** via `run_queue.sh` (log: `results/llm/sonnet_queue.log`). Lesson: keep to 4 or fewer Sonnet games at once.
+- **Status when the session ended:** queue running in the background (nohup and caffeinate, so it survives closing Claude). At the pause, the low-effort games were at rounds 86–91 of 200 and the high-effort games at 52–65.
+  - Early sign: high-effort seed 12 was at $1.47/$1.47 (Nash) around round 69.
+- **To check next session:**
+  - `grep finished pricing-collusion/results/llm/sonnet_queue.log`
+  - `tail -1 pricing-collusion/results/llm/sonnet_*_200r_seed*/run.log`
+  - If a game crashed, rerun it with the same args plus `--resume`.
+- **When done:**
+  - Run `analyze_llm_games.py "sonnet_low_*" --last 50` and `analyze_llm_games.py "sonnet_high_*" --last 50` (add `--title`), then `analyze_behavior.py` on each.
+  - Compare the conditions (difference in means plus a paired-by-seed comparison).
+  - Then update the README with the findings. Javen wants the README GitHub-ready.
+
+### 2026-10-13: Sonnet effort experiment finished + Experiment 2 launched
+- All 10 Sonnet games done (high seed 15 crashed at round 145 when the laptop slept; resumed). Real running time ~70–85 min per game; usage-limit pauses and laptop sleep stretched the batch to ~a day.
+- **Result (rounds 151–200):** low effort index −0.02 (price 1.47), high effort 0.13 (1.51). Diff +0.15, permutation p = 0.13; 4/5 pairs higher, sign-flip p = 0.31. **Hypothesis not supported; neither colluded.** Chart: `results/llm/summary_collusion_index.png`.
+- Exploratory: high effort changes price in ~11% of second-half rounds vs 34% for low (locks in fast; its two above-Nash games flat 100+ rounds). Low effort keeps undercutting by a cent; 2 games went below Nash (price war, seed 14 down to ~1.25).
+- Sonnet's notes read like a data analyst treating the rival's price as fixed; almost no talk of rival reactions. Keyword "steady/reaction" counts are near zero for Sonnet (its style doesn't match the keywords), so don't lean on them.
+- New code: `compare_conditions.py` (exact permutation + sign-flip tests), `plot_summary.py` (README key chart), "moves%" exploration column in `analyze_behavior.py`, new prompt `PX` in `llm_agent.py`. Retries now wait on the wall clock for up to 8 hours (survive sleep and a full usage-limit window).
+- README rewritten with Stage 2 findings, GitHub-ready.
+- **Experiment 2 (pre-registered in `EXPERIMENT_PLAN.md`):** Haiku, P1 vs PX (P2 minus the undercutting hint) vs P2, 200 rounds, seeds 21–25, 15 games, 4 at a time. Javen chose the 3-group design. Estimate ~14 h running + limit pauses, ~$170–190 API-equivalent (free). Queue log: `results/llm/haiku_exp2_queue.log`.
+- Keep the laptop plugged in with the lid open; `caffeinate` can't stop lid-close sleep.
+
+### 2026-10-14: Experiment 2 finished (Haiku P1 vs PX vs P2)
+- All 15 games done, no crashes. Usage limit hit 4 times (resets 3pm, 8pm, 1:20am, 6:20am) and the lid was closed ~8:46am Oct 14; the new retry logic waited everything out. ~4 h per Haiku 200-round game; ~$10–17 API-equivalent each.
+- **Results (rounds 151–200):** P1 0.54 (price 1.69), PX 0.33 (1.58), P2 0.41 (1.62). PX vs P1 −0.21, p = 0.26 (paired 0.44, PX lower in 4/5). P2 vs PX +0.09, p = 0.67. P2 vs P1 −0.13, p = 0.57. Exploration (price changes, 2nd half): P1 21%, PX 51%, P2 40%.
+- Takeaway: exploring more points toward lower prices (fits lock-in) but not significant with 5 games; the P2 undercut hint did nothing clear.
+- P1 seed 23 = first cartel-level game: both at $2.00 from round 7, never undercut (undercutting to ~$1.69 would earn +31% that round). One firm called it "Nash"; the other feared "grim-trigger retaliation" that never happened. Lock-in plus an imagined threat.
+- New chart `results/llm/exp2_prompts.png` (`plot_summary.py` now makes both charts). README has a Stage 3 section.
+- Javen wanted a few sentences for a one-slide progress update, NOT a deck. A Slides artifact was started by mistake (https://claude.ai/artifact/HgT12Kt3CeRNGJWfBAihQM, private, cover only); offered to delete it.
+- Next ideas: more P1 vs PX games (~10/group), Sonnet with Lee & Park's prompt, more firms / messaging later.
+
+### 2026-10-14 (later): findings images, slides, plans saved for later
+- `plot_findings.py` makes 4 summary charts in `results/findings/` (overview of all 30 games, Sonnet effort over time, the exploring test, the $2.00 cartel game). Not yet committed/pushed (Javen hasn't said).
+- Slide deck with those 4 charts: https://claude.ai/artifact/HgT12Kt3CeRNGJWfBAihQM (private).
+- **Javen's long-term goal:** try bigger models (Opus, Fable) and test whether firms collude when the user suggests it, even when told it's illegal. Design, draft prompt wording, open choices, literature, and the lock-in follow-up options are in **`pricing-collusion/SIDENOTES.md`**. Bring it up when the project gets to that stage.
+- Recommended going forward: 200 rounds, 10 games per condition; start with Sonnet, pilot bigger models first.
+
+### 2026-10-14 (evening): Experiment 3 started, P1 baseline for every model size
+- Plan: plain P1 prompt (no extras), 200 rounds, 10 games per model, same seeds for every model (11–15, 21–25). Pre-registered in `EXPERIMENT_PLAN.md` (Experiment 3). Extras (e.g. suggest-collusion) wait until baselines are done.
+- Running (detached, started ~2:50pm): Haiku seeds 11–15 and Sonnet high seeds 21–25 via `run_queue.sh 4`. Log: `results/llm/exp3_baseline_queue.log`.
+- Pilots done (10 rounds, seed 11, not results): Opus $1.38, Fable $2.99 API-equivalent (Sonnet's first 10 rounds cost ~$0.65 and full games ~$25). Rough full-game estimates: Opus ~$50, Fable ~$110. Fable ran ~30 s/round. All model aliases work on the Harvard login.
+- Waiting on Javen's OK before full Opus/Fable games.
+- **2026-10-15: Haiku/Sonnet baselines done (10 games each).** Index (rounds 151–200): Haiku 0.40 (price 1.62), Sonnet high 0.12 (1.51). Sonnet − Haiku = −0.28, p = 0.004 (paired p = 0.012, 8/10 seeds lower). Bigger model competed harder. Haiku's new seeds averaged 0.25 vs 0.54 earlier, so 5 games overstated it. Usage limit hit a few times; no crashes. Opus not queued yet (waiting on Javen's explicit yes); Fable waits for Opus results.
+- Javen (2026-10-16): compare our results **only to the original Fish, Gonczarowski & Shorrer study**, not to other papers (Lee & Park, Garra, etc.).
+- **2026-10-16: Opus games started** (Javen said go): 10 games, P1, high effort, seeds 11–15 and 21–25, `--budget 80`, 4 at a time. Log: `results/llm/exp3_opus_queue.log`. Estimate ~$500 API-equivalent, 2–3 days with usage-limit pauses. Fable waits for Opus results. Other-paper comparisons parked in `SIDENOTES.md` section 4.
+- **2026-10-20: Opus baseline done (10 games, ~$44–59 API-equivalent each).** Index: Opus 0.17 (price 1.53). Opus vs Sonnet +0.06, p = 0.51 (no difference); Opus vs Haiku −0.22, p = 0.061. Big drop is Haiku → Sonnet, then flat. Opus at Nash in 6/10 games, barely moves its price late in the game (3.6% of rounds). Next: Javen decides on Fable.
+
+### 2026-10-20/21: Opus results, charts, README
+- Opus baseline analyzed (see 2026-10-20 bullet above). Exploratory find: Opus often names "tacit collusion" and rejects it as an antitrust risk unprompted (5 of 10 games; Sonnet never). In Opus game 12 the firms held near-cartel prices, then one firm backed off for that reason at round 132. Details in `EXPERIMENT_PLAN.md`.
+- `plot_findings.py` now makes 8 charts in `results/findings/` (5–8 are Experiment 3). Same simple Slides deck updated with them: https://claude.ai/artifact/HgT12Kt3CeRNGJWfBAihQM. A .pptx version was made and deleted at Javen's request (don't commit decks; they prefer the simple image deck plus a chat explanation).
+- README updated for Experiment 3 (new key chart and findings, Stage 3b section) and now compares only with the original paper.
+- Explained to Javen: the logit demand formula (plain-text version, since the terminal can't render LaTeX), the collusion index and why it can go below 0, how a round works, and starting prices (no fixed start; AIs open around $2.00–3.00, often near the midpoint of cost and the price ceiling).
+- Next: Javen to choose between a Fable baseline (~$1,100 API-equivalent, ~1 week) and the suggest-collusion experiment on Sonnet.
