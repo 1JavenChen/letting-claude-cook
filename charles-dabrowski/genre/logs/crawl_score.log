@@ -1,0 +1,9 @@
+17:07:34 [score] 353 seed artists
+17:08:19 [score] artists visited 40 (on-genre 13), tracks 120, queue 401
+17:11:31 [score] artists visited 380 (on-genre 119), tracks 1310, queue 534
+17:11:57 [score] artists visited 420 (on-genre 133), tracks 1460, queue 557
+17:12:15 [score] done: 1604 tracks from 145 artists (443 visited)
+17:12:15 1604 score tracks after removing artists already in other genres
+17:15:33 download: 1373/1604
+17:20:24 after refresh: 1461/1604
+17:20:24 SCORE CRAWL DONE

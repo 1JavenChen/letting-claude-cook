@@ -1,0 +1,89 @@
+13:45:14 [country] 294 seed artists
+13:45:20 [hiphop] 543 seed artists
+13:45:20 [classical] 650 seed artists
+13:45:23 [jazz] 574 seed artists
+13:45:25 [electronic] 944 seed artists
+13:45:29 [pop] 1058 seed artists
+13:45:30 [rock] 956 seed artists
+13:46:20 [jazz] artists visited 20 (on-genre 12), tracks 144, queue 646
+13:46:39 [hiphop] artists visited 20 (on-genre 12), tracks 131, queue 660
+13:46:55 [classical] artists visited 20 (on-genre 16), tracks 185, queue 768
+13:47:18 [jazz] artists visited 40 (on-genre 25), tracks 296, queue 727
+13:47:20 [country] artists visited 40 (on-genre 25), tracks 292, queue 394
+13:47:44 [electronic] artists visited 40 (on-genre 20), tracks 231, queue 1156
+13:47:50 [hiphop] artists visited 40 (on-genre 24), tracks 267, queue 807
+13:48:16 [jazz] artists visited 60 (on-genre 36), tracks 399, queue 749
+13:48:30 [pop] artists visited 80 (on-genre 27), tracks 293, queue 1297
+13:48:51 [country] artists visited 60 (on-genre 41), tracks 484, queue 429
+13:49:29 [classical] artists visited 60 (on-genre 42), tracks 479, queue 886
+13:49:29 [jazz] artists visited 80 (on-genre 50), tracks 547, queue 799
+13:50:03 [country] artists visited 80 (on-genre 55), tracks 652, queue 461
+13:50:10 [hiphop] artists visited 80 (on-genre 50), tracks 551, queue 1011
+13:50:53 [classical] artists visited 80 (on-genre 54), tracks 604, queue 903
+13:51:10 [jazz] artists visited 120 (on-genre 73), tracks 823, queue 897
+13:51:23 [country] artists visited 100 (on-genre 68), tracks 808, queue 491
+13:51:48 [hiphop] artists visited 100 (on-genre 62), tracks 685, queue 1093
+13:51:59 [rock] artists visited 220 (on-genre 50), tracks 587, queue 1143
+13:52:29 [pop] artists visited 180 (on-genre 51), tracks 578, queue 1409
+13:52:53 [country] artists visited 120 (on-genre 83), tracks 988, queue 512
+13:52:55 [hiphop] artists visited 120 (on-genre 70), tracks 781, queue 1161
+13:53:24 [jazz] artists visited 160 (on-genre 94), tracks 1065, queue 922
+13:54:02 [electronic] artists visited 120 (on-genre 64), tracks 719, queue 1634
+13:54:04 [country] artists visited 140 (on-genre 95), tracks 1126, queue 503
+13:55:06 [rock] artists visited 300 (on-genre 72), tracks 844, queue 1156
+13:55:36 [hiphop] artists visited 160 (on-genre 94), tracks 1068, queue 1317
+13:55:48 [pop] artists visited 260 (on-genre 70), tracks 786, queue 1484
+13:55:49 [jazz] artists visited 200 (on-genre 123), tracks 1387, queue 956
+13:55:59 [classical] artists visited 140 (on-genre 92), tracks 1043, queue 1024
+13:56:44 [jazz] artists visited 220 (on-genre 135), tracks 1531, queue 967
+13:56:48 [electronic] artists visited 160 (on-genre 84), tracks 947, queue 1777
+13:57:03 [country] artists visited 180 (on-genre 124), tracks 1463, queue 500
+13:57:09 [hiphop] artists visited 180 (on-genre 108), tracks 1234, queue 1360
+13:57:12 [jazz] done: 1603 tracks from 141 artists (229 visited)
+13:57:33 [pop] artists visited 320 (on-genre 85), tracks 961, queue 1579
+13:57:38 [rock] artists visited 380 (on-genre 98), tracks 1144, queue 1165
+13:57:59 [country] done: 1607 tracks from 136 artists (198 visited)
+13:58:08 [hiphop] artists visited 200 (on-genre 121), tracks 1385, queue 1392
+13:58:37 [pop] artists visited 360 (on-genre 94), tracks 1068, queue 1608
+13:58:46 [hiphop] artists visited 220 (on-genre 132), tracks 1515, queue 1395
+13:59:03 [pop] artists visited 380 (on-genre 99), tracks 1120, queue 1639
+13:59:23 [pop] artists visited 400 (on-genre 102), tracks 1156, queue 1647
+13:59:26 [hiphop] done: 1611 tracks from 140 artists (247 visited)
+13:59:32 [classical] artists visited 200 (on-genre 136), tracks 1533, queue 1124
+13:59:49 [electronic] artists visited 220 (on-genre 117), tracks 1314, queue 2013
+13:59:51 [classical] done: 1605 tracks from 142 artists (208 visited)
+14:00:11 [pop] artists visited 440 (on-genre 112), tracks 1276, queue 1716
+14:00:14 [rock] artists visited 520 (on-genre 128), tracks 1497, queue 1206
+14:00:34 [electronic] artists visited 240 (on-genre 129), tracks 1444, queue 2112
+14:00:41 [rock] artists visited 560 (on-genre 137), tracks 1600, queue 1211
+14:00:41 [rock] done: 1600 tracks from 137 artists (560 visited)
+14:00:55 [pop] artists visited 500 (on-genre 124), tracks 1420, queue 1710
+14:01:19 [electronic] done: 1611 tracks from 144 artists (270 visited)
+14:01:23 [pop] artists visited 540 (on-genre 137), tracks 1574, queue 1749
+14:01:31 [pop] done: 1610 tracks from 140 artists (558 visited)
+14:01:31 total after cross-genre filter: 11242
+14:01:31 downloading previews...
+14:01:32 downloaded 0/11242
+14:02:14 downloaded 500/11242
+14:02:52 downloaded 1000/11242
+14:03:39 downloaded 1500/11242
+14:03:46 downloaded 2000/11242
+14:04:19 downloaded 2500/11242
+14:04:51 downloaded 3000/11242
+14:05:06 downloaded 3500/11242
+14:05:29 downloaded 4000/11242
+14:06:30 downloaded 4500/11242
+14:06:48 downloaded 5000/11242
+14:06:50 downloaded 5500/11242
+14:07:29 downloaded 6000/11242
+14:08:05 downloaded 6500/11242
+14:08:07 downloaded 7000/11242
+14:08:36 downloaded 7500/11242
+14:09:08 downloaded 8000/11242
+14:09:12 downloaded 8500/11242
+14:09:39 downloaded 9000/11242
+14:10:26 downloaded 9500/11242
+14:10:41 downloaded 10000/11242
+14:10:49 downloaded 10500/11242
+14:11:20 downloaded 11000/11242
+14:11:33 download done: 6343/11242 ok

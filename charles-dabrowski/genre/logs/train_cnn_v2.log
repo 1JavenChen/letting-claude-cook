@@ -1,0 +1,51 @@
+=== preprocess
+11238 tracks with audio
+11238 decoded
+train (9038, 128, 646) {'classical': 1286, 'pop': 1292, 'jazz': 1288, 'hiphop': 1295, 'rock': 1288, 'electronic': 1297, 'country': 1292}
+val (1132, 128, 646) {'classical': 168, 'pop': 165, 'jazz': 163, 'hiphop': 159, 'rock': 156, 'electronic': 162, 'country': 159}
+test (1068, 128, 646) {'classical': 151, 'pop': 149, 'jazz': 152, 'hiphop': 155, 'rock': 156, 'electronic': 152, 'country': 153}
+wrote /Users/karoldabrowski/Desktop/College/FYS/genre/results/dataset
+=== train
+train counts [1286.0, 1292.0, 1288.0, 1295.0, 1288.0, 1297.0, 1292.0] class weights [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0]
+params: 2.49M
+ep  1 loss 1.580 val_acc 0.581 (110s)
+ep  2 loss 1.339 val_acc 0.599 (90s)
+ep  3 loss 1.262 val_acc 0.590 (94s)
+ep  4 loss 1.216 val_acc 0.615 (94s)
+ep  5 loss 1.184 val_acc 0.403 (93s)
+ep  6 loss 1.146 val_acc 0.620 (95s)
+ep  7 loss 1.127 val_acc 0.732 (96s)
+ep  8 loss 1.104 val_acc 0.645 (98s)
+ep  9 loss 1.066 val_acc 0.516 (98s)
+ep 10 loss 1.055 val_acc 0.643 (99s)
+ep 11 loss 1.047 val_acc 0.708 (100s)
+ep 12 loss 1.033 val_acc 0.724 (99s)
+ep 13 loss 1.010 val_acc 0.661 (95s)
+ep 14 loss 1.006 val_acc 0.711 (98s)
+ep 15 loss 0.998 val_acc 0.776 (99s)
+ep 16 loss 0.964 val_acc 0.689 (99s)
+ep 17 loss 0.963 val_acc 0.686 (99s)
+ep 18 loss 0.944 val_acc 0.772 (100s)
+ep 19 loss 0.942 val_acc 0.773 (96s)
+ep 20 loss 0.931 val_acc 0.716 (101s)
+ep 21 loss 0.918 val_acc 0.764 (96s)
+ep 22 loss 0.910 val_acc 0.662 (93s)
+ep 23 loss 0.896 val_acc 0.764 (90s)
+ep 24 loss 0.886 val_acc 0.769 (89s)
+ep 25 loss 0.876 val_acc 0.787 (90s)
+ep 26 loss 0.857 val_acc 0.731 (89s)
+ep 27 loss 0.857 val_acc 0.787 (89s)
+ep 28 loss 0.838 val_acc 0.784 (89s)
+ep 29 loss 0.833 val_acc 0.796 (88s)
+ep 30 loss 0.818 val_acc 0.818 (89s)
+ep 31 loss 0.804 val_acc 0.799 (87s)
+ep 32 loss 0.786 val_acc 0.791 (83s)
+ep 33 loss 0.772 val_acc 0.800 (86s)
+ep 34 loss 0.768 val_acc 0.814 (84s)
+ep 35 loss 0.767 val_acc 0.829 (83s)
+ep 36 loss 0.756 val_acc 0.824 (83s)
+ep 37 loss 0.757 val_acc 0.829 (84s)
+ep 38 loss 0.747 val_acc 0.827 (83s)
+ep 39 loss 0.738 val_acc 0.828 (86s)
+ep 40 loss 0.741 val_acc 0.828 (83s)
+best val acc 0.8286219239234924

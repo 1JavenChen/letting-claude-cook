@@ -1,0 +1,22 @@
+=== preprocess
+12699 tracks with audio
+12699 decoded
+train (10214, 128, 646) {'classical': 1286, 'pop': 1292, 'jazz': 1288, 'hiphop': 1295, 'rock': 1288, 'electronic': 1297, 'country': 1292, 'score': 1176}
+val (1281, 128, 646) {'classical': 168, 'pop': 165, 'jazz': 163, 'hiphop': 159, 'rock': 156, 'electronic': 162, 'country': 159, 'score': 149}
+test (1204, 128, 646) {'classical': 151, 'pop': 149, 'jazz': 152, 'hiphop': 155, 'rock': 156, 'electronic': 152, 'country': 153, 'score': 136}
+wrote /Users/karoldabrowski/Desktop/College/FYS/genre/results/dataset
+=== finetune
+train counts [1286.0, 1292.0, 1288.0, 1295.0, 1288.0, 1297.0, 1292.0, 1176.0] class weights [1.0, 0.99, 1.0, 0.99, 1.0, 0.99, 0.99, 1.04]
+init from cnn_v2 _IncompatibleKeys(missing_keys=['head.4.weight', 'head.4.bias'], unexpected_keys=[])
+params: 2.49M
+ep  1 loss 0.989 val_acc 0.699 (87s)
+ep  2 loss 0.958 val_acc 0.735 (86s)
+ep  3 loss 0.943 val_acc 0.764 (96s)
+ep  4 loss 0.925 val_acc 0.770 (96s)
+ep  5 loss 0.909 val_acc 0.760 (122s)
+ep  6 loss 0.895 val_acc 0.769 (96s)
+ep  7 loss 0.872 val_acc 0.776 (95s)
+ep  8 loss 0.850 val_acc 0.781 (98s)
+ep  9 loss 0.838 val_acc 0.786 (101s)
+/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/multiprocessing/resource_tracker.py:276: UserWarning: resource_tracker: There appear to be 20 leaked semaphore objects to clean up at shutdown: {'/mp-a7lwffmu', '/mp-s1yiaohp', '/mp-vjwyzutp', '/mp-z5kegwxl', '/mp-q36pnb96', '/mp-heokvein', '/mp-866adwbn', '/mp-df8eh561', '/mp-lw3text1', '/mp-cv0u_39f', '/mp-wwarg53l', '/mp-uva0xby1', '/mp-sqyv9rof', '/mp-vqhp0t3c', '/mp-kryto8v_', '/mp-366cokls', '/mp-ktpqvabs', '/mp-g66jlm5b', '/mp-137m44c6', '/mp-lwrllgsk'}
+  warnings.warn(

@@ -1,0 +1,14 @@
+train counts [2939.0, 2950.0, 2949.0, 2945.0, 2949.0, 2952.0, 2947.0, 2827.0] class weights [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.02]
+params: 5.49M
+ep  1 loss 1.507 val_acc 0.496 (555s)
+ep  2 loss 1.308 val_acc 0.488 (564s)
+ep  3 loss 1.228 val_acc 0.678 (499s)
+ep  4 loss 1.167 val_acc 0.627 (1919s)
+ep  5 loss 1.129 val_acc 0.535 (1684s)
+ep  6 loss 1.093 val_acc 0.731 (497s)
+ep  7 loss 1.063 val_acc 0.766 (577s)
+ep  8 loss 1.030 val_acc 0.751 (710s)
+ep  9 loss 0.994 val_acc 0.785 (689s)
+ep 10 loss 0.972 val_acc 0.798 (676s)
+ep 11 loss 0.958 val_acc 0.802 (539s)
+best val acc 0.8024980425834656

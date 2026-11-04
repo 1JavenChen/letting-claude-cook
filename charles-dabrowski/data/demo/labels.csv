@@ -1,0 +1,31 @@
+file,split,n_speakers,n_male,n_female,snr_db,reverb,noise_kind,speaker_ids
+train/train_00000.wav,train,3,3,0,14.61,0,white,1272 3170 174
+train/train_00001.wav,train,0,0,0,,0,pink,
+train/train_00002.wav,train,1,1,0,18.66,0,pink,652
+train/train_00003.wav,train,0,0,0,,0,white,
+train/train_00004.wav,train,2,0,2,6.71,1,babble,7850 8842
+train/train_00005.wav,train,1,0,1,3.41,0,white,6319
+train/train_00006.wav,train,3,0,3,7.82,1,pink,7850 5338 3081
+train/train_00007.wav,train,2,0,2,10.59,1,babble,7850 3081
+train/train_00008.wav,train,0,0,0,,0,white,
+train/train_00009.wav,train,3,1,2,0.91,0,white,6345 2078 3536
+train/train_00010.wav,train,2,1,1,12.42,0,pink,5694 6319
+train/train_00011.wav,train,2,0,2,17.51,1,white,1988 6313
+train/train_00012.wav,train,4,2,2,15.11,0,pink,1272 2078 5338 1988
+train/train_00013.wav,train,0,0,0,,0,white,
+train/train_00014.wav,train,3,1,2,18.2,0,babble,8297 8842 1673
+train/train_00015.wav,train,0,0,0,,0,pink,
+train/train_00016.wav,train,3,2,1,12.41,1,white,1673 2078 777
+train/train_00017.wav,train,0,0,0,,0,babble,
+train/train_00018.wav,train,4,1,3,4.35,0,pink,1988 652 1673 2035
+train/train_00019.wav,train,0,0,0,,0,white,
+train/train_00020.wav,train,3,2,1,17.49,0,babble,8297 777 3081
+train/train_00021.wav,train,4,2,2,1.31,0,babble,652 5694 7850 1988
+train/train_00022.wav,train,2,1,1,12.29,1,babble,7850 3000
+train/train_00023.wav,train,2,0,2,19.15,0,pink,1673 3081
+train/train_00024.wav,train,0,0,0,,0,babble,
+train/train_00025.wav,train,0,0,0,,0,white,
+train/train_00026.wav,train,3,1,2,3.13,0,babble,1272 1462 6313
+train/train_00027.wav,train,1,1,0,13.26,1,white,5694
+train/train_00028.wav,train,1,1,0,2.85,1,pink,2428
+train/train_00029.wav,train,3,2,1,4.08,0,white,3000 1673 777

@@ -1,0 +1,3 @@
+file,true_n_speakers,guess_n_speakers,true_n_male,guess_n_male,true_n_female,guess_n_female,snr_db,noise_kind,reverb
+test/test_00663.wav,2,2,2,,0,,16.34,white,1
+test/test_01941.wav,3,4,2,,1,,12.31,babble,1

@@ -1,0 +1,21 @@
+4899 missing
+14:12:05 redownloaded 0/4899 (ok 1)
+14:13:24 redownloaded 500/4899 (ok 245)
+14:14:55 redownloaded 1000/4899 (ok 660)
+14:16:03 redownloaded 1500/4899 (ok 1140)
+14:17:44 redownloaded 2000/4899 (ok 1481)
+14:19:04 redownloaded 2500/4899 (ok 1657)
+14:20:12 redownloaded 3000/4899 (ok 2083)
+14:21:19 redownloaded 3500/4899 (ok 2532)
+14:22:29 redownloaded 4000/4899 (ok 2999)
+14:23:39 redownloaded 4500/4899 (ok 3424)
+14:24:32 redownload done: 3781/4899 ok
+=== pass 1
+1118 missing
+14:24:37 redownloaded 0/1118 (ok 1)
+14:25:59 redownloaded 500/1118 (ok 44)
+14:27:20 redownloaded 1000/1118 (ok 64)
+14:27:38 redownload done: 84/1118 ok
+=== pass 2
+1034 missing
+14:27:40 redownloaded 0/1034 (ok 0)

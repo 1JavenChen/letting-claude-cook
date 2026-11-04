@@ -1,0 +1,23 @@
+# environments / OS
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+
+# speaker-count project: raw audio, mixtures, AMI, feature tensors (tens of GB)
+data/*
+!data/demo/
+
+# genre project: downloaded previews and feature tensors (16 GB) — CSVs are kept
+genre/data/audio/
+genre/data/fresh/audio/
+genre/data/*.pt
+
+# LaTeX build files
+*.aux
+*.log.tex
+*.fdb_latexmk
+*.fls
+*.synctex.gz
+*.out
+*.toc

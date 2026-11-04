@@ -1,0 +1,59 @@
+=== 16:37:00 waiting for downloads
+=== PAUSED by user Wed Oct  7 16:47:51 EDT 2026
+=== 18:38:19 waiting for downloads
+=== PAUSED by user Fri Oct  9 18:38:51 EDT 2026
+=== 18:57:16 waiting for downloads
+=== 20:02:17 downloads finished: 340 files,  21G
+=== FINISHED ok=170 fail=3 Fri Oct  9 19:50:54 EDT 2026
+=== FINISHED ok=170 fail=3 Fri Oct  9 20:02:15 EDT 2026
+=== 20:02:17 building AMI windows
+Traceback (most recent call last):
+  File "/Users/karoldabrowski/Desktop/College/FYS/src/make_ami_windows.py", line 150, in <module>
+    main()
+    ~~~~^^
+  File "/Users/karoldabrowski/Desktop/College/FYS/src/make_ami_windows.py", line 105, in main
+    info = sf.info(wav)
+  File "/Users/karoldabrowski/Desktop/College/FYS/.venv/lib/python3.13/site-packages/soundfile.py", line 501, in info
+    return _SoundFileInfo(file, verbose)
+  File "/Users/karoldabrowski/Desktop/College/FYS/.venv/lib/python3.13/site-packages/soundfile.py", line 446, in __init__
+    with SoundFile(file) as f:
+         ~~~~~~~~~^^^^^^
+  File "/Users/karoldabrowski/Desktop/College/FYS/.venv/lib/python3.13/site-packages/soundfile.py", line 708, in __init__
+    self._file = self._open(file, mode_int, closefd)
+                 ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/karoldabrowski/Desktop/College/FYS/.venv/lib/python3.13/site-packages/soundfile.py", line 1296, in _open
+    raise LibsndfileError(err, prefix=f"Error opening {self.name!r}: ")
+soundfile.LibsndfileError: Error opening 'data/raw/ami/audio/IS1003b.Array1-01.wav': Format not recognised.
+=== 20:02:20 WINDOWING FAILED
+=== 20:02:39 waiting for downloads
+=== 20:02:39 downloads finished: 338 files,  21G
+=== FINISHED ok=170 fail=3 Fri Oct  9 19:50:54 EDT 2026
+=== FINISHED ok=170 fail=3 Fri Oct  9 20:02:15 EDT 2026
+=== 20:02:39 building AMI windows
+  missing IS1003b.Array1-01.wav, skipping
+  missing IS1007d.Array1-01.wav, skipping
+train: candidate windows per class {0: 15594, 1: 165768, 2: 78155, 3: 20761, 4: 2510}
+  train: 42510 windows -> computing log-mel
+  train: saved 42510 windows, class counts {0: 10000, 1: 10000, 2: 10000, 3: 10000, 4: 2510}
+val: candidate windows per class {0: 1168, 1: 9358, 2: 4738, 3: 1503, 4: 179}
+  val: 1779 windows -> computing log-mel
+  val: saved 1779 windows, class counts {0: 400, 1: 400, 2: 400, 3: 400, 4: 179}
+test: candidate windows per class {0: 526, 1: 4768, 2: 1975, 3: 642, 4: 89}
+  test: 8000 windows -> computing log-mel
+  test: saved 8000 windows, class counts {0: 526, 1: 4768, 2: 1975, 3: 642, 4: 89}
+  test_bal: 1689 windows -> computing log-mel
+  test_bal: saved 1689 windows, class counts {0: 400, 1: 400, 2: 400, 3: 400, 4: 89}
+wrote data/ami/labels.csv 53978 rows
+=== 20:03:26 waiting for AC power before training
+=== 20:03:26 on AC power; training
+=== 21:52:42 cnn_v6_ami trained: best val count accuracy 0.620; saved models/cnn_v6_ami.pt
+=== 22:40:20 cnn_v7_ft trained: best val count accuracy 0.626; saved models/cnn_v7_ft.pt
+=== 22:40:20 evaluating
+=== 22:40:37 cnn_v4 on ami test: 0.254 0.782
+=== 22:40:42 cnn_v4 on ami test_bal: 0.265 0.619
+=== 22:40:59 cnn_v6_ami on ami test: 0.682 0.972
+=== 22:41:04 cnn_v6_ami on ami test_bal: 0.658 0.953
+=== 22:41:21 cnn_v7_ft on ami test: 0.66 0.969
+=== 22:41:25 cnn_v7_ft on ami test_bal: 0.649 0.947
+=== 22:41:31 cnn_v7_ft on synthetic v3 test: 0.381
+=== 22:41:31 DONE
