@@ -1,0 +1,4510 @@
+{
+ "s01_control_none_r1": {
+  "requirements_met": [
+   false,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s01_control_none_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s01_control_none_r3": {
+  "requirements_met": [
+   false,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s01_beginner_system_r1": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 1,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s01_beginner_system_r2": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s01_beginner_system_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s01_beginner_message_r1": {
+  "requirements_met": [
+   true,
+   false,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 3,
+  "assumed_knowledge": 1,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s01_beginner_message_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 3,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s01_beginner_message_r3": {
+  "requirements_met": [
+   true,
+   false,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 3,
+  "assumed_knowledge": 1,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s01_hobbyist_system_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s01_hobbyist_system_r2": {
+  "requirements_met": [
+   true,
+   false,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s01_hobbyist_system_r3": {
+  "requirements_met": [
+   true,
+   false,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s01_hobbyist_message_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s01_hobbyist_message_r2": {
+  "requirements_met": [
+   true,
+   false,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s01_hobbyist_message_r3": {
+  "requirements_met": [
+   false,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s01_professional_system_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 1,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s01_professional_system_r2": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": true,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s01_professional_system_r3": {
+  "requirements_met": [
+   false,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s01_professional_message_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s01_professional_message_r2": {
+  "requirements_met": [
+   true,
+   false,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s01_professional_message_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s01_expert_system_r1": {
+  "requirements_met": [
+   false,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s01_expert_system_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s01_expert_system_r3": {
+  "requirements_met": [
+   true,
+   false,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 5,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s01_expert_message_r1": {
+  "requirements_met": [
+   false,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s01_expert_message_r2": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s01_expert_message_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s02_control_none_r1": {
+  "requirements_met": [
+   true,
+   false,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s02_control_none_r2": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s02_control_none_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s02_beginner_system_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s02_beginner_system_r2": {
+  "requirements_met": [
+   false,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 3,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s02_beginner_system_r3": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 3,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s02_beginner_message_r1": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 1,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s02_beginner_message_r2": {
+  "requirements_met": [
+   true,
+   false,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 3,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s02_beginner_message_r3": {
+  "requirements_met": [
+   false,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 1,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s02_hobbyist_system_r1": {
+  "requirements_met": [
+   false,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s02_hobbyist_system_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s02_hobbyist_system_r3": {
+  "requirements_met": [
+   false,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s02_hobbyist_message_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s02_hobbyist_message_r2": {
+  "requirements_met": [
+   true,
+   false,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 3,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s02_hobbyist_message_r3": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s02_professional_system_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s02_professional_system_r2": {
+  "requirements_met": [
+   true,
+   false,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s02_professional_system_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s02_professional_message_r1": {
+  "requirements_met": [
+   true,
+   false,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s02_professional_message_r2": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 3,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s02_professional_message_r3": {
+  "requirements_met": [
+   true,
+   false,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 2,
+  "hedging": true,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s02_expert_system_r1": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s02_expert_system_r2": {
+  "requirements_met": [
+   true,
+   false,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s02_expert_system_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 1,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s02_expert_message_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 1,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s02_expert_message_r2": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s02_expert_message_r3": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s03_control_none_r1": {
+  "requirements_met": [
+   false,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s03_control_none_r2": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s03_control_none_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s03_beginner_system_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 3,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s03_beginner_system_r2": {
+  "requirements_met": [
+   false,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 3,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s03_beginner_system_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 3,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s03_beginner_message_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 3,
+  "assumed_knowledge": 1,
+  "hedging": true,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s03_beginner_message_r2": {
+  "requirements_met": [
+   false,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 3,
+  "assumed_knowledge": 1,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s03_beginner_message_r3": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 3,
+  "assumed_knowledge": 1,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s03_hobbyist_system_r1": {
+  "requirements_met": [
+   true,
+   false,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s03_hobbyist_system_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s03_hobbyist_system_r3": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s03_hobbyist_message_r1": {
+  "requirements_met": [
+   false,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s03_hobbyist_message_r2": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 3,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s03_hobbyist_message_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 1,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s03_professional_system_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s03_professional_system_r2": {
+  "requirements_met": [
+   true,
+   false,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 4,
+  "hedging": true,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s03_professional_system_r3": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s03_professional_message_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 3,
+  "hedging": true,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s03_professional_message_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s03_professional_message_r3": {
+  "requirements_met": [
+   true,
+   false,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s03_expert_system_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s03_expert_system_r2": {
+  "requirements_met": [
+   false,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s03_expert_system_r3": {
+  "requirements_met": [
+   true,
+   false,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 5,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s03_expert_message_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s03_expert_message_r2": {
+  "requirements_met": [
+   true,
+   false,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s03_expert_message_r3": {
+  "requirements_met": [
+   false,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s04_control_none_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s04_control_none_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s04_control_none_r3": {
+  "requirements_met": [
+   true,
+   false,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": true,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s04_beginner_system_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 3,
+  "assumed_knowledge": 1,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s04_beginner_system_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 3,
+  "assumed_knowledge": 2,
+  "hedging": true,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s04_beginner_system_r3": {
+  "requirements_met": [
+   false,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s04_beginner_message_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 3,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s04_beginner_message_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s04_beginner_message_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 4,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s04_hobbyist_system_r1": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 3,
+  "hedging": true,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s04_hobbyist_system_r2": {
+  "requirements_met": [
+   false,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s04_hobbyist_system_r3": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s04_hobbyist_message_r1": {
+  "requirements_met": [
+   false,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s04_hobbyist_message_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s04_hobbyist_message_r3": {
+  "requirements_met": [
+   true,
+   false,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s04_professional_system_r1": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s04_professional_system_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s04_professional_system_r3": {
+  "requirements_met": [
+   false,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s04_professional_message_r1": {
+  "requirements_met": [
+   true,
+   false,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s04_professional_message_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s04_professional_message_r3": {
+  "requirements_met": [
+   true,
+   false,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s04_expert_system_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 1,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s04_expert_system_r2": {
+  "requirements_met": [
+   false,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s04_expert_system_r3": {
+  "requirements_met": [
+   true,
+   false,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 5,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s04_expert_message_r1": {
+  "requirements_met": [
+   true,
+   false,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s04_expert_message_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 1,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s04_expert_message_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 4,
+  "hedging": true,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s05_control_none_r1": {
+  "requirements_met": [
+   false,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s05_control_none_r2": {
+  "requirements_met": [
+   false,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s05_control_none_r3": {
+  "requirements_met": [
+   true,
+   false,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s05_beginner_system_r1": {
+  "requirements_met": [
+   true,
+   false,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s05_beginner_system_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 3,
+  "assumed_knowledge": 1,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s05_beginner_system_r3": {
+  "requirements_met": [
+   false,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 3,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s05_beginner_message_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 1,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s05_beginner_message_r2": {
+  "requirements_met": [
+   false,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 3,
+  "assumed_knowledge": 1,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s05_beginner_message_r3": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s05_hobbyist_system_r1": {
+  "requirements_met": [
+   true,
+   false,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s05_hobbyist_system_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s05_hobbyist_message_r1": {
+  "requirements_met": [
+   true,
+   false,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 3,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s05_hobbyist_message_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 1,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s05_hobbyist_message_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 1,
+  "hedging": true,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s05_professional_system_r1": {
+  "requirements_met": [
+   true,
+   false,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s05_professional_system_r2": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 3,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s05_professional_system_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s05_professional_message_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s05_professional_message_r2": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s05_professional_message_r3": {
+  "requirements_met": [
+   true,
+   false,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s05_expert_system_r1": {
+  "requirements_met": [
+   false,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s05_expert_system_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s05_expert_system_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 4,
+  "hedging": true,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s05_expert_message_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 1,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s05_expert_message_r2": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 5,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s05_expert_message_r3": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s06_control_none_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s06_control_none_r2": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s06_control_none_r3": {
+  "requirements_met": [
+   true,
+   false,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s06_beginner_system_r1": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 3,
+  "assumed_knowledge": 1,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s06_beginner_system_r2": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 1,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s06_beginner_system_r3": {
+  "requirements_met": [
+   false,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 3,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s06_beginner_message_r1": {
+  "requirements_met": [
+   true,
+   false,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 3,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s06_beginner_message_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 3,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s06_beginner_message_r3": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 3,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s06_hobbyist_system_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s06_hobbyist_system_r2": {
+  "requirements_met": [
+   false,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s06_hobbyist_system_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s06_hobbyist_message_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s06_hobbyist_message_r2": {
+  "requirements_met": [
+   false,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 3,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s06_hobbyist_message_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s06_professional_system_r1": {
+  "requirements_met": [
+   false,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s06_professional_system_r2": {
+  "requirements_met": [
+   false,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s06_professional_system_r3": {
+  "requirements_met": [
+   false,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s06_professional_message_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 3,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s06_professional_message_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 1,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s06_professional_message_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s06_expert_system_r1": {
+  "requirements_met": [
+   true,
+   false,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s06_expert_system_r2": {
+  "requirements_met": [
+   false,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s06_expert_system_r3": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s06_expert_message_r1": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s06_expert_message_r2": {
+  "requirements_met": [
+   false,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s06_expert_message_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s07_control_none_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 1,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s07_control_none_r2": {
+  "requirements_met": [
+   true,
+   false,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s07_control_none_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s07_beginner_system_r1": {
+  "requirements_met": [
+   false,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 3,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s07_beginner_system_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 3,
+  "assumed_knowledge": 1,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s07_beginner_system_r3": {
+  "requirements_met": [
+   true,
+   false,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s07_beginner_message_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 3,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s07_beginner_message_r2": {
+  "requirements_met": [
+   false,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s07_beginner_message_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s07_hobbyist_system_r1": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s07_hobbyist_system_r2": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s07_hobbyist_system_r3": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s07_hobbyist_message_r1": {
+  "requirements_met": [
+   true,
+   false,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s07_hobbyist_message_r2": {
+  "requirements_met": [
+   false,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s07_hobbyist_message_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 1,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s07_professional_system_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s07_professional_system_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s07_professional_system_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s07_professional_message_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s07_professional_message_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s07_professional_message_r3": {
+  "requirements_met": [
+   false,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s07_expert_system_r1": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s07_expert_system_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s07_expert_system_r3": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s07_expert_message_r1": {
+  "requirements_met": [
+   true,
+   false,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s07_expert_message_r2": {
+  "requirements_met": [
+   false,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s07_expert_message_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 1,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s08_control_none_r1": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s08_control_none_r2": {
+  "requirements_met": [
+   false,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s08_beginner_system_r1": {
+  "requirements_met": [
+   false,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 3,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s08_beginner_system_r2": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   false
+  ],
+  "requirements_met_prop": 0.5,
+  "condescension": 2,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s08_beginner_system_r3": {
+  "requirements_met": [
+   false,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s08_beginner_message_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 3,
+  "assumed_knowledge": 1,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s08_beginner_message_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 3,
+  "assumed_knowledge": 1,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s08_beginner_message_r3": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 3,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s08_hobbyist_system_r1": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s08_hobbyist_system_r2": {
+  "requirements_met": [
+   true,
+   false,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s08_hobbyist_system_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 1,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s08_hobbyist_message_r1": {
+  "requirements_met": [
+   false,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s08_hobbyist_message_r2": {
+  "requirements_met": [
+   false,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": true,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s08_hobbyist_message_r3": {
+  "requirements_met": [
+   false,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s08_professional_system_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s08_professional_system_r2": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s08_professional_system_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s08_professional_message_r1": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s08_professional_message_r2": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s08_professional_message_r3": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s08_expert_system_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": true,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s08_expert_system_r2": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   false
+  ],
+  "requirements_met_prop": 0.5,
+  "condescension": 1,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s08_expert_system_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 1,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s08_expert_message_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s08_expert_message_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 1,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s08_expert_message_r3": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s09_control_none_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s09_control_none_r2": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s09_control_none_r3": {
+  "requirements_met": [
+   true,
+   false,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s09_beginner_system_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 3,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s09_beginner_system_r2": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 1,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s09_beginner_system_r3": {
+  "requirements_met": [
+   false,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s09_beginner_message_r1": {
+  "requirements_met": [
+   true,
+   false,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 3,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s09_beginner_message_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s09_beginner_message_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 1,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s09_hobbyist_system_r1": {
+  "requirements_met": [
+   false,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s09_hobbyist_system_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s09_hobbyist_system_r3": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 1,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s09_hobbyist_message_r1": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s09_hobbyist_message_r2": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   false
+  ],
+  "requirements_met_prop": 0.5,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s09_hobbyist_message_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 1,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s09_professional_system_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 1,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s09_professional_system_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s09_professional_system_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s09_professional_message_r1": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s09_professional_message_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 1,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s09_professional_message_r3": {
+  "requirements_met": [
+   true,
+   false,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s09_expert_system_r1": {
+  "requirements_met": [
+   false,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s09_expert_system_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 1,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s09_expert_system_r3": {
+  "requirements_met": [
+   true,
+   false,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s09_expert_message_r1": {
+  "requirements_met": [
+   false,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s09_expert_message_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 1,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s09_expert_message_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 4,
+  "hedging": true,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s10_control_none_r1": {
+  "requirements_met": [
+   false,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s10_control_none_r2": {
+  "requirements_met": [
+   false,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s10_control_none_r3": {
+  "requirements_met": [
+   false,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s10_beginner_system_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 1,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s10_beginner_system_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s10_beginner_system_r3": {
+  "requirements_met": [
+   true,
+   false,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 3,
+  "assumed_knowledge": 1,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s10_beginner_message_r1": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 1,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s10_beginner_message_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 3,
+  "assumed_knowledge": 1,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s10_beginner_message_r3": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 3,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s10_hobbyist_system_r1": {
+  "requirements_met": [
+   false,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s10_hobbyist_system_r2": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s10_hobbyist_system_r3": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s10_hobbyist_message_r1": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s10_hobbyist_message_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s10_hobbyist_message_r3": {
+  "requirements_met": [
+   true,
+   false,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 3,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s10_professional_system_r1": {
+  "requirements_met": [
+   false,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s10_professional_system_r2": {
+  "requirements_met": [
+   false,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s10_professional_system_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s10_professional_message_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 1,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s10_professional_message_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s10_professional_message_r3": {
+  "requirements_met": [
+   false,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s10_expert_system_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 1,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s10_expert_system_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s10_expert_system_r3": {
+  "requirements_met": [
+   false,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s10_expert_message_r1": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 5,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s10_expert_message_r2": {
+  "requirements_met": [
+   true,
+   false,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s10_expert_message_r3": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s11_control_none_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 3,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s11_control_none_r2": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s11_control_none_r3": {
+  "requirements_met": [
+   true,
+   false,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s11_beginner_system_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 3,
+  "assumed_knowledge": 1,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s11_beginner_system_r2": {
+  "requirements_met": [
+   false,
+   true,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.5,
+  "condescension": 3,
+  "assumed_knowledge": 1,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s11_beginner_system_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 3,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s11_beginner_message_r1": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s11_beginner_message_r2": {
+  "requirements_met": [
+   false,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 3,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s11_beginner_message_r3": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 3,
+  "assumed_knowledge": 1,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s11_hobbyist_system_r1": {
+  "requirements_met": [
+   false,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 1,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s11_hobbyist_system_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 3,
+  "assumed_knowledge": 3,
+  "hedging": true,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s11_hobbyist_system_r3": {
+  "requirements_met": [
+   false,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s11_hobbyist_message_r1": {
+  "requirements_met": [
+   true,
+   false,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s11_hobbyist_message_r2": {
+  "requirements_met": [
+   false,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s11_hobbyist_message_r3": {
+  "requirements_met": [
+   false,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s11_professional_system_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s11_professional_system_r2": {
+  "requirements_met": [
+   true,
+   false,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s11_professional_system_r3": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s11_professional_message_r1": {
+  "requirements_met": [
+   true,
+   false,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s11_professional_message_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s11_professional_message_r3": {
+  "requirements_met": [
+   false,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s11_expert_system_r1": {
+  "requirements_met": [
+   false,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s11_expert_system_r2": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s11_expert_system_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s11_expert_message_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s11_expert_message_r2": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s11_expert_message_r3": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s12_control_none_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s12_control_none_r2": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s12_control_none_r3": {
+  "requirements_met": [
+   false,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s12_beginner_system_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 3,
+  "assumed_knowledge": 1,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s12_beginner_system_r2": {
+  "requirements_met": [
+   true,
+   false,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s12_beginner_system_r3": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 3,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s12_beginner_message_r1": {
+  "requirements_met": [
+   false,
+   false,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.5,
+  "condescension": 2,
+  "assumed_knowledge": 1,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s12_beginner_message_r2": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 3,
+  "assumed_knowledge": 1,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s12_beginner_message_r3": {
+  "requirements_met": [
+   true,
+   false,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 3,
+  "assumed_knowledge": 1,
+  "hedging": true,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s12_hobbyist_system_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s12_hobbyist_system_r2": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s12_hobbyist_system_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s12_hobbyist_message_r1": {
+  "requirements_met": [
+   false,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s12_hobbyist_message_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s12_hobbyist_message_r3": {
+  "requirements_met": [
+   false,
+   true,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.5,
+  "condescension": 2,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s12_professional_system_r1": {
+  "requirements_met": [
+   false,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s12_professional_system_r2": {
+  "requirements_met": [
+   true,
+   false,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s12_professional_system_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s12_professional_message_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s12_professional_message_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s12_professional_message_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s12_expert_system_r1": {
+  "requirements_met": [
+   true,
+   false,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.5,
+  "condescension": 1,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s12_expert_system_r2": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s12_expert_system_r3": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s12_expert_message_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s12_expert_message_r2": {
+  "requirements_met": [
+   true,
+   false,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ },
+ "s12_expert_message_r3": {
+  "requirements_met": [
+   false,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "fixture-judge"
+ }
+}

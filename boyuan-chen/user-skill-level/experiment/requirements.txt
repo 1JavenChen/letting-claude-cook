@@ -1,0 +1,4 @@
+huggingface_hub>=0.30
+anthropic>=1.12.0  # only needed for --backend anthropic
+certifi
+matplotlib>=3.8  # figures only

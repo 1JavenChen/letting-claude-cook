@@ -1,0 +1,9128 @@
+{
+ "t01_control_none_r1": {
+  "requirements_met": [
+   true,
+   false,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 3,
+  "hedging": true,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t01_control_none_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t01_control_none_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t01_beginner_system_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 3,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t01_beginner_system_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 1,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t01_beginner_system_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 3,
+  "assumed_knowledge": 2,
+  "hedging": true,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t01_beginner_message_r1": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 3,
+  "assumed_knowledge": 1,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t01_beginner_message_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 2,
+  "hedging": true,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t01_beginner_message_r3": {
+  "requirements_met": [
+   false,
+   false,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.5,
+  "condescension": 1,
+  "assumed_knowledge": 1,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t01_hobbyist_system_r1": {
+  "requirements_met": [
+   false,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.5,
+  "condescension": 3,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t01_hobbyist_system_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 3,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t01_hobbyist_system_r3": {
+  "requirements_met": [
+   true,
+   false,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.5,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t01_hobbyist_message_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 1,
+  "assumed_knowledge": 3,
+  "hedging": true,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t01_hobbyist_message_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 1,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t01_hobbyist_message_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 3,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t01_professional_system_r1": {
+  "requirements_met": [
+   false,
+   false,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.5,
+  "condescension": 1,
+  "assumed_knowledge": 3,
+  "hedging": true,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t01_professional_system_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 3,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t01_professional_system_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 1,
+  "assumed_knowledge": 4,
+  "hedging": true,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t01_professional_message_r1": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t01_professional_message_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 1,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t01_professional_message_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t01_expert_system_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 5,
+  "hedging": true,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t01_expert_system_r2": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 5,
+  "hedging": true,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t01_expert_system_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 1,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t01_expert_message_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t01_expert_message_r2": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 4,
+  "hedging": true,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t01_expert_message_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 3,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t02_control_none_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t02_control_none_r2": {
+  "requirements_met": [
+   true,
+   false,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t02_control_none_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t02_beginner_system_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 4,
+  "assumed_knowledge": 1,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t02_beginner_system_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 4,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t02_beginner_system_r3": {
+  "requirements_met": [
+   true,
+   false,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 1,
+  "hedging": true,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t02_beginner_message_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t02_beginner_message_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t02_beginner_message_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 3,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t02_hobbyist_system_r1": {
+  "requirements_met": [
+   false,
+   true,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.5,
+  "condescension": 1,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t02_hobbyist_system_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 3,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t02_hobbyist_system_r3": {
+  "requirements_met": [
+   true,
+   false,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t02_hobbyist_message_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 3,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t02_hobbyist_message_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t02_hobbyist_message_r3": {
+  "requirements_met": [
+   true,
+   false,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t02_professional_system_r1": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 5,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t02_professional_system_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 3,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t02_professional_system_r3": {
+  "requirements_met": [
+   false,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.5,
+  "condescension": 2,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t02_professional_message_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 1,
+  "assumed_knowledge": 3,
+  "hedging": true,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t02_professional_message_r2": {
+  "requirements_met": [
+   false,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t02_professional_message_r3": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t02_expert_system_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t02_expert_system_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 1,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t02_expert_system_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 1,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t02_expert_message_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t02_expert_message_r2": {
+  "requirements_met": [
+   false,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t02_expert_message_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 5,
+  "hedging": true,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t03_control_none_r1": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   false
+  ],
+  "requirements_met_prop": 0.5,
+  "condescension": 3,
+  "assumed_knowledge": 1,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t03_control_none_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t03_control_none_r3": {
+  "requirements_met": [
+   false,
+   true,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.5,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t03_beginner_system_r1": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   false
+  ],
+  "requirements_met_prop": 0.5,
+  "condescension": 4,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t03_beginner_system_r2": {
+  "requirements_met": [
+   true,
+   false,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.5,
+  "condescension": 2,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t03_beginner_system_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 1,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t03_beginner_message_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t03_beginner_message_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 2,
+  "hedging": true,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t03_beginner_message_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 3,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t03_hobbyist_system_r1": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t03_hobbyist_system_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t03_hobbyist_system_r3": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 3,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t03_hobbyist_message_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 1,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t03_hobbyist_message_r2": {
+  "requirements_met": [
+   false,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t03_hobbyist_message_r3": {
+  "requirements_met": [
+   true,
+   false,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t03_professional_system_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t03_professional_system_r2": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t03_professional_system_r3": {
+  "requirements_met": [
+   true,
+   false,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t03_professional_message_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t03_professional_message_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t03_professional_message_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 1,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t03_expert_system_r1": {
+  "requirements_met": [
+   true,
+   false,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.5,
+  "condescension": 2,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t03_expert_system_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 3,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t03_expert_system_r3": {
+  "requirements_met": [
+   false,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t03_expert_message_r1": {
+  "requirements_met": [
+   false,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.5,
+  "condescension": 2,
+  "assumed_knowledge": 5,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t03_expert_message_r2": {
+  "requirements_met": [
+   false,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.5,
+  "condescension": 1,
+  "assumed_knowledge": 5,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t03_expert_message_r3": {
+  "requirements_met": [
+   false,
+   false,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.5,
+  "condescension": 2,
+  "assumed_knowledge": 5,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t04_control_none_r1": {
+  "requirements_met": [
+   true,
+   false,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t04_control_none_r2": {
+  "requirements_met": [
+   false,
+   false,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.5,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t04_control_none_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 1,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t04_beginner_system_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 3,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t04_beginner_system_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 4,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t04_beginner_system_r3": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   false
+  ],
+  "requirements_met_prop": 0.5,
+  "condescension": 3,
+  "assumed_knowledge": 1,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t04_beginner_message_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 3,
+  "assumed_knowledge": 1,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t04_beginner_message_r2": {
+  "requirements_met": [
+   true,
+   false,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 3,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t04_beginner_message_r3": {
+  "requirements_met": [
+   false,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t04_hobbyist_system_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t04_hobbyist_system_r2": {
+  "requirements_met": [
+   true,
+   false,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 3,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t04_hobbyist_system_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 1,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t04_hobbyist_message_r1": {
+  "requirements_met": [
+   false,
+   false,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.5,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t04_hobbyist_message_r2": {
+  "requirements_met": [
+   false,
+   true,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.5,
+  "condescension": 2,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t04_hobbyist_message_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 3,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t04_professional_system_r1": {
+  "requirements_met": [
+   true,
+   false,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 3,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t04_professional_system_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 1,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t04_professional_system_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t04_professional_message_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 1,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t04_professional_message_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t04_professional_message_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 1,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t04_expert_system_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 1,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t04_expert_system_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": true,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t04_expert_system_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 1,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t04_expert_message_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 1,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t04_expert_message_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 1,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t04_expert_message_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t05_control_none_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t05_control_none_r2": {
+  "requirements_met": [
+   true,
+   false,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.5,
+  "condescension": 1,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t05_control_none_r3": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t05_beginner_system_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 1,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t05_beginner_system_r2": {
+  "requirements_met": [
+   true,
+   false,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 4,
+  "assumed_knowledge": 1,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t05_beginner_system_r3": {
+  "requirements_met": [
+   true,
+   false,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 1,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t05_beginner_message_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 4,
+  "assumed_knowledge": 1,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t05_beginner_message_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 3,
+  "assumed_knowledge": 1,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t05_beginner_message_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 3,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t05_hobbyist_system_r1": {
+  "requirements_met": [
+   false,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.5,
+  "condescension": 2,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t05_hobbyist_system_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t05_hobbyist_system_r3": {
+  "requirements_met": [
+   true,
+   false,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t05_hobbyist_message_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 2,
+  "hedging": true,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t05_hobbyist_message_r2": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 4,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t05_hobbyist_message_r3": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t05_professional_system_r1": {
+  "requirements_met": [
+   false,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 3,
+  "assumed_knowledge": 3,
+  "hedging": true,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t05_professional_system_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t05_professional_system_r3": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t05_professional_message_r1": {
+  "requirements_met": [
+   true,
+   false,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.5,
+  "condescension": 2,
+  "assumed_knowledge": 2,
+  "hedging": true,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t05_professional_message_r2": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t05_professional_message_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 1,
+  "assumed_knowledge": 3,
+  "hedging": true,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t05_expert_system_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 1,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t05_expert_system_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t05_expert_system_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 1,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t05_expert_message_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 1,
+  "assumed_knowledge": 5,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t05_expert_message_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 1,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t05_expert_message_r3": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 5,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t06_control_none_r1": {
+  "requirements_met": [
+   true,
+   false,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.5,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t06_control_none_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 5,
+  "hedging": true,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t06_control_none_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 3,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t06_beginner_system_r1": {
+  "requirements_met": [
+   true,
+   false,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.5,
+  "condescension": 2,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t06_beginner_system_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 3,
+  "assumed_knowledge": 1,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t06_beginner_system_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 1,
+  "hedging": true,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t06_beginner_message_r1": {
+  "requirements_met": [
+   true,
+   false,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 1,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t06_beginner_message_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t06_beginner_message_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 3,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t06_hobbyist_system_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t06_hobbyist_system_r2": {
+  "requirements_met": [
+   false,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t06_hobbyist_system_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t06_hobbyist_message_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t06_hobbyist_message_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t06_hobbyist_message_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 3,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t06_professional_system_r1": {
+  "requirements_met": [
+   true,
+   false,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 4,
+  "hedging": true,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t06_professional_system_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 1,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t06_professional_system_r3": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 3,
+  "assumed_knowledge": 5,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t06_professional_message_r1": {
+  "requirements_met": [
+   true,
+   false,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t06_professional_message_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 3,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t06_professional_message_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t06_expert_system_r1": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 3,
+  "hedging": true,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t06_expert_system_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 5,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t06_expert_system_r3": {
+  "requirements_met": [
+   true,
+   false,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t06_expert_message_r1": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t06_expert_message_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 5,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t06_expert_message_r3": {
+  "requirements_met": [
+   false,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t07_control_none_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 1,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t07_control_none_r2": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t07_control_none_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 1,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t07_beginner_system_r1": {
+  "requirements_met": [
+   true,
+   false,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 3,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t07_beginner_system_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 3,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t07_beginner_system_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 3,
+  "assumed_knowledge": 1,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t07_beginner_message_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 3,
+  "assumed_knowledge": 1,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t07_beginner_message_r2": {
+  "requirements_met": [
+   false,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 4,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t07_beginner_message_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 3,
+  "assumed_knowledge": 1,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t07_hobbyist_system_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t07_hobbyist_system_r2": {
+  "requirements_met": [
+   false,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t07_hobbyist_system_r3": {
+  "requirements_met": [
+   true,
+   false,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.5,
+  "condescension": 3,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t07_hobbyist_message_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t07_hobbyist_message_r2": {
+  "requirements_met": [
+   true,
+   false,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t07_hobbyist_message_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t07_professional_system_r1": {
+  "requirements_met": [
+   false,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 4,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t07_professional_system_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t07_professional_system_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t07_professional_message_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 1,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t07_professional_message_r2": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t07_professional_message_r3": {
+  "requirements_met": [
+   false,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t07_expert_system_r1": {
+  "requirements_met": [
+   true,
+   false,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 5,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t07_expert_system_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t07_expert_system_r3": {
+  "requirements_met": [
+   true,
+   false,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t07_expert_message_r1": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t07_expert_message_r2": {
+  "requirements_met": [
+   true,
+   false,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t07_expert_message_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 5,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t08_control_none_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 3,
+  "assumed_knowledge": 5,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t08_control_none_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t08_control_none_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t08_beginner_system_r1": {
+  "requirements_met": [
+   true,
+   false,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t08_beginner_system_r2": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 3,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t08_beginner_system_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 1,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t08_beginner_message_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t08_beginner_message_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t08_beginner_message_r3": {
+  "requirements_met": [
+   true,
+   false,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 3,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t08_hobbyist_system_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 4,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t08_hobbyist_system_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t08_hobbyist_system_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t08_hobbyist_message_r1": {
+  "requirements_met": [
+   false,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 3,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t08_hobbyist_message_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 1,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t08_hobbyist_message_r3": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t08_professional_system_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t08_professional_system_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 1,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t08_professional_system_r3": {
+  "requirements_met": [
+   false,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 5,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t08_professional_message_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 1,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t08_professional_message_r2": {
+  "requirements_met": [
+   true,
+   false,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.5,
+  "condescension": 2,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t08_professional_message_r3": {
+  "requirements_met": [
+   false,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t08_expert_system_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 2,
+  "hedging": true,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t08_expert_system_r2": {
+  "requirements_met": [
+   false,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t08_expert_system_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 1,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t08_expert_message_r1": {
+  "requirements_met": [
+   true,
+   false,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t08_expert_message_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 1,
+  "assumed_knowledge": 5,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t08_expert_message_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t09_control_none_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 1,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t09_control_none_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 1,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t09_control_none_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t09_beginner_system_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 1,
+  "assumed_knowledge": 1,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t09_beginner_system_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 3,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t09_beginner_system_r3": {
+  "requirements_met": [
+   false,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.5,
+  "condescension": 2,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t09_beginner_message_r1": {
+  "requirements_met": [
+   true,
+   false,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 3,
+  "assumed_knowledge": 3,
+  "hedging": true,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t09_beginner_message_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t09_beginner_message_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 1,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t09_hobbyist_system_r1": {
+  "requirements_met": [
+   false,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t09_hobbyist_system_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t09_hobbyist_system_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 1,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t09_hobbyist_message_r1": {
+  "requirements_met": [
+   false,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t09_hobbyist_message_r2": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t09_hobbyist_message_r3": {
+  "requirements_met": [
+   true,
+   false,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.5,
+  "condescension": 3,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t09_professional_system_r1": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t09_professional_system_r2": {
+  "requirements_met": [
+   true,
+   false,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.5,
+  "condescension": 1,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t09_professional_system_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t09_professional_message_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t09_professional_message_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 1,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t09_professional_message_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t09_expert_system_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t09_expert_system_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 5,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t09_expert_system_r3": {
+  "requirements_met": [
+   true,
+   false,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t09_expert_message_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 3,
+  "assumed_knowledge": 3,
+  "hedging": true,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t09_expert_message_r2": {
+  "requirements_met": [
+   false,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 5,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t09_expert_message_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 1,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t10_control_none_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t10_control_none_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 1,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t10_control_none_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t10_beginner_system_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t10_beginner_system_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 3,
+  "assumed_knowledge": 1,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t10_beginner_system_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 3,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t10_beginner_message_r1": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 3,
+  "assumed_knowledge": 1,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t10_beginner_message_r2": {
+  "requirements_met": [
+   true,
+   false,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 3,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t10_beginner_message_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t10_hobbyist_system_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t10_hobbyist_system_r2": {
+  "requirements_met": [
+   true,
+   false,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t10_hobbyist_system_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t10_hobbyist_message_r1": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 3,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t10_hobbyist_message_r2": {
+  "requirements_met": [
+   false,
+   true,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.5,
+  "condescension": 2,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t10_hobbyist_message_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t10_professional_system_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t10_professional_system_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 3,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t10_professional_system_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 1,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t10_professional_message_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t10_professional_message_r2": {
+  "requirements_met": [
+   false,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t10_professional_message_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t10_expert_system_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 5,
+  "hedging": true,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t10_expert_system_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t10_expert_system_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t10_expert_message_r1": {
+  "requirements_met": [
+   true,
+   false,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t10_expert_message_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 1,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t10_expert_message_r3": {
+  "requirements_met": [
+   false,
+   true,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.5,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t11_control_none_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 3,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t11_control_none_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 1,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t11_control_none_r3": {
+  "requirements_met": [
+   true,
+   false,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t11_beginner_system_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 3,
+  "assumed_knowledge": 1,
+  "hedging": true,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t11_beginner_system_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t11_beginner_system_r3": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 3,
+  "assumed_knowledge": 2,
+  "hedging": true,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t11_beginner_message_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 3,
+  "assumed_knowledge": 1,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t11_beginner_message_r2": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   false
+  ],
+  "requirements_met_prop": 0.5,
+  "condescension": 3,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t11_beginner_message_r3": {
+  "requirements_met": [
+   false,
+   true,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.5,
+  "condescension": 3,
+  "assumed_knowledge": 1,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t11_hobbyist_system_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t11_hobbyist_system_r2": {
+  "requirements_met": [
+   false,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t11_hobbyist_system_r3": {
+  "requirements_met": [
+   false,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.5,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t11_hobbyist_message_r1": {
+  "requirements_met": [
+   false,
+   false,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.25,
+  "condescension": 2,
+  "assumed_knowledge": 2,
+  "hedging": true,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t11_hobbyist_message_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 3,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t11_hobbyist_message_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 1,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t11_professional_system_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 3,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t11_professional_system_r2": {
+  "requirements_met": [
+   false,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t11_professional_system_r3": {
+  "requirements_met": [
+   false,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.5,
+  "condescension": 3,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t11_professional_message_r1": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t11_professional_message_r2": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t11_professional_message_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 1,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t11_expert_system_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 1,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t11_expert_system_r2": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 5,
+  "hedging": true,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t11_expert_system_r3": {
+  "requirements_met": [
+   true,
+   false,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.5,
+  "condescension": 1,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t11_expert_message_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 1,
+  "assumed_knowledge": 4,
+  "hedging": true,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t11_expert_message_r2": {
+  "requirements_met": [
+   true,
+   false,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t11_expert_message_r3": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t12_control_none_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 3,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t12_control_none_r2": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t12_control_none_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t12_beginner_system_r1": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 2,
+  "hedging": true,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t12_beginner_system_r2": {
+  "requirements_met": [
+   false,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t12_beginner_system_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 3,
+  "assumed_knowledge": 1,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t12_beginner_message_r1": {
+  "requirements_met": [
+   true,
+   false,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.5,
+  "condescension": 3,
+  "assumed_knowledge": 1,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t12_beginner_message_r2": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 3,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t12_beginner_message_r3": {
+  "requirements_met": [
+   true,
+   false,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.5,
+  "condescension": 3,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t12_hobbyist_system_r1": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t12_hobbyist_system_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": true,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t12_hobbyist_system_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 1,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t12_hobbyist_message_r1": {
+  "requirements_met": [
+   false,
+   false,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.5,
+  "condescension": 1,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t12_hobbyist_message_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 3,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t12_hobbyist_message_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t12_professional_system_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t12_professional_system_r2": {
+  "requirements_met": [
+   false,
+   true,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.5,
+  "condescension": 2,
+  "assumed_knowledge": 4,
+  "hedging": true,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t12_professional_system_r3": {
+  "requirements_met": [
+   false,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.5,
+  "condescension": 1,
+  "assumed_knowledge": 2,
+  "hedging": true,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t12_professional_message_r1": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   false
+  ],
+  "requirements_met_prop": 0.5,
+  "condescension": 3,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t12_professional_message_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 1,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t12_professional_message_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 1,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t12_expert_system_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 1,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t12_expert_system_r2": {
+  "requirements_met": [
+   false,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.5,
+  "condescension": 3,
+  "assumed_knowledge": 5,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t12_expert_system_r3": {
+  "requirements_met": [
+   true,
+   false,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t12_expert_message_r1": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t12_expert_message_r2": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t12_expert_message_r3": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 3,
+  "hedging": true,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t13_control_none_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t13_control_none_r2": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 2,
+  "hedging": true,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t13_control_none_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 1,
+  "assumed_knowledge": 3,
+  "hedging": true,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t13_beginner_system_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 3,
+  "assumed_knowledge": 1,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t13_beginner_system_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 3,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t13_beginner_system_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 1,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t13_beginner_message_r1": {
+  "requirements_met": [
+   true,
+   false,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t13_beginner_message_r2": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   false
+  ],
+  "requirements_met_prop": 0.5,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t13_beginner_message_r3": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   false
+  ],
+  "requirements_met_prop": 0.5,
+  "condescension": 4,
+  "assumed_knowledge": 1,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t13_hobbyist_system_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t13_hobbyist_system_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 3,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t13_hobbyist_system_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": true,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t13_hobbyist_message_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t13_hobbyist_message_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 1,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t13_hobbyist_message_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 3,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t13_professional_system_r1": {
+  "requirements_met": [
+   true,
+   false,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.5,
+  "condescension": 1,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t13_professional_system_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 1,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t13_professional_system_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t13_professional_message_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t13_professional_message_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 1,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t13_professional_message_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t13_expert_system_r1": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t13_expert_system_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 5,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t13_expert_system_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t13_expert_message_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t13_expert_message_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 1,
+  "assumed_knowledge": 5,
+  "hedging": true,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t13_expert_message_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 1,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t14_control_none_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t14_control_none_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t14_control_none_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t14_beginner_system_r1": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   false
+  ],
+  "requirements_met_prop": 0.5,
+  "condescension": 1,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t14_beginner_system_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 1,
+  "assumed_knowledge": 1,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t14_beginner_system_r3": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t14_beginner_message_r1": {
+  "requirements_met": [
+   false,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 3,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t14_beginner_message_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 4,
+  "assumed_knowledge": 1,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t14_beginner_message_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 3,
+  "assumed_knowledge": 1,
+  "hedging": true,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t14_hobbyist_system_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 3,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t14_hobbyist_system_r2": {
+  "requirements_met": [
+   false,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t14_hobbyist_system_r3": {
+  "requirements_met": [
+   false,
+   true,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.5,
+  "condescension": 3,
+  "assumed_knowledge": 1,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t14_hobbyist_message_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 4,
+  "hedging": true,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t14_hobbyist_message_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 1,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t14_hobbyist_message_r3": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t14_professional_system_r1": {
+  "requirements_met": [
+   true,
+   false,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t14_professional_system_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t14_professional_system_r3": {
+  "requirements_met": [
+   false,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 2,
+  "hedging": true,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t14_professional_message_r1": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t14_professional_message_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 3,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t14_professional_message_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 3,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t14_expert_system_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 1,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t14_expert_system_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 1,
+  "assumed_knowledge": 5,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t14_expert_system_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 1,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t14_expert_message_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 5,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t14_expert_message_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 1,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t14_expert_message_r3": {
+  "requirements_met": [
+   false,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 3,
+  "assumed_knowledge": 5,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t15_control_none_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 3,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t15_control_none_r2": {
+  "requirements_met": [
+   false,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.5,
+  "condescension": 2,
+  "assumed_knowledge": 4,
+  "hedging": true,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t15_control_none_r3": {
+  "requirements_met": [
+   true,
+   false,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.5,
+  "condescension": 1,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t15_beginner_system_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 3,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t15_beginner_system_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 3,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t15_beginner_system_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 1,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t15_beginner_message_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t15_beginner_message_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t15_beginner_message_r3": {
+  "requirements_met": [
+   true,
+   false,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 4,
+  "assumed_knowledge": 1,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t15_hobbyist_system_r1": {
+  "requirements_met": [
+   false,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t15_hobbyist_system_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 3,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t15_hobbyist_system_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t15_hobbyist_message_r1": {
+  "requirements_met": [
+   true,
+   false,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 3,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t15_hobbyist_message_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t15_hobbyist_message_r3": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t15_professional_system_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t15_professional_system_r2": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t15_professional_system_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t15_professional_message_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t15_professional_message_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t15_professional_message_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 4,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t15_expert_system_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t15_expert_system_r2": {
+  "requirements_met": [
+   false,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t15_expert_system_r3": {
+  "requirements_met": [
+   true,
+   false,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 5,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t15_expert_message_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 5,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t15_expert_message_r2": {
+  "requirements_met": [
+   false,
+   true,
+   false,
+   false
+  ],
+  "requirements_met_prop": 0.25,
+  "condescension": 1,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t15_expert_message_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 1,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t16_control_none_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 1,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t16_control_none_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t16_control_none_r3": {
+  "requirements_met": [
+   false,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 5,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t16_beginner_system_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 3,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t16_beginner_system_r2": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t16_beginner_system_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 1,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t16_beginner_message_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 3,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t16_beginner_message_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 4,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t16_beginner_message_r3": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   false
+  ],
+  "requirements_met_prop": 0.5,
+  "condescension": 3,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t16_hobbyist_system_r1": {
+  "requirements_met": [
+   false,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t16_hobbyist_system_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t16_hobbyist_system_r3": {
+  "requirements_met": [
+   true,
+   false,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 3,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t16_hobbyist_message_r1": {
+  "requirements_met": [
+   false,
+   false,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.5,
+  "condescension": 3,
+  "assumed_knowledge": 1,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t16_hobbyist_message_r2": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 3,
+  "assumed_knowledge": 1,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t16_hobbyist_message_r3": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 3,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t16_professional_system_r1": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t16_professional_system_r2": {
+  "requirements_met": [
+   true,
+   false,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": true,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t16_professional_system_r3": {
+  "requirements_met": [
+   false,
+   false,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.5,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t16_professional_message_r1": {
+  "requirements_met": [
+   false,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 2,
+  "hedging": true,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t16_professional_message_r2": {
+  "requirements_met": [
+   true,
+   false,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t16_professional_message_r3": {
+  "requirements_met": [
+   true,
+   false,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.5,
+  "condescension": 1,
+  "assumed_knowledge": 1,
+  "hedging": true,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t16_expert_system_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 1,
+  "assumed_knowledge": 5,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t16_expert_system_r2": {
+  "requirements_met": [
+   true,
+   false,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t16_expert_system_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 1,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t16_expert_message_r1": {
+  "requirements_met": [
+   false,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t16_expert_message_r2": {
+  "requirements_met": [
+   false,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t16_expert_message_r3": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t17_control_none_r1": {
+  "requirements_met": [
+   false,
+   false,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.5,
+  "condescension": 1,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t17_control_none_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": true,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t17_control_none_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 3,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t17_beginner_system_r1": {
+  "requirements_met": [
+   true,
+   false,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 1,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t17_beginner_system_r2": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 3,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t17_beginner_system_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 1,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t17_beginner_message_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 3,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t17_beginner_message_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t17_beginner_message_r3": {
+  "requirements_met": [
+   false,
+   true,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.5,
+  "condescension": 2,
+  "assumed_knowledge": 2,
+  "hedging": true,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t17_hobbyist_system_r1": {
+  "requirements_met": [
+   false,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 3,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t17_hobbyist_system_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t17_hobbyist_system_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t17_hobbyist_message_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 3,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t17_hobbyist_message_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 1,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t17_hobbyist_message_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 3,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t17_professional_system_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t17_professional_system_r2": {
+  "requirements_met": [
+   true,
+   false,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 5,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t17_professional_system_r3": {
+  "requirements_met": [
+   false,
+   true,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.5,
+  "condescension": 1,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t17_professional_message_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 3,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t17_professional_message_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t17_professional_message_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t17_expert_system_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t17_expert_system_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t17_expert_system_r3": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t17_expert_message_r1": {
+  "requirements_met": [
+   true,
+   false,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t17_expert_message_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 1,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t17_expert_message_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 1,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t18_control_none_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 1,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t18_control_none_r2": {
+  "requirements_met": [
+   false,
+   false,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.5,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t18_control_none_r3": {
+  "requirements_met": [
+   false,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t18_beginner_system_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 3,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t18_beginner_system_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 1,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t18_beginner_system_r3": {
+  "requirements_met": [
+   true,
+   false,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 4,
+  "assumed_knowledge": 4,
+  "hedging": true,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t18_beginner_message_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 3,
+  "assumed_knowledge": 1,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t18_beginner_message_r2": {
+  "requirements_met": [
+   true,
+   false,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 4,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t18_beginner_message_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t18_hobbyist_system_r1": {
+  "requirements_met": [
+   true,
+   false,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 3,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t18_hobbyist_system_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 3,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t18_hobbyist_system_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 3,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t18_hobbyist_message_r1": {
+  "requirements_met": [
+   true,
+   false,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.5,
+  "condescension": 3,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t18_hobbyist_message_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 1,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t18_hobbyist_message_r3": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 3,
+  "assumed_knowledge": 5,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t18_professional_system_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 1,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t18_professional_system_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t18_professional_system_r3": {
+  "requirements_met": [
+   false,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t18_professional_message_r1": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t18_professional_message_r2": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 4,
+  "hedging": true,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t18_professional_message_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": true,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t18_expert_system_r1": {
+  "requirements_met": [
+   true,
+   false,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t18_expert_system_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t18_expert_system_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t18_expert_message_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t18_expert_message_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t18_expert_message_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 1,
+  "assumed_knowledge": 4,
+  "hedging": true,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t19_control_none_r1": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t19_control_none_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t19_control_none_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t19_beginner_system_r1": {
+  "requirements_met": [
+   false,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 3,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t19_beginner_system_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 1,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t19_beginner_system_r3": {
+  "requirements_met": [
+   true,
+   false,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 3,
+  "assumed_knowledge": 1,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t19_beginner_message_r1": {
+  "requirements_met": [
+   true,
+   false,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 3,
+  "assumed_knowledge": 1,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t19_beginner_message_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 1,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t19_beginner_message_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 3,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t19_hobbyist_system_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 3,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t19_hobbyist_system_r2": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t19_hobbyist_system_r3": {
+  "requirements_met": [
+   false,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t19_hobbyist_message_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t19_hobbyist_message_r2": {
+  "requirements_met": [
+   true,
+   false,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.5,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t19_hobbyist_message_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t19_professional_system_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t19_professional_system_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 1,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t19_professional_system_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 5,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t19_professional_message_r1": {
+  "requirements_met": [
+   true,
+   false,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.5,
+  "condescension": 1,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t19_professional_message_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 1,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t19_professional_message_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 1,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t19_expert_system_r1": {
+  "requirements_met": [
+   true,
+   false,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 5,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t19_expert_system_r2": {
+  "requirements_met": [
+   false,
+   true,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.5,
+  "condescension": 1,
+  "assumed_knowledge": 4,
+  "hedging": true,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t19_expert_system_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 1,
+  "assumed_knowledge": 5,
+  "hedging": true,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t19_expert_message_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 1,
+  "assumed_knowledge": 5,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t19_expert_message_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t19_expert_message_r3": {
+  "requirements_met": [
+   true,
+   false,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 5,
+  "hedging": true,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t20_control_none_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 1,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t20_control_none_r2": {
+  "requirements_met": [
+   true,
+   false,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.5,
+  "condescension": 1,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t20_control_none_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t20_beginner_system_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 3,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t20_beginner_system_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 3,
+  "assumed_knowledge": 1,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t20_beginner_system_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 4,
+  "assumed_knowledge": 1,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t20_beginner_message_r1": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t20_beginner_message_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 3,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t20_beginner_message_r3": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 3,
+  "assumed_knowledge": 1,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t20_hobbyist_system_r1": {
+  "requirements_met": [
+   true,
+   false,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 3,
+  "assumed_knowledge": 1,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t20_hobbyist_system_r2": {
+  "requirements_met": [
+   false,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 1,
+  "hedging": true,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t20_hobbyist_system_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t20_hobbyist_message_r1": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   false
+  ],
+  "requirements_met_prop": 0.5,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t20_hobbyist_message_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 1,
+  "assumed_knowledge": 3,
+  "hedging": true,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t20_hobbyist_message_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t20_professional_system_r1": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t20_professional_system_r2": {
+  "requirements_met": [
+   false,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 3,
+  "hedging": true,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t20_professional_system_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 1,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t20_professional_message_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 3,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t20_professional_message_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t20_professional_message_r3": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 4,
+  "hedging": true,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t20_expert_system_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 5,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t20_expert_system_r2": {
+  "requirements_met": [
+   true,
+   false,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t20_expert_system_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t20_expert_message_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t20_expert_message_r2": {
+  "requirements_met": [
+   true,
+   false,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t20_expert_message_r3": {
+  "requirements_met": [
+   false,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.75,
+  "condescension": 1,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t21_control_none_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 1,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t21_control_none_r2": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.8,
+  "condescension": 3,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t21_control_none_r3": {
+  "requirements_met": [
+   true,
+   false,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.8,
+  "condescension": 2,
+  "assumed_knowledge": 5,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t21_beginner_system_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 4,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t21_beginner_system_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t21_beginner_system_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 3,
+  "assumed_knowledge": 1,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t21_beginner_message_r1": {
+  "requirements_met": [
+   true,
+   false,
+   false,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.6,
+  "condescension": 2,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t21_beginner_message_r2": {
+  "requirements_met": [
+   false,
+   false,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.6,
+  "condescension": 1,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t21_beginner_message_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 3,
+  "assumed_knowledge": 2,
+  "hedging": true,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t21_hobbyist_system_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 3,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t21_hobbyist_system_r2": {
+  "requirements_met": [
+   false,
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.8,
+  "condescension": 1,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t21_hobbyist_system_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t21_hobbyist_message_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 3,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t21_hobbyist_message_r2": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.6,
+  "condescension": 2,
+  "assumed_knowledge": 2,
+  "hedging": true,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t21_hobbyist_message_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 2,
+  "hedging": true,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t21_professional_system_r1": {
+  "requirements_met": [
+   true,
+   false,
+   true,
+   false,
+   false
+  ],
+  "requirements_met_prop": 0.4,
+  "condescension": 3,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t21_professional_system_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.8,
+  "condescension": 2,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t21_professional_system_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 1,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t21_professional_message_r1": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.8,
+  "condescension": 2,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t21_professional_message_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 1,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t21_professional_message_r3": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.8,
+  "condescension": 1,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t21_expert_system_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   false,
+   false
+  ],
+  "requirements_met_prop": 0.6,
+  "condescension": 1,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t21_expert_system_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 1,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t21_expert_system_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 1,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t21_expert_message_r1": {
+  "requirements_met": [
+   false,
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.8,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": true,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t21_expert_message_r2": {
+  "requirements_met": [
+   true,
+   false,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.8,
+  "condescension": 1,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t21_expert_message_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 1,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t22_control_none_r1": {
+  "requirements_met": [
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.6667,
+  "condescension": 2,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t22_control_none_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 1,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t22_control_none_r3": {
+  "requirements_met": [
+   true,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.6667,
+  "condescension": 2,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t22_beginner_system_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t22_beginner_system_r2": {
+  "requirements_met": [
+   false,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.3333,
+  "condescension": 2,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t22_beginner_system_r3": {
+  "requirements_met": [
+   true,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.6667,
+  "condescension": 2,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t22_beginner_message_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 3,
+  "assumed_knowledge": 1,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t22_beginner_message_r2": {
+  "requirements_met": [
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.6667,
+  "condescension": 2,
+  "assumed_knowledge": 1,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t22_beginner_message_r3": {
+  "requirements_met": [
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.6667,
+  "condescension": 3,
+  "assumed_knowledge": 1,
+  "hedging": true,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t22_hobbyist_system_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t22_hobbyist_system_r2": {
+  "requirements_met": [
+   true,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.6667,
+  "condescension": 2,
+  "assumed_knowledge": 1,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t22_hobbyist_system_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t22_hobbyist_message_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 2,
+  "hedging": true,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t22_hobbyist_message_r2": {
+  "requirements_met": [
+   true,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.6667,
+  "condescension": 2,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t22_hobbyist_message_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 3,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t22_professional_system_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 3,
+  "assumed_knowledge": 5,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t22_professional_system_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 5,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t22_professional_system_r3": {
+  "requirements_met": [
+   true,
+   false,
+   false
+  ],
+  "requirements_met_prop": 0.3333,
+  "condescension": 3,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t22_professional_message_r1": {
+  "requirements_met": [
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.6667,
+  "condescension": 1,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t22_professional_message_r2": {
+  "requirements_met": [
+   false,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.6667,
+  "condescension": 2,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t22_professional_message_r3": {
+  "requirements_met": [
+   false,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.3333,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t22_expert_system_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 3,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t22_expert_system_r2": {
+  "requirements_met": [
+   false,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.6667,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": true,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t22_expert_system_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 1,
+  "assumed_knowledge": 5,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t22_expert_message_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 1,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t22_expert_message_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 1,
+  "assumed_knowledge": 4,
+  "hedging": true,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t22_expert_message_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 1,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t23_control_none_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.8,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t23_control_none_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.8,
+  "condescension": 1,
+  "assumed_knowledge": 5,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t23_control_none_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t23_beginner_system_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t23_beginner_system_r2": {
+  "requirements_met": [
+   false,
+   true,
+   true,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.6,
+  "condescension": 4,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t23_beginner_system_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 3,
+  "assumed_knowledge": 1,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t23_beginner_message_r1": {
+  "requirements_met": [
+   false,
+   false,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.6,
+  "condescension": 2,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t23_beginner_message_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t23_beginner_message_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 1,
+  "assumed_knowledge": 1,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t23_hobbyist_system_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 3,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t23_hobbyist_system_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.8,
+  "condescension": 2,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t23_hobbyist_system_r3": {
+  "requirements_met": [
+   false,
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.8,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t23_hobbyist_message_r1": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.6,
+  "condescension": 3,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t23_hobbyist_message_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.8,
+  "condescension": 2,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t23_hobbyist_message_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 3,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t23_professional_system_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 1,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t23_professional_system_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t23_professional_system_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.8,
+  "condescension": 2,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t23_professional_message_r1": {
+  "requirements_met": [
+   false,
+   false,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.6,
+  "condescension": 1,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t23_professional_message_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 1,
+  "assumed_knowledge": 4,
+  "hedging": true,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t23_professional_message_r3": {
+  "requirements_met": [
+   true,
+   false,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.8,
+  "condescension": 2,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t23_expert_system_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.8,
+  "condescension": 2,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t23_expert_system_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t23_expert_system_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t23_expert_message_r1": {
+  "requirements_met": [
+   false,
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.8,
+  "condescension": 1,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t23_expert_message_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.8,
+  "condescension": 2,
+  "assumed_knowledge": 5,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t23_expert_message_r3": {
+  "requirements_met": [
+   false,
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.8,
+  "condescension": 1,
+  "assumed_knowledge": 5,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t24_control_none_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.8,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t24_control_none_r2": {
+  "requirements_met": [
+   false,
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.8,
+  "condescension": 1,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t24_control_none_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t24_beginner_system_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 3,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t24_beginner_system_r2": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.6,
+  "condescension": 4,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t24_beginner_system_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 1,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t24_beginner_message_r1": {
+  "requirements_met": [
+   false,
+   true,
+   true,
+   true,
+   false
+  ],
+  "requirements_met_prop": 0.6,
+  "condescension": 3,
+  "assumed_knowledge": 1,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t24_beginner_message_r2": {
+  "requirements_met": [
+   true,
+   true,
+   false,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.8,
+  "condescension": 4,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t24_beginner_message_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 3,
+  "assumed_knowledge": 1,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t24_hobbyist_system_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   false,
+   false
+  ],
+  "requirements_met_prop": 0.6,
+  "condescension": 2,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t24_hobbyist_system_r2": {
+  "requirements_met": [
+   true,
+   false,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.8,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t24_hobbyist_system_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 3,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t24_hobbyist_message_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 1,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t24_hobbyist_message_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.8,
+  "condescension": 3,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t24_hobbyist_message_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.8,
+  "condescension": 1,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t24_professional_system_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 1,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t24_professional_system_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t24_professional_system_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.8,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t24_professional_message_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.8,
+  "condescension": 1,
+  "assumed_knowledge": 2,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t24_professional_message_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t24_professional_message_r3": {
+  "requirements_met": [
+   false,
+   true,
+   true,
+   false,
+   true
+  ],
+  "requirements_met_prop": 0.6,
+  "condescension": 1,
+  "assumed_knowledge": 4,
+  "hedging": true,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t24_expert_system_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 1,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t24_expert_system_r2": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 1,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t24_expert_system_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t24_expert_message_r1": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 1,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t24_expert_message_r2": {
+  "requirements_met": [
+   false,
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 0.8,
+  "condescension": 1,
+  "assumed_knowledge": 4,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ },
+ "t24_expert_message_r3": {
+  "requirements_met": [
+   true,
+   true,
+   true,
+   true,
+   true
+  ],
+  "requirements_met_prop": 1.0,
+  "condescension": 2,
+  "assumed_knowledge": 3,
+  "hedging": false,
+  "refusal": false,
+  "judge_model": "TOY-SYNTHETIC"
+ }
+}

@@ -1,0 +1,35 @@
+n = 297 scored answers
+
+== by skill level (both channels pooled) ==
+level           n  pass%  all% nocode% gaveup% trunc% tout%  words  loc tokens
+control        72   53.5  37.5    13.9    11.1    6.9   0.0     76   36   1284
+beginner       56   50.2  37.5    17.9    14.3    3.6   1.8     35   41   1281
+hobbyist       57   47.7  38.6    12.3    10.5    3.5   3.5     36   35   1174
+professional   60   45.7  36.7    16.7    15.0    0.0   1.7     12   38   1220
+expert         52   47.6  34.6    15.4     9.6    9.6   0.0     75   38   1407
+
+== by level x channel ==
+level        channel     n  pass%  all% nocode%  words tokens
+control      none       72   53.5  37.5    13.9     76   1284
+beginner     system     32   46.2  34.4    18.8     38   1495
+beginner     message    24   55.6  41.7    16.7     30    997
+hobbyist     system     29   46.7  34.5     6.9     46   1127
+hobbyist     message    28   48.7  42.9    17.9     25   1222
+professional system     28   43.9  35.7    21.4     20   1253
+professional message    32   47.3  37.5    12.5      5   1191
+expert       system     24   46.2  29.2    16.7     88   1528
+expert       message    28   48.9  39.3    14.3     63   1304
+
+== within-task contrast vs control (task-paired, 2000-boot CI over tasks) ==
+pass_rate    beginner      diff=  +0.019  95% CI [-0.075, +0.120]  tasks=22
+pass_rate    hobbyist      diff=  -0.069  95% CI [-0.168, +0.028]  tasks=24
+pass_rate    professional  diff=  -0.049  95% CI [-0.117, +0.022]  tasks=23
+pass_rate    expert        diff=  -0.108  95% CI [-0.199, -0.012]  tasks=20
+all_pass     beginner      diff=  +0.034  95% CI [-0.049, +0.129]  tasks=22
+all_pass     hobbyist      diff=  -0.019  95% CI [-0.171, +0.126]  tasks=24
+all_pass     professional  diff=  +0.014  95% CI [-0.080, +0.101]  tasks=23
+all_pass     expert        diff=  -0.052  95% CI [-0.146, +0.022]  tasks=20
+prose_words  beginner      diff= -30.773  95% CI [-101.886, +34.027]  tasks=22
+prose_words  hobbyist      diff= -25.118  95% CI [-86.611, +35.674]  tasks=24
+prose_words  professional  diff= -50.000  95% CI [-101.373, -6.601]  tasks=23
+prose_words  expert        diff= -22.625  95% CI [-82.667, +31.533]  tasks=20
