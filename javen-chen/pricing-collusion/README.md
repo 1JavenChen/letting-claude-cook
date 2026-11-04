@@ -401,10 +401,10 @@ cut its price from $1.91 to $1.65.
 
 ```bash
 python3 -m venv .venv                          # from the repo root
-.venv/bin/pip install -r pricing-collusion/requirements.txt
-cd pricing-collusion
-../.venv/bin/python market.py                  # prints the two benchmarks
-../.venv/bin/python run_bot_tests.py           # runs the bots, saves CSVs + chart to results/
+.venv/bin/pip install -r javen-chen/pricing-collusion/requirements.txt
+cd javen-chen/pricing-collusion
+../../.venv/bin/python market.py                  # prints the two benchmarks
+../../.venv/bin/python run_bot_tests.py           # runs the bots, saves CSVs + chart to results/
 ```
 
 | File | What it does |
@@ -426,8 +426,8 @@ AI games run through Claude Code (`claude -p`) on a Claude subscription. For
 example:
 
 ```bash
-../.venv/bin/python run_llm_game.py --model sonnet --effort high --rounds 200 --prefix P1 --seed 11 --budget 40
-../.venv/bin/python compare_conditions.py "sonnet_low_*" "sonnet_high_*" --last 50
+../../.venv/bin/python run_llm_game.py --model sonnet --effort high --rounds 200 --prefix P1 --seed 11 --budget 40
+../../.venv/bin/python compare_conditions.py "sonnet_low_*" "sonnet_high_*" --last 50
 ```
 
 ## Reference

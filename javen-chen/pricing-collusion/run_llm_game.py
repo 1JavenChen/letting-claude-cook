@@ -1,7 +1,7 @@
 """Run one game between two AI pricing agents and save the results.
 
 Example (from this folder):
-    ../.venv/bin/python run_llm_game.py --model haiku --rounds 5 --prefix P1
+    ../../.venv/bin/python run_llm_game.py --model haiku --rounds 5 --prefix P1
 
 Saves to results/llm/<run name>/: rounds.csv (prices and profits),
 transcripts.jsonl (every AI answer, including its notes), settings.json,

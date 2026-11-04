@@ -1,7 +1,7 @@
 """Summary images of the main findings so far, for slides and the README.
 
 Example (from this folder):
-    ../.venv/bin/python plot_findings.py
+    ../../.venv/bin/python plot_findings.py
 
 Saves four PNGs to results/findings/:
   1_overview.png     collusion index of every AI game, all experiments

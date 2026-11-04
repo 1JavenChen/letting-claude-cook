@@ -16,7 +16,7 @@
    this is low.
 
 Example (from this folder):
-    ../.venv/bin/python analyze_behavior.py "haiku_P1_a1_100r_seed*" --skip 10
+    ../../.venv/bin/python analyze_behavior.py "haiku_P1_a1_100r_seed*" --skip 10
 """
 
 import argparse

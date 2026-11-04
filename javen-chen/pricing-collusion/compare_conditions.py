@@ -1,7 +1,7 @@
 """Compare two sets of AI games (e.g. low vs high thinking effort).
 
 Example (from this folder):
-    ../.venv/bin/python compare_conditions.py "sonnet_low_*" "sonnet_high_*" --last 50
+    ../../.venv/bin/python compare_conditions.py "sonnet_low_*" "sonnet_high_*" --last 50
 
 For each game it takes the collusion index over the last `--last` rounds
 (0 = competitive, 1 = cartel; see analyze_llm_games.py), then reports:
