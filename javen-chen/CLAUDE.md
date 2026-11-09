@@ -148,3 +148,8 @@
 
 ### 2026-11-09: Fable dropped
 - Javen decided not to run full Fable games (~1 week, ~$1,100 API-equivalent). The 10-round Fable pilot stays in `results/llm/`, labeled as a test run in its `notes.txt`, in `GAMES.md`, the README's "What's next" and `EXPERIMENT_PLAN.md`.
+
+### 2026-11-09: Rule-based mechanism classifier
+- `pricing-collusion/classify_mechanism.py` labels each game: Competitive / Still probing / Leader-follower / Fear (borne out, untested, not borne out) / Stuck / Unclear, from price data (exploration in rounds 151–200, price gap, leader-follower signature, cuts answered after round 20, "punish-like" responses below best response) plus keyword shares in the notes (rounds 101–200). Rules and thresholds are in the docstring.
+- Results are NOT shared with Javen yet (a second blind check on the 13 high-price games is in progress); full output was kept outside the repo. Share after Javen finishes the blind check.
+- Found while building it: Haiku P2 seed 22 also reached the cartel level (index 0.97), so the paper's "only game to reach the full cartel level" (Haiku P1 seed 23) is wrong; told Javen.
