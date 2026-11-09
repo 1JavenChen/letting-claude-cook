@@ -151,5 +151,13 @@
 
 ### 2026-11-09: Rule-based mechanism classifier
 - `pricing-collusion/classify_mechanism.py` labels each game: Competitive / Still probing / Leader-follower / Fear (borne out, untested, not borne out) / Stuck / Unclear, from price data (exploration in rounds 151–200, price gap, leader-follower signature, cuts answered after round 20, "punish-like" responses below best response) plus keyword shares in the notes (rounds 101–200). Rules and thresholds are in the docstring.
-- Results are NOT shared with Javen yet (a second blind check on the 13 high-price games is in progress); full output was kept outside the repo. Share after Javen finishes the blind check.
+- Results are NOT shared with Javen yet (blind check round 2 in progress). Re-run the script to see them.
 - Found while building it: Haiku P2 seed 22 also reached the cartel level (index 0.97), so the paper's "only game to reach the full cartel level" (Haiku P1 seed 23) is wrong; told Javen.
+
+### Where things stand (handoff, 2026-11-09)
+- **Links:** paper draft (Claude Doc) https://claude.ai/artifact/JrDMCcHzrU2StY4W6P3Won · chart slides https://claude.ai/artifact/HgT12Kt3CeRNGJWfBAihQM · blind check round 2 sheet https://claude.ai/artifact/5PhRM3dVAMJeVoZBFEQCqo (tab 1 = Javen's answers; tab 2 = game identities + Claude's answers, Javen shouldn't open until done) · README review notes https://claude.ai/artifact/Q5DK8YV8yd72aZuZz3RmEe
+- **Teacher's repo:** both PRs merged (#1 project, #2 move into `javen-chen/`). The course workflow is a PR from this fork to `dfink/letting-claude-cook`; anything new needs a new PR.
+- **Blind check round 2 in progress:** 13 high-price games (index ≥ 0.25, Experiment 3) anonymized as Games 1–13 in `pricing-collusion/blind_check/`. Q1 = main reason (stuck / fear of retaliation / price leader and follower / still probing / other), Q2 = were cuts answered. When Javen says done: compare their answers with the Results tab and with `classify_mechanism.py`, then share the general finding: almost no "punish-like" responses (rivals follow cuts by ordinary best response, not punishment). Javen does NOT want blind-check results added to the README or saved in the repo unless they say so.
+- **Open README fix (waiting on the blind check):** Key finding #3 and the comparison-table row still say high prices come "mostly from lock-in". Counting cuts shows most high-price games had cuts matched by the rival; rewrite after the blind check.
+- **Paper fixed:** Haiku P2 seed 22 (index 0.97) also reached the cartel level; the paper now says "one of two games".
+- **Next experiment ideas:** user-suggests-collusion test on Sonnet (SIDENOTES section 1); the original study's implantation test to separate "stuck" from "afraid".
