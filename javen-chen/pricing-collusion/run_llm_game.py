@@ -40,8 +40,9 @@ def main():
                     help="continue an unfinished game from its saved rounds")
     args = ap.parse_args()
 
-    # Like the paper: the price ceiling shown to agents is k * cartel price,
-    # with k drawn at random between 1.5 and 2.5 (once per game).
+    # The price ceiling shown to agents is k * cartel price, with k drawn at
+    # random between 1.5 and 2.5 once per seed. (The paper drew k once,
+    # getting 2.34, and used that one ceiling for every game.)
     k = random.Random(args.seed).uniform(1.5, 2.5)
     ceiling = k * P_MONOPOLY
 

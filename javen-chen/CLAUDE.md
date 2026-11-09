@@ -144,4 +144,20 @@
 - `plot_findings.py` now makes 8 charts in `results/findings/` (5–8 are Experiment 3). Same simple Slides deck updated with them: https://claude.ai/artifact/HgT12Kt3CeRNGJWfBAihQM. A .pptx version was made and deleted at Javen's request (don't commit decks; they prefer the simple image deck plus a chat explanation).
 - README updated for Experiment 3 (new key chart and findings, Stage 3b section) and now compares only with the original paper.
 - Explained to Javen: the logit demand formula (plain-text version, since the terminal can't render LaTeX), the collusion index and why it can go below 0, how a round works, and starting prices (no fixed start; AIs open around $2.00–3.00, often near the midpoint of cost and the price ceiling).
-- Next: Javen to choose between a Fable baseline (~$1,100 API-equivalent, ~1 week) and the suggest-collusion experiment on Sonnet.
+- Next: the suggest-collusion experiment on Sonnet (not started).
+
+### 2026-11-09: Fable dropped
+- Javen decided not to run full Fable games (~1 week, ~$1,100 API-equivalent). The 10-round Fable pilot stays in `results/llm/`, labeled as a test run in its `notes.txt`, in `GAMES.md`, the README's "What's next" and `EXPERIMENT_PLAN.md`.
+
+### 2026-11-09: Rule-based mechanism classifier
+- `pricing-collusion/classify_mechanism.py` labels each game: Competitive / Still probing / Leader-follower / Fear (borne out, untested, not borne out) / Stuck / Unclear, from price data (exploration in rounds 151–200, price gap, leader-follower signature, cuts answered after round 20, "punish-like" responses below best response) plus keyword shares in the notes (rounds 101–200). Rules and thresholds are in the docstring.
+- Results are NOT shared with Javen yet (blind check round 2 in progress). Re-run the script to see them.
+- Found while building it: Haiku P2 seed 22 also reached the cartel level (index 0.97), so the paper's "only game to reach the full cartel level" (Haiku P1 seed 23) is wrong; told Javen.
+
+### Where things stand (handoff, 2026-11-09)
+- **Links:** paper draft (Claude Doc) https://claude.ai/artifact/JrDMCcHzrU2StY4W6P3Won · chart slides https://claude.ai/artifact/HgT12Kt3CeRNGJWfBAihQM · blind check round 2 sheet https://claude.ai/artifact/5PhRM3dVAMJeVoZBFEQCqo (tab 1 = Javen's answers; tab 2 = game identities + Claude's answers, Javen shouldn't open until done) · README review notes https://claude.ai/artifact/Q5DK8YV8yd72aZuZz3RmEe
+- **Teacher's repo:** both PRs merged (#1 project, #2 move into `javen-chen/`). The course workflow is a PR from this fork to `dfink/letting-claude-cook`; anything new needs a new PR.
+- **Blind check round 2 done (2026-11-09):** Javen and Claude agreed on Q1 in 10/13 games, Q2 in 11/13. All Q1 disagreements were Haiku games (Javen "stuck", Claude "fear"); each mixed a stuck firm with an afraid one. Rivals matched cuts but almost never punished (1 punish-like response in 13 games). README now has a summary section (no answer table, per Javen) and key finding #3 / comparison row rewritten: high prices from expecting cuts to be matched or price leadership, not lock-in. The 5 errors from the README check were also fixed. Exploratory lead: Sonnet/Opus high-price games were mostly leader/follower, Haiku's mostly fear/stuck.
+- **Course repo:** these README changes need a new PR to `dfink/letting-claude-cook`.
+- **Paper fixed:** Haiku P2 seed 22 (index 0.97) also reached the cartel level; the paper now says "one of two games".
+- **Next experiment ideas:** recommended first: the original study's implantation test (force one firm to cut mid-game) to separate stuck / fear / leader-follower; then the user-suggests-collusion test on Sonnet (SIDENOTES section 1).
