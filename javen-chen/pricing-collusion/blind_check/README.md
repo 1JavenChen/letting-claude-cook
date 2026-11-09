@@ -25,4 +25,4 @@ Each folder has:
 3. In `notes.txt`, search for words like `retaliat`, `price war`, `punish`, `match`, `equilibrium`, `hold`, around rounds 150–200.
 4. Pick a verdict and a confidence, and write one line on why.
 
-Claude's own verdicts were written before you started and are kept sealed (not in this repo).
+Claude's verdicts were written and sealed before Javen started. Both sets and the comparison are in `RESULTS.md`.
