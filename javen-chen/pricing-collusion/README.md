@@ -420,6 +420,7 @@ watching what the rival does.
 | Cartel price | 1.92 | 1.92 | ✅ |
 | AI agents | GPT-4 (and GPT-5.2 in an appendix) | Claude Haiku 4.5, Sonnet 5.5, Opus 5.5 | different models |
 | Instructions | Prompt P1 (and P2) | P1 and P2 word for word, plus my PX | ✅ |
+| Price ceiling ("no customer would pay more than…") | One fixed ceiling for every game: 2.34 × the cartel price ≈ $4.51 (2.34 drawn once at random from 1.5–2.5) | A new random ceiling for each seed (about $3.09–$4.75 in the 200-round games), the same for every model at that seed. In the model comparison, a higher ceiling meant higher opening prices but was barely related to final prices | 🔶 Different |
 | Games per condition | 7 per prompt at this market setting (21 across three settings) | 10 per model (5 in the earlier tests) | 🔶 Similar |
 | Do AI agents reach above-competitive prices? | Yes, clearly (GPT-4; GPT-5.2 averaged 1.79 in an appendix) | Haiku partly (1.62); Sonnet and Opus barely (1.51–1.53) | ❌ Mostly not |
 | What keeps prices high? | Reward-and-punishment strategies; notes show fear of price wars | Firms expecting price cuts to be matched, or one firm leading and the other following. Rivals matched cuts but almost never punished them. Opus often rejects collusion outright | 🔶 Partly: fear of price wars appears, punishment doesn't |
