@@ -451,7 +451,8 @@ watching what the rival does.
 | Finding the demand formula in the paper and checking the benchmarks against it | had it explained | ✔ |
 | Choice of test bots (best-responder, grim trigger, cheater) | reviewed | proposed |
 | Writing and running the code | | ✔ |
-| Interpreting results and deciding the next step | ✔ | assisted |
+| Interpreting results | shared | shared |
+| Deciding the next step | ✔ | proposed |
 
 ## Reproduce it
 
