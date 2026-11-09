@@ -26,7 +26,7 @@ question from two directions:
 1. **It is research done with AI agents.** An AI coding agent (Claude Code)
    wrote most of the code and proposed parts of the experimental design. I
    chose the question and the plan, reviewed and checked the agent's work, and
-   decide what the results mean. In later stages this becomes a multi-agent
+   helped decide what the results mean. In later stages this becomes a multi-agent
    team project, where several AI agents share the work.
 2. **It is research about AI agents.** The experiment itself asks what AI
    agents do when they are left alone to set prices in a market.
