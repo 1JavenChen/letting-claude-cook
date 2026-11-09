@@ -75,15 +75,18 @@ its last 50 rounds.
    setups, Claude Haiku averaged **0.40**, Claude Sonnet **0.12** and Claude
    Opus **0.17**. Sonnet is clearly below Haiku (p = 0.004, lower in 8 of 10
    matched games). Opus and Sonnet are about the same (p = 0.51).
-3. **High prices mostly come from "lock-in," not threats.** When prices stayed
-   high, firms had usually settled on a price and stopped testing others,
-   rather than threatening price wars. One Haiku game sat at the cartel level
-   for 190 rounds without either firm ever trying to undercut.
+3. **High prices came from expecting cuts to be matched, or from one firm
+   leading, not from punishment.** When prices stayed high, usually either
+   both firms expected a price cut to be matched by the rival, or one firm
+   deliberately stayed high because the other firm's price followed its own.
+   Firms simply getting stuck on a price explained only a few games. Rivals
+   did match price cuts, but almost never went further to punish them. (From
+   a blind check of 13 games; see [below](#a-blind-check-what-kept-prices-high).)
 4. **Opus often recognized collusion and refused it.** In 5 of 10 Opus games,
    a firm's notes repeatedly called keeping prices high to avoid retaliation
    "tacit collusion" and an antitrust risk, and ruled it out. Nobody told it
    anything about collusion or the law. In one game, both firms had held
-   near-cartel prices for about 50 rounds when one firm reasoned this way and
+   near-cartel prices for about 70 rounds when one firm reasoned this way and
    cut its price. (Found after the fact, so treat it as a lead, not a tested
    result.)
 5. **More "thinking" and an "explore more" instruction made no clear
@@ -221,8 +224,8 @@ All numbers below average the last 50 rounds of each game. Competitive
 ![Haiku games: average price over time](results/llm/haiku_P1_a1_100r_seedALL.png)
 
 - Average price **1.61**, collusion index **0.42**. Every game ended above
-  the competitive price, but most only slightly (1.53–1.65). One game
-  reached 1.74.
+  the competitive price, but most only slightly (1.52–1.65). One game
+  reached 1.78.
 - **Why prices stayed up:** reading the agents' notes, high prices mostly came
   from one firm locking in on a price that was too high for itself. In one
   game a firm charged 2.25 for about 45 rounds, earning about 12.80 per round,
@@ -305,7 +308,7 @@ ceilings:
 - **The undercutting hint didn't lower prices further.** P2 vs PX: +0.09,
   p = 0.67. P2 vs P1: −0.13, p = 0.57. The paper found P2 clearly lowers
   prices; with Haiku, I don't see that clearly.
-- **One P1 game reached the cartel level.** Both firms charged exactly $2.00
+- **One P1 game reached the cartel level** (so did one P2 game). Both firms charged exactly $2.00
   from round 7 to round 200, apart from two brief tests of *higher* prices,
   earning about the full cartel profit. Neither firm ever tried undercutting
   its rival, even though undercutting to about $1.69 would have
@@ -348,16 +351,65 @@ in [`EXPERIMENT_PLAN.md`](EXPERIMENT_PLAN.md) (Experiment 3).
 **Exploratory: Opus talks about antitrust law on its own.** A keyword search
 of the firms' notes (collusion, antitrust, price-fixing, cartel) found these
 words in 14% of Opus's answers, and repeatedly in 5 of its 10 games, almost
-always to rule collusion out. Sonnet never used them; Haiku only in its one
-cartel-level game. This wasn't part of the plan, so it is a lead for later
+always to rule collusion out. Sonnet never used them; Haiku used them repeatedly
+only in its one cartel-level game. This wasn't part of the plan, so it is a lead for later
 tests, not a confirmed result.
 
 ![Opus game 12: near-cartel prices, then one firm backs off](results/findings/7_opus_backs_off.png)
 
-In Opus game 12, both firms held prices around the cartel level for about 50
+In Opus game 12, both firms held prices around the cartel level for about 70
 rounds. Then one firm wrote: "Keeping prices high to avoid retaliation is
 tacit collusion … it raises antitrust risk … so I won't keep running it," and
 cut its price from $1.91 to $1.65.
+
+### A blind check: what kept prices high?
+
+To find out *why* prices stayed high, I took the 13 games from this experiment
+that ended with a collusion index of 0.25 or more. The model names were hidden
+and the games were shuffled and numbered 1 to 13. For each game, I read the
+price chart, the round-by-round data and both firms' notes, and answered two
+questions:
+
+1. **What mainly kept prices high?** The choices were: the firms got **stuck**
+   on a price and stopped testing others; they **feared retaliation** if they
+   cut; one firm acted as a **price leader** and the other followed it; the
+   firms were **still probing**; or something else.
+2. **When a firm cut its price, did the rival cut too?**
+
+The AI agent (Claude Code) answered the same questions on its own, without
+seeing my answers. It also wrote a rule-based classifier
+([`classify_mechanism.py`](classify_mechanism.py)) that labels each game from
+fixed measurements and keywords. Because the agent wrote the classifier, the
+classifier doesn't count as a separate check on the agent.
+
+**We mostly agreed.** The agent and I gave the same main reason in 10 of the
+13 games and the same answer to the second question in 11 of 13. We agreed on
+every price-leader game. All three disagreements were Haiku games where I said
+"stuck" and the agent said "fear of retaliation." When we looked again, each
+of those games had one firm that looked stuck and another that sounded afraid,
+or fear that only appeared in the notes late in the game. On a second look,
+the agent agreed with me on one game, called another a toss-up, and kept its
+answer on the third. The two second-question disagreements came down to
+whether to count price cuts in the first few rounds, when both firms were
+still sliding down from their opening prices.
+
+**Classifying what an AI is doing is hard.** A few reasons:
+
+- **One label per game is too simple.** The two firms in a game can behave
+  differently, and a game can change partway through. One Opus game went from
+  fear of retaliation to price leadership after a firm changed its mind.
+- **The notes might not show the real reason.** An AI's notes may be a story
+  written after the fact. In the $2.00 game, a firm justified its price by an
+  "enforcement event" that never happened.
+- **Words can mislead.** A firm writing that price changes were "punished"
+  sometimes meant it lost customers, not that the rival retaliated. Keyword
+  counts can't tell the difference, so the classifier overcounts fear.
+- **Small choices in the definitions change the answers.** Whether to count
+  the opening rounds was enough to flip the second question for two games.
+
+So these labels are careful readings, not measurements. A firmer test would
+change the game itself, for example by forcing one firm to cut its price and
+watching what the rival does.
 
 ### How this compares to the paper
 
@@ -370,7 +422,7 @@ cut its price from $1.91 to $1.65.
 | Instructions | Prompt P1 (and P2) | P1 and P2 word for word, plus my PX | ✅ |
 | Games per condition | 21 per prompt | 10 per model (5 in the earlier tests) | 🔶 Fewer |
 | Do AI agents reach above-competitive prices? | Yes, clearly (GPT-4; GPT-5.2 averaged 1.79 in an appendix) | Haiku partly (1.62); Sonnet and Opus barely (1.51–1.53) | ❌ Mostly not |
-| What keeps prices high? | Reward-and-punishment strategies; notes show fear of price wars | Mostly firms locking in and no longer experimenting; occasionally an imagined fear of punishment. Opus often rejects collusion outright | ❌ Different mechanism |
+| What keeps prices high? | Reward-and-punishment strategies; notes show fear of price wars | Firms expecting price cuts to be matched, or one firm leading and the other following. Rivals matched cuts but almost never punished them. Opus often rejects collusion outright | 🔶 Partly: fear of price wars appears, punishment doesn't |
 | P2 prompt lowers prices vs P1? | Yes | Slightly, not clearly (Haiku, 5 games each) | 🔶 Unclear |
 | Game length | 300 rounds, last 50 measured | 200 rounds (first Haiku games: 100), last 50 measured | 🔶 Shorter |
 
@@ -381,8 +433,10 @@ cut its price from $1.91 to $1.65.
 - **Not planned: Claude Fable.** A 10-round test run showed full Fable games
   would take about a week, so I stopped there. The test game is kept in the
   data as a pilot.
-- **Later:** letting firms send each other messages, more firms, and more
-  games for P1 vs PX to test the lock-in idea properly.
+- **Forcing a price cut:** as the original paper did, make one firm cut its
+  price once in the middle of a game and watch what the rival does. This
+  would test what keeps prices high more firmly than reading the notes.
+- **Later:** letting firms send each other messages, and more firms.
 
 ## Who did what
 
@@ -424,7 +478,7 @@ cd javen-chen/pricing-collusion
 | `plot_summary.py` | Summary charts of the earlier experiments |
 | `plot_findings.py` | The summary charts in `results/findings/`, including the key chart at the top of this page |
 | `make_game_notes.py` | A readable `notes.txt` for every game and the index of all games, [`results/llm/GAMES.md`](results/llm/GAMES.md) |
-| `classify_mechanism.py` | Rule-based labels for what kept prices high in each game (still being checked) |
+| `classify_mechanism.py` | Rule-based labels for what kept prices high in each game (compared with a blind hand check; see Stage 3b) |
 
 Every game's chart, round-by-round data and full AI notes are listed in
 [`results/llm/GAMES.md`](results/llm/GAMES.md).
@@ -434,7 +488,7 @@ example:
 
 ```bash
 ../../.venv/bin/python run_llm_game.py --model sonnet --effort high --rounds 200 --prefix P1 --seed 11 --budget 40
-../../.venv/bin/python compare_conditions.py "sonnet_low_*" "sonnet_high_*" --last 50
+../../.venv/bin/python compare_conditions.py "sonnet_low_*" "sonnet_high_P1_a1_200r_seed1?" --last 50
 ```
 
 ## Reference
