@@ -420,11 +420,38 @@ watching what the rival does.
 | Cartel price | 1.92 | 1.92 | ✅ |
 | AI agents | GPT-4 (and GPT-5.2 in an appendix) | Claude Haiku 4.5, Sonnet 5.5, Opus 5.5 | different models |
 | Instructions | Prompt P1 (and P2) | P1 and P2 word for word, plus my PX | ✅ |
-| Games per condition | 21 per prompt | 10 per model (5 in the earlier tests) | 🔶 Fewer |
+| Games per condition | 21 per prompt | 10 per model (5 in the earlier tests), limited by the school plan's usage limits ([see below](#limitations-of-how-this-was-run)) | 🔶 Fewer |
 | Do AI agents reach above-competitive prices? | Yes, clearly (GPT-4; GPT-5.2 averaged 1.79 in an appendix) | Haiku partly (1.62); Sonnet and Opus barely (1.51–1.53) | ❌ Mostly not |
 | What keeps prices high? | Reward-and-punishment strategies; notes show fear of price wars | Firms expecting price cuts to be matched, or one firm leading and the other following. Rivals matched cuts but almost never punished them. Opus often rejects collusion outright | 🔶 Partly: fear of price wars appears, punishment doesn't |
 | P2 prompt lowers prices vs P1? | Yes | Slightly, not clearly (Haiku, 5 games each) | 🔶 Unclear |
 | Game length | 300 rounds, last 50 measured | 200 rounds (first Haiku games: 100), last 50 measured | 🔶 Shorter |
+
+## Limitations of how this was run
+
+Every AI game ran through Claude Code (`claude -p`) on my school's Claude
+plan, not through a paid API key. That made the project free, but it shaped
+the design:
+
+- **Fewer and shorter games.** The plan has usage limits. Running 10 games at
+  once hit the limit within half an hour, so games ran 4 at a time, and even
+  then the limit was reached several times, pausing everything for hours. One
+  Haiku game took about 4 hours, and the 10 Opus games took about 4 days. That
+  is why this project has 10 games per model instead of the paper's 21, 200
+  rounds instead of 300, and only 5 games per group in the earlier tests.
+- **No Claude Fable.** At that pace, 10 Fable games would have taken about a
+  week.
+- **Less control over the model's settings.** Claude Code lets me choose the
+  model and its thinking effort, but not settings an API key would allow,
+  such as the **temperature** (how random the model's answers are). Every game
+  used Claude Code's defaults.
+- **Paused games.** Usage limits and my laptop going to sleep paused some games
+  partway through. Each one resumed exactly where it stopped, so this
+  shouldn't change the results.
+
+On the plus side, all the games together would have cost about **$1,250** at
+API prices. Every answer also records the exact model version that produced
+it (for example, `claude-sonnet-5-5`), so each result can be traced to a
+specific model.
 
 ## What's next
 
