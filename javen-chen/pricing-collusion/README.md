@@ -420,11 +420,12 @@ watching what the rival does.
 | Cartel price | 1.92 | 1.92 | ✅ |
 | AI agents | GPT-4 (and GPT-5.2 in an appendix) | Claude Haiku 4.5, Sonnet 5.5, Opus 5.5 | different models |
 | Instructions | Prompt P1 (and P2) | P1 and P2 word for word, plus my PX | ✅ |
-| Games per condition | 21 per prompt | 10 per model (5 in the earlier tests), limited by the school plan's usage limits ([see below](#limitations-of-how-this-was-run)) | 🔶 Fewer |
+| Games per condition | 7 per prompt at this market setting (21 across three settings) | 10 per model (5 in the earlier tests) | 🔶 Similar |
 | Do AI agents reach above-competitive prices? | Yes, clearly (GPT-4; GPT-5.2 averaged 1.79 in an appendix) | Haiku partly (1.62); Sonnet and Opus barely (1.51–1.53) | ❌ Mostly not |
 | What keeps prices high? | Reward-and-punishment strategies; notes show fear of price wars | Firms expecting price cuts to be matched, or one firm leading and the other following. Rivals matched cuts but almost never punished them. Opus often rejects collusion outright | 🔶 Partly: fear of price wars appears, punishment doesn't |
 | P2 prompt lowers prices vs P1? | Yes | Slightly, not clearly (Haiku, 5 games each) | 🔶 Unclear |
-| Game length | 300 rounds, last 50 measured | 200 rounds (first Haiku games: 100), last 50 measured | 🔶 Shorter |
+| Game length | 300 rounds, rounds 251–300 measured | 200 rounds (first Haiku games: 100), rounds 151–200 measured; in most games prices had leveled out by then ([see below](#limitations-of-how-this-was-run)) | 🔶 Shorter |
+| How the AI was run | OpenAI's API with research credits; one fixed GPT-4 version; temperature set to 1 | Claude Code on a school plan; exact model version recorded with every answer; temperature can't be set | 🔶 Different |
 
 ## Limitations of how this was run
 
@@ -432,18 +433,30 @@ Every AI game ran through Claude Code (`claude -p`) on my school's Claude
 plan, not through a paid API key. That made the project free, but it shaped
 the design:
 
-- **Fewer and shorter games.** The plan has usage limits. Running 10 games at
-  once hit the limit within half an hour, so games ran 4 at a time, and even
-  then the limit was reached several times, pausing everything for hours. One
-  Haiku game took about 4 hours, and the 10 Opus games took about 4 days. That
-  is why this project has 10 games per model instead of the paper's 21, 200
-  rounds instead of 300, and only 5 games per group in the earlier tests.
+- **Shorter games, and small early tests.** The plan has usage limits.
+  Running 10 games at once hit the limit within half an hour, so games ran 4
+  at a time, and even then the limit was reached several times, pausing
+  everything for hours. One Haiku game took about 4 hours, and the 10 Opus
+  games took about 4 days. That is why games here last 200 rounds instead of
+  the paper's 300, and why the earlier tests had only 5 games per group. (The
+  model comparison has 10 games per model. At the market setting used here,
+  the paper ran 7 games per prompt.)
+- **Measuring rounds 151–200 instead of 251–300.** Like the paper, I score each
+  game on its last 50 rounds. In most games prices had leveled out well before
+  then: in 38 of the 45 200-round games, the average price in rounds 151–200
+  was within 3 cents of rounds 101–150, and in half the games prices stayed
+  within 3 cents of their final level from about round 90 on. A few games were
+  still moving: four Haiku games (one climbing to the cartel level), two
+  low-effort Sonnet games in price wars, and the Opus game where a firm backed
+  off at round 132. Longer games might have ended somewhat differently for
+  those.
 - **No Claude Fable.** At that pace, 10 Fable games would have taken about a
   week.
 - **Less control over the model's settings.** Claude Code lets me choose the
   model and its thinking effort, but not settings an API key would allow,
-  such as the **temperature** (how random the model's answers are). Every game
-  used Claude Code's defaults.
+  such as the **temperature** (how random the model's answers are). The paper
+  set temperature to 1, the API's default. Every game here used Claude Code's
+  defaults, which I can't see or change.
 - **Paused games.** Usage limits and my laptop going to sleep paused some games
   partway through. Each one resumed exactly where it stopped, so this
   shouldn't change the results.
