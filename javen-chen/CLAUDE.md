@@ -147,7 +147,7 @@
 - Next: Javen to choose between a Fable baseline (~$1,100 API-equivalent, ~1 week) and the suggest-collusion experiment on Sonnet.
 
 ### 2026-11-09: Blind check of the high-price games
-- Javen asked whether they'd reach the same conclusions from the data. Set up a blind check: the 13 Experiment 3 games with index ≥ 0.25, anonymized as Game A–M in `pricing-collusion/blind_check/` (chart, prices, full notes per game; mapping and seed list are in the sealed file).
+- Javen asked whether they'd reach the same conclusions from the data. Set up a blind check: the 13 Experiment 3 games with index ≥ 0.25, anonymized as Game A–M in `pricing-collusion/blind_check/` (chart, prices, full notes per game; the game-to-model mapping is in the private verdict sheet).
 - Verdict sheet (Claude Doc, dropdowns): https://claude.ai/artifact/4uZ9GYcwwfqxCdJ9tofzdU
 - Blind check completed 2026-11-09. Javen asked that the results not be added to the README or saved in the repo (comparison kept only in the private verdict sheet). Don't change README/paper mechanism claims without asking.
 - Teacher merged both pull requests (#1 project, #2 move into `javen-chen/`).
