@@ -98,8 +98,8 @@ stages below for details and caveats.
 
 Two firms sell similar but not identical products (think Coke and Pepsi).
 Every round, each firm picks a price at the same time. Customers then choose
-which one to buy, or buy nothing. A bot game lasts 100 rounds (AI games 100–200), and each firm sees
-every past price before choosing its next one.
+which one to buy, or buy nothing. A bot game lasts 100 rounds (AI games 100–200).
+Before choosing its next price, each AI firm sees the last 100 rounds of prices.
 
 How many customers each firm gets follows the **logit demand** model used in
 the paper (and originally in Calvano et al., 2020):
@@ -183,8 +183,8 @@ Experiments so far:
 | Prompt test: P1, PX, P2 | Claude Haiku 4.5 | default | 5 each | 200 |
 | Model size | Claude Haiku 4.5, Sonnet 5.5, Opus 5.5 | default (Haiku), high | 10 each | 200 |
 
-The thinking-effort, prompt and model-size tests were each **written down and committed to git before it was
-run** ([`EXPERIMENT_PLAN.md`](EXPERIMENT_PLAN.md)), so the test couldn't be
+The thinking-effort, prompt and model-size tests were each **written down and committed to git before they
+were run** ([`EXPERIMENT_PLAN.md`](EXPERIMENT_PLAN.md)), so the test couldn't be
 changed after seeing the results. No published study I found varies thinking
 effort within one model.
 
@@ -367,8 +367,9 @@ cut its price from $1.91 to $1.65.
 | Competitive (Nash) price | 1.47 | 1.47 | ✅ |
 | Cartel price | 1.92 | 1.92 | ✅ |
 | AI agents | GPT-4 (and GPT-5.2 in an appendix) | Claude Haiku 4.5, Sonnet 5.5, Opus 5.5 | different models |
-| Instructions | Prompt P1 (and P2) | Prompt P1, word for word | ✅ |
-| Do AI agents reach above-competitive prices? | Yes, clearly (GPT-5.2 averaged 1.79) | Haiku partly (1.62); Sonnet and Opus barely (1.51–1.53) | ❌ Mostly not |
+| Instructions | Prompt P1 (and P2) | P1 and P2 word for word, plus my PX | ✅ |
+| Games per condition | 21 per prompt | 10 per model (5 in the earlier tests) | 🔶 Fewer |
+| Do AI agents reach above-competitive prices? | Yes, clearly (GPT-4; GPT-5.2 averaged 1.79 in an appendix) | Haiku partly (1.62); Sonnet and Opus barely (1.51–1.53) | ❌ Mostly not |
 | What keeps prices high? | Reward-and-punishment strategies; notes show fear of price wars | Mostly firms locking in and no longer experimenting; occasionally an imagined fear of punishment. Opus often rejects collusion outright | ❌ Different mechanism |
 | P2 prompt lowers prices vs P1? | Yes | Slightly, not clearly (Haiku, 5 games each) | 🔶 Unclear |
 | Game length | 300 rounds, last 50 measured | 200 rounds (first Haiku games: 100), last 50 measured | 🔶 Shorter |
@@ -422,6 +423,11 @@ cd javen-chen/pricing-collusion
 | `analyze_behavior.py` | How much firms follow their rival, how often they change price, and what their notes talk about |
 | `plot_summary.py` | Summary charts of the earlier experiments |
 | `plot_findings.py` | The summary charts in `results/findings/`, including the key chart at the top of this page |
+| `make_game_notes.py` | A readable `notes.txt` for every game and the index of all games, [`results/llm/GAMES.md`](results/llm/GAMES.md) |
+| `classify_mechanism.py` | Rule-based labels for what kept prices high in each game (still being checked) |
+
+Every game's chart, round-by-round data and full AI notes are listed in
+[`results/llm/GAMES.md`](results/llm/GAMES.md).
 
 AI games run through Claude Code (`claude -p`) on a Claude subscription. For
 example:
