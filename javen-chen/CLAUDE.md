@@ -145,3 +145,9 @@
 - README updated for Experiment 3 (new key chart and findings, Stage 3b section) and now compares only with the original paper.
 - Explained to Javen: the logit demand formula (plain-text version, since the terminal can't render LaTeX), the collusion index and why it can go below 0, how a round works, and starting prices (no fixed start; AIs open around $2.00–3.00, often near the midpoint of cost and the price ceiling).
 - Next: Javen to choose between a Fable baseline (~$1,100 API-equivalent, ~1 week) and the suggest-collusion experiment on Sonnet.
+
+### 2026-11-09: Blind check of the high-price games
+- Javen asked whether they'd reach the same conclusions from the data. Set up a blind check: the 13 Experiment 3 games with index ≥ 0.25, anonymized as Game A–M in `pricing-collusion/blind_check/` (chart, prices, full notes per game; mapping and seed list are in the sealed file).
+- Verdict sheet (Claude Doc, dropdowns): https://claude.ai/artifact/4uZ9GYcwwfqxCdJ9tofzdU
+- Claude's verdicts were written BEFORE Javen's and sealed in `pricing-collusion/blind_check/.claude_verdicts_SEALED.md` (git-ignored, sha256 starts 8bfb11ac56023865). Don't reveal or edit it until Javen says they're done; then compare game by game and update the paper/README's mechanism claims ("mostly lock-in") with whatever the comparison shows.
+- Teacher merged both pull requests (#1 project, #2 move into `javen-chen/`).
