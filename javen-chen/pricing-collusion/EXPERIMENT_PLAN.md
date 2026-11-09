@@ -279,4 +279,6 @@ Opus high **0.17** (price 1.53), 10 games, seeds 11–15 and 21–25.
   always mean low prices. Charts: `results/findings/7_opus_backs_off.png`,
   `results/findings/8_collusion_talk.png`.
 
-Fable: not yet run (pilot only).
+Fable: stopped after the 10-round pilot (2026-11-09). Ten full games would
+have taken about a week of runs under usage limits, so Javen decided not to
+run them. The pilot game stays in the data, labeled as a test run.

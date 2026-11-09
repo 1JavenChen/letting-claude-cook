@@ -19,6 +19,7 @@ from analyze_llm_games import PI_CARTEL, PI_NASH
 LLM = os.path.join("results", "llm")
 
 EXPERIMENTS = [  # (test on the folder name, experiment label), first match wins
+    (lambda n: n.startswith("fable"), "Test run only (Fable stopped: full games would take ~1 week)"),
     (lambda n: n.endswith("_10r_seed11"), "Pilot (cost check)"),
     (lambda n: "_5r_" in n or "_50r_" in n or "_100r_" in n, "Pilot"),
     (lambda n: n.startswith("sonnet_low"), "1: thinking effort"),
@@ -57,6 +58,9 @@ def write_notes(folder, settings, rounds, answers):
     retries = len(answers) - len(used)
     with open(os.path.join(folder, "notes.txt"), "w") as f:
         f.write(f"GAME: {name}\n")
+        if name.startswith("fable"):
+            f.write("NOTE: 10-round test run only. Full Fable games were not run because\n"
+                    "they would have taken about a week; this game is not a result.\n")
         f.write(f"Model: {', '.join(models) or settings.get('model')}"
                 f" | thinking effort: {settings.get('effort') or 'default'}"
                 f" | prompt: {settings.get('prefix')} | rounds: {len(rounds)}"

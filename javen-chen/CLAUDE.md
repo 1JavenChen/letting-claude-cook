@@ -144,4 +144,7 @@
 - `plot_findings.py` now makes 8 charts in `results/findings/` (5–8 are Experiment 3). Same simple Slides deck updated with them: https://claude.ai/artifact/HgT12Kt3CeRNGJWfBAihQM. A .pptx version was made and deleted at Javen's request (don't commit decks; they prefer the simple image deck plus a chat explanation).
 - README updated for Experiment 3 (new key chart and findings, Stage 3b section) and now compares only with the original paper.
 - Explained to Javen: the logit demand formula (plain-text version, since the terminal can't render LaTeX), the collusion index and why it can go below 0, how a round works, and starting prices (no fixed start; AIs open around $2.00–3.00, often near the midpoint of cost and the price ceiling).
-- Next: Javen to choose between a Fable baseline (~$1,100 API-equivalent, ~1 week) and the suggest-collusion experiment on Sonnet.
+- Next: the suggest-collusion experiment on Sonnet (not started).
+
+### 2026-11-09: Fable dropped
+- Javen decided not to run full Fable games (~1 week, ~$1,100 API-equivalent). The 10-round Fable pilot stays in `results/llm/`, labeled as a test run in its `notes.txt`, in `GAMES.md`, the README's "What's next" and `EXPERIMENT_PLAN.md`.

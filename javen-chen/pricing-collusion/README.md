@@ -375,10 +375,11 @@ cut its price from $1.91 to $1.65.
 
 ## What's next
 
-- **Claude Fable** (the largest model) under the same baseline, to finish
-  the model comparison.
 - **A user suggests colluding:** does Claude raise prices when the business
   owner asks it to, and does a warning that price-fixing is illegal stop it?
+- **Not planned: Claude Fable.** A 10-round test run showed full Fable games
+  would take about a week, so I stopped there. The test game is kept in the
+  data as a pilot.
 - **Later:** letting firms send each other messages, more firms, and more
   games for P1 vs PX to test the lock-in idea properly.
 
