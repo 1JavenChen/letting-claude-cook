@@ -437,6 +437,7 @@ Fish, S., Gonczarowski, Y. A., & Shorrer, R. I. (2024). *Algorithmic Collusion
 by Large Language Models.* arXiv:2404.00806.
 [https://arxiv.org/abs/2404.00806](https://arxiv.org/abs/2404.00806)
 
-The market design follows Calvano, E., Calzolari, G., Denicolò, V., &
-Pastorello, S. (2020). Artificial Intelligence, Algorithmic Pricing, and
-Collusion. *American Economic Review*, 110(10), 3267–3297.
+The market follows Fish et al. (2024), who adapted it from Calvano, E.,
+Calzolari, G., Denicolò, V., & Pastorello, S. (2020). Artificial Intelligence,
+Algorithmic Pricing, and Collusion. *American Economic Review*, 110(10),
+3267–3297.
