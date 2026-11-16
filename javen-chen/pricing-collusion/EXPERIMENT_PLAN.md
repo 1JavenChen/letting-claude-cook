@@ -229,7 +229,7 @@ Opus or Fable in this market.
 2. **Pilots:** one 10-round game each for Opus then Fable (seed 11) to
    measure time and usage per call. Pilot games are not part of the
    results.
-3. **Full Opus and Fable games** only after Javen approves the estimate
+3. **Full Opus and Fable games** only after I approve the estimate
    from the pilots.
 
 ## Result so far: Haiku and Sonnet (added 2026-10-15, after all 20 games)
@@ -280,5 +280,5 @@ Opus high **0.17** (price 1.53), 10 games, seeds 11–15 and 21–25.
   `results/findings/8_collusion_talk.png`.
 
 Fable: stopped after the 10-round pilot (2026-11-09). Ten full games would
-have taken about a week of runs under usage limits, so Javen decided not to
+have taken about a week of runs under usage limits, so I decided not to
 run them. The pilot game stays in the data, labeled as a test run.

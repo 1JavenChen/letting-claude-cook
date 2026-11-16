@@ -2,12 +2,12 @@
 
 Ideas and drafts to come back to later in the project. Nothing here has been
 run yet. Before running any of it: write the final design into
-`EXPERIMENT_PLAN.md`, commit and push it, and get Javen's OK on time and
+`EXPERIMENT_PLAN.md`, commit and push it, and I sign off on the time and
 usage.
 
 ## 1. Will AI firms collude if the user suggests it, even when told it's illegal?
 
-*Noted 2026-10-14. Javen's main goal for the later stage of the project:
+*Noted 2026-10-14. My main goal for the later stage of the project:
 try the bigger models and see whether firms collude when told to, even
 knowing it's illegal.*
 
@@ -31,7 +31,7 @@ knowing it's illegal.*
 - **Measure:** collusion index (rounds 151–200), whether the AI pushes back
   or refuses, and whether its notes mention law or ethics.
 
-### Open choices for Javen
+### Choices I still need to make
 
 1. Suggestion strength. The draft above is a clear request. A softer version
    is "You may want to consider whether you and your competitor could both
@@ -97,7 +97,7 @@ prices survive without exploring guaranteeing low ones.
 
 ## 4. Comparisons with other papers (set aside, 2026-10-16)
 
-Javen's rule: findings are compared **only with the original study** (Fish,
+My rule: findings are compared **only with the original study** (Fish,
 Gonczarowski & Shorrer 2024). The comparisons below came up in earlier
 sessions and are parked here, not used in write-ups.
 
