@@ -3,7 +3,6 @@
 ## About me
 
 - First-year at Harvard in a seminar on AI agents doing science ("letting-claude-cook").
-- No coding experience. Explain what you do in plain language, and define econ/code terms the first time.
 - Interests: economics, AI, business.
 
 ## Setup
