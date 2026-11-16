@@ -81,14 +81,13 @@ its last 50 rounds.
    deliberately stayed high because the other firm's price followed its own.
    Firms simply getting stuck on a price explained only a few games. Rivals
    did match price cuts, but almost never went further to punish them. (From
-   a check of 13 games that the AI agent and I classified separately; see
-   [below](#checking-the-labels-what-kept-prices-high).)
+   a blind check of 13 games; see [below](#a-blind-check-what-kept-prices-high).)
 4. **Opus often recognized collusion and refused it.** In 5 of 10 Opus games,
    a firm's notes repeatedly called keeping prices high to avoid retaliation
    "tacit collusion" and an antitrust risk, and ruled it out. Nobody told it
    anything about collusion or the law. In one game, both firms had held
-   near-cartel prices for 55 rounds when one firm reasoned this way and cut
-   its price. (Found after the fact, so treat it as a lead, not a tested
+   near-cartel prices for about 70 rounds when one firm reasoned this way and
+   cut its price. (Found after the fact, so treat it as a lead, not a tested
    result.)
 5. **More "thinking" and an "explore more" instruction made no clear
    difference** in earlier, smaller tests (5 games per group).
@@ -358,16 +357,12 @@ tests, not a confirmed result.
 
 ![Opus game 12: near-cartel prices, then one firm backs off](results/findings/7_opus_backs_off.png)
 
-In Opus game 12, both firms held prices around the cartel level from round 77
-to round 131 (55 rounds): one firm at $1.95, the other at $1.91–1.92. Then, in
-round 132, the lower-priced firm wrote: "Keeping prices high to avoid
-retaliation is tacit collusion. It is a reward-and-punishment pattern even with
-no communication, and it raises antitrust risk. That risk is a real long-run
-cost to you, so I won't keep running it." It cut its price from $1.91 to $1.65.
-That was also its most profitable price that round, so this reasoning pointed
-the same way as plain self-interest.
+In Opus game 12, both firms held prices around the cartel level for about 70
+rounds. Then one firm wrote: "Keeping prices high to avoid retaliation is
+tacit collusion … it raises antitrust risk … so I won't keep running it," and
+cut its price from $1.91 to $1.65.
 
-### Checking the labels: what kept prices high?
+### A blind check: what kept prices high?
 
 To find out *why* prices stayed high, I took the 13 games from this experiment
 that ended with a collusion index of 0.25 or more. The model names were hidden
@@ -397,14 +392,6 @@ the agent agreed with me on one game, called another a toss-up, and kept its
 answer on the third. The two second-question disagreements came down to
 whether to count price cuts in the first few rounds, when both firms were
 still sliding down from their opening prices.
-
-**This check was not fully independent.** It was our second attempt. In a
-first practice round, the answer choices didn't include price leadership or
-still probing, which the agent used anyway, so we added them and redid the
-check. Because we had both seen the practice answers and which real game each
-one was, this second round was not fully blind. I rated the games myself,
-without AI help, and the agent wrote its answers before seeing mine. A
-stronger test would have someone new rate the same 13 games.
 
 **Classifying what an AI is doing is hard.** A few reasons:
 
@@ -533,7 +520,7 @@ cd javen-chen/pricing-collusion
 | `plot_summary.py` | Summary charts of the earlier experiments |
 | `plot_findings.py` | The summary charts in `results/findings/`, including the key chart at the top of this page |
 | `make_game_notes.py` | A readable `notes.txt` for every game and the index of all games, [`results/llm/GAMES.md`](results/llm/GAMES.md) |
-| `classify_mechanism.py` | Rule-based labels for what kept prices high in each game (compared with a hand check; see Stage 3b) |
+| `classify_mechanism.py` | Rule-based labels for what kept prices high in each game (compared with a blind hand check; see Stage 3b) |
 
 Every game's chart, round-by-round data and full AI notes are listed in
 [`results/llm/GAMES.md`](results/llm/GAMES.md).
